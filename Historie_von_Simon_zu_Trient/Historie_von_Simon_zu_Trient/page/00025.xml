@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>Transkribus</Creator>
+        <Created>2025-10-20T10:16:59.308+02:00</Created>
+        <LastChange>2025-10-22T11:07:47.923+02:00</LastChange>
+        <TranskribusMetadata docId="11498403" pageId="104573942" pageNr="25" tsid="258590559" status="DONE" userId="19940" imgUrl="https://files.transkribus.eu/Get?id=RDCUTVYULJBIEZKEROEHMEAR&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=OLPRDWZHKIIRNBINWLAGYHUV" imageId="87748807"/>
+    </Metadata>
+    <Page imageFilename="00025.jpg" imageWidth="2997" imageHeight="4304">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1761124233488" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="tr_2"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion orientation="0.0" id="tr_2" custom="readingOrder {index:0;}">
+            <Coords points="471,669 471,3535 2354,3535 2354,669"/>
+            <TextLine id="tr_2_tl_1" custom="readingOrder {index:0;}">
+                <Coords points="668,741 751,744 835,741 918,741 1002,738 1086,735 1169,729 1253,729 1336,729 1420,729 1504,726 1587,726 1671,726 1754,726 1838,728 1922,729 2005,729 2089,726 2172,726 2256,729 2340,735 2340,678 2256,672 2172,669 2089,669 2005,672 1922,672 1838,671 1754,669 1671,669 1587,669 1504,669 1420,672 1336,672 1253,672 1169,672 1086,678 1002,681 918,684 835,684 751,687 668,684"/>
+                <Baseline points="668,722 751,725 835,722 918,722 1002,719 1086,716 1169,710 1253,710 1336,710 1420,710 1504,707 1587,707 1671,707 1754,707 1838,709 1922,710 2005,710 2089,707 2172,707 2256,710 2340,716"/>
+                <TextEquiv>
+                    <Unicode>DAs cʒwelffte Capittel hat auch drij artikel. Der erſte artikel iſt das vnder</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_2" custom="readingOrder {index:1;} abbrev {offset:10; length:2;expansion:en;} persName {offset:71; length:8;forename:Saligman;} abbrev {offset:77; length:2;expansion:an;}">
+                <Coords points="635,830 725,830 815,827 906,827 996,825 1087,822 1177,818 1268,815 1358,815 1449,812 1539,810 1630,809 1720,809 1811,809 1901,812 1992,812 2082,812 2173,812 2263,812 2354,815 2354,758 2263,755 2173,755 2082,755 1992,755 1901,755 1811,752 1720,752 1630,752 1539,753 1449,755 1358,758 1268,758 1177,761 1087,765 996,768 906,770 815,770 725,773 635,773"/>
+                <Baseline points="635,811 725,811 815,808 906,808 996,806 1087,803 1177,799 1268,796 1358,796 1449,793 1539,791 1630,790 1720,790 1811,790 1901,793 1992,793 2082,793 2173,793 2263,793 2354,796"/>
+                <TextEquiv>
+                    <Unicode>den gefangē iuden ſint gheweſt cʒween iung iuden die alle bed hieſſen Saligmā</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_3" custom="readingOrder {index:2;} sic {offset:56; length:7;correction:\u0020;}">
+                <Coords points="668,920 752,919 836,917 920,914 1004,911 1088,906 1172,902 1257,899 1341,899 1425,896 1509,893 1593,893 1677,893 1761,890 1846,893 1930,896 2014,899 2098,899 2182,900 2266,902 2351,899 2351,842 2266,845 2182,843 2098,842 2014,842 1930,839 1846,836 1761,833 1677,836 1593,836 1509,836 1425,839 1341,842 1257,842 1172,845 1088,849 1004,854 920,857 836,860 752,862 668,863"/>
+                <Baseline points="668,901 752,900 836,898 920,895 1004,892 1088,887 1172,883 1257,880 1341,880 1425,877 1509,874 1593,874 1677,874 1761,871 1846,874 1930,877 2014,880 2098,880 2182,881 2266,883 2351,880"/>
+                <TextEquiv>
+                    <Unicode>auff das teusch ader boneuentura auff welsch der iunger iunger was alſʒ bij acht</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_4" custom="readingOrder {index:3;} abbrev {offset:14; length:2;expansion:nd;} persName {offset:25; length:5;forename:Mayer;} abbrev {offset:59; length:2;expansion:an;}">
+                <Coords points="483,1010 576,1009 669,1006 763,999 856,998 950,995 1043,993 1136,990 1230,990 1323,987 1417,984 1510,981 1603,981 1697,978 1790,978 1884,978 1977,981 2070,984 2164,982 2257,984 2351,981 2351,929 2257,932 2164,930 2070,932 1977,929 1884,926 1790,926 1697,926 1603,929 1510,929 1417,932 1323,935 1230,938 1136,938 1043,941 950,943 856,946 763,947 669,954 576,957 483,958"/>
+                <Baseline points="483,993 576,992 669,989 763,982 856,981 950,978 1043,976 1136,973 1230,973 1323,970 1417,967 1510,964 1603,964 1697,961 1790,961 1884,961 1977,964 2070,967 2164,965 2257,967 2351,964"/>
+                <TextEquiv>
+                    <Unicode>cʒehen iaren vn̄ was des Mayer ſun der mit dem leſten verpꝛāt wart. Der ander was</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_5" custom="readingOrder {index:4;} sic {offset:28; length:2;correction:w;} sic {offset:33; length:2;correction:ʒ;} abbrev {offset:43; length:2;expansion:nd;} abbrev {offset:67; length:2;expansion:nd;} persName {offset:73; length:7;forename:Samuel;}">
+                <Coords points="477,1082 570,1082 664,1081 758,1079 851,1078 945,1076 1039,1073 1132,1073 1226,1070 1320,1073 1414,1073 1507,1070 1601,1069 1695,1067 1788,1064 1882,1062 1976,1066 2069,1070 2163,1072 2257,1070 2351,1070 2351,1018 2257,1018 2163,1020 2069,1018 1976,1014 1882,1010 1788,1012 1695,1015 1601,1017 1507,1018 1414,1021 1320,1021 1226,1018 1132,1021 1039,1021 945,1024 851,1026 758,1027 664,1029 570,1030 477,1030"/>
+                <Baseline points="477,1065 570,1065 664,1064 758,1062 851,1061 945,1059 1039,1056 1132,1056 1226,1053 1320,1056 1414,1056 1507,1053 1601,1052 1695,1050 1788,1047 1882,1045 1976,1049 2069,1053 2163,1055 2257,1053 2351,1053"/>
+                <TextEquiv>
+                    <Unicode>in dem elter alſʒ funfvndecʒbeencʒgig iar vn̄ was ain fromder iud vn̄ in Samuels hauſʒ</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_6" custom="readingOrder {index:5;} abbrev {offset:31; length:2;expansion:nd;}">
+                <Coords points="480,1157 573,1154 667,1154 761,1154 854,1155 948,1157 1042,1155 1135,1154 1229,1156 1323,1157 1417,1157 1510,1157 1604,1154 1698,1153 1791,1150 1885,1151 1979,1151 2072,1153 2166,1159 2260,1160 2354,1160 2354,1108 2260,1108 2166,1107 2072,1101 1979,1099 1885,1099 1791,1098 1698,1101 1604,1102 1510,1105 1417,1105 1323,1105 1229,1104 1135,1102 1042,1103 948,1105 854,1103 761,1102 667,1102 573,1102 480,1105"/>
+                <Baseline points="480,1140 573,1137 667,1137 761,1137 854,1138 948,1140 1042,1138 1135,1137 1229,1139 1323,1140 1417,1140 1510,1140 1604,1137 1698,1136 1791,1133 1885,1134 1979,1134 2072,1136 2166,1142 2260,1143 2354,1143"/>
+                <TextEquiv>
+                    <Unicode>was er koch der anderen iuden vn̄ was ouch der auff den die iuden hatten bekant er het</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_7" custom="readingOrder {index:6;} geogName {offset:16; length:13;} geogName {offset:66; length:7;}">
+                <Coords points="480,1260 573,1253 666,1251 759,1251 853,1253 946,1251 1039,1251 1133,1251 1226,1251 1319,1248 1413,1248 1506,1251 1599,1248 1692,1245 1786,1242 1879,1242 1972,1242 2066,1242 2159,1245 2252,1248 2346,1251 2346,1194 2252,1191 2159,1188 2066,1185 1972,1185 1879,1185 1786,1185 1692,1188 1599,1191 1506,1194 1413,1191 1319,1191 1226,1194 1133,1194 1039,1194 946,1194 853,1196 759,1194 666,1194 573,1196 480,1203"/>
+                <Baseline points="480,1241 573,1234 666,1232 759,1232 853,1234 946,1232 1039,1232 1133,1232 1226,1232 1319,1229 1413,1229 1506,1232 1599,1229 1692,1226 1786,1223 1879,1223 1972,1223 2066,1223 2159,1226 2252,1229 2346,1232"/>
+                <TextEquiv>
+                    <Unicode>das kint funden in der ricʒen alſʒ er wolte waſſer holen auſʒ der ricʒſen ſi hatten das aber</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_8" custom="readingOrder {index:7;} sic {offset:33; length:2;correction:k;} sic {offset:70; length:2;correction:k;} abbrev {offset:89; length:2;expansion:nd;}">
+                <Coords points="474,1338 567,1335 661,1336 755,1337 849,1336 943,1337 1037,1335 1130,1333 1224,1332 1318,1332 1412,1332 1506,1332 1600,1331 1694,1329 1787,1326 1881,1326 1975,1324 2069,1325 2163,1328 2257,1332 2351,1332 2351,1275 2257,1275 2163,1271 2069,1268 1975,1267 1881,1269 1787,1269 1694,1272 1600,1274 1506,1275 1412,1275 1318,1275 1224,1275 1130,1276 1037,1278 943,1280 849,1279 755,1280 661,1279 567,1278 474,1281"/>
+                <Baseline points="474,1319 567,1316 661,1317 755,1318 849,1317 943,1318 1037,1316 1130,1314 1224,1313 1318,1313 1412,1313 1506,1313 1600,1312 1694,1310 1787,1307 1881,1307 1975,1305 2069,1306 2163,1309 2257,1313 2351,1313"/>
+                <TextEquiv>
+                    <Unicode>mit im an gheleit er hatt auch belꝛant das er achte ſtich dem ſeligen lꝛint gheben het. vn̄</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_9" custom="readingOrder {index:8;} sic {offset:31; length:2;correction:k;} sic {offset:70; length:2;correction:k;}">
+                <Coords points="477,1430 570,1431 663,1433 756,1432 849,1433 942,1433 1035,1433 1129,1430 1222,1427 1315,1427 1408,1427 1501,1426 1594,1421 1687,1418 1781,1419 1874,1418 1967,1418 2060,1418 2153,1415 2246,1415 2340,1409 2340,1352 2246,1358 2153,1358 2060,1361 1967,1361 1874,1361 1781,1362 1687,1361 1594,1364 1501,1369 1408,1370 1315,1370 1222,1370 1129,1373 1035,1376 942,1376 849,1376 756,1375 663,1376 570,1374 477,1373"/>
+                <Baseline points="477,1411 570,1412 663,1414 756,1413 849,1414 942,1414 1035,1414 1129,1411 1222,1408 1315,1408 1408,1408 1501,1407 1594,1402 1687,1399 1781,1400 1874,1399 1967,1399 2060,1399 2153,1396 2246,1396 2340,1390"/>
+                <TextEquiv>
+                    <Unicode>die anderen hatten in auſʒ der lꝛuchen dar ʒu gherufft. Der ander artilꝛel iſt das der</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_10" custom="readingOrder {index:9;} sic {offset:0; length:2;correction:k;} sic {offset:63; length:2;correction:k;}">
+                <Coords points="480,1520 573,1520 666,1520 759,1520 852,1520 945,1520 1038,1520 1132,1520 1225,1520 1318,1520 1411,1517 1504,1517 1597,1514 1690,1515 1784,1514 1877,1514 1970,1512 2063,1514 2156,1514 2249,1511 2343,1514 2343,1457 2249,1454 2156,1457 2063,1457 1970,1455 1877,1457 1784,1457 1690,1458 1597,1457 1504,1460 1411,1460 1318,1463 1225,1463 1132,1463 1038,1463 945,1463 852,1463 759,1463 666,1463 573,1463 480,1463"/>
+                <Baseline points="480,1501 573,1501 666,1501 759,1501 852,1501 945,1501 1038,1501 1132,1501 1225,1501 1318,1501 1411,1498 1504,1498 1597,1495 1690,1496 1784,1495 1877,1495 1970,1493 2063,1495 2156,1495 2249,1492 2343,1495"/>
+                <TextEquiv>
+                    <Unicode>lꝛoch von dem aller erſten tag alſʒ er gefangen wart do aſſ er lꝛain iudisch ſpeyſʒ alſʒ die</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_11" custom="readingOrder {index:10;}">
+                <Coords points="483,1606 575,1604 668,1603 761,1603 853,1606 946,1603 1039,1603 1131,1603 1224,1603 1317,1603 1410,1601 1502,1603 1595,1602 1688,1603 1780,1603 1873,1603 1966,1604 2058,1602 2151,1600 2244,1600 2337,1603 2337,1546 2244,1543 2151,1543 2058,1545 1966,1547 1873,1546 1780,1546 1688,1546 1595,1545 1502,1546 1410,1544 1317,1546 1224,1546 1131,1546 1039,1546 946,1546 853,1549 761,1546 668,1546 575,1547 483,1549"/>
+                <Baseline points="483,1587 575,1585 668,1584 761,1584 853,1587 946,1584 1039,1584 1131,1584 1224,1584 1317,1584 1410,1582 1502,1584 1595,1583 1688,1584 1780,1584 1873,1584 1966,1585 2058,1583 2151,1581 2244,1581 2337,1584"/>
+                <TextEquiv>
+                    <Unicode>anderen. ſunder er begherte Criſten ʒu werden alle tag ſo lang er gefangen lag bicʒ in</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_12" custom="readingOrder {index:11;} work {offset:47; length:23;title:Pater\u0020Noster;} abbrev {offset:72; length:2;expansion:nd;} work {offset:79; length:7;title:Credo;}">
+                <Coords points="477,1687 570,1687 663,1690 756,1690 849,1690 942,1690 1035,1691 1128,1692 1221,1693 1314,1693 1407,1695 1500,1699 1593,1699 1686,1699 1779,1699 1872,1699 1965,1696 2058,1695 2151,1692 2244,1690 2337,1693 2337,1636 2244,1633 2151,1635 2058,1638 1965,1639 1872,1642 1779,1642 1686,1642 1593,1642 1500,1642 1407,1638 1314,1636 1221,1636 1128,1635 1035,1634 942,1633 849,1633 756,1633 663,1633 570,1630 477,1630"/>
+                <Baseline points="477,1668 570,1668 663,1671 756,1671 849,1671 942,1671 1035,1672 1128,1673 1221,1674 1314,1674 1407,1676 1500,1680 1593,1680 1686,1680 1779,1680 1872,1680 1965,1677 2058,1676 2151,1673 2244,1671 2337,1674"/>
+                <TextEquiv>
+                    <Unicode>die treiʒehen wuchen vn in der cʒeit lerent er das ghepet pater noſter vn̄ den glouben</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_13" custom="readingOrder {index:12;} sic {offset:57; length:2;correction:k;} abbrev {offset:87; length:2;expansion:en;}">
+                <Coords points="480,1774 572,1777 665,1777 757,1779 850,1779 942,1778 1035,1778 1127,1779 1220,1779 1312,1781 1405,1785 1498,1787 1590,1790 1683,1791 1775,1788 1868,1788 1960,1788 2053,1785 2145,1782 2238,1782 2331,1782 2331,1725 2238,1725 2145,1725 2053,1728 1960,1731 1868,1731 1775,1731 1683,1734 1590,1733 1498,1730 1405,1728 1312,1724 1220,1722 1127,1722 1035,1721 942,1721 850,1722 757,1722 665,1720 572,1720 480,1717"/>
+                <Baseline points="480,1755 572,1758 665,1758 757,1760 850,1760 942,1759 1035,1759 1127,1760 1220,1760 1312,1762 1405,1766 1498,1768 1590,1771 1683,1772 1775,1769 1868,1769 1960,1769 2053,1766 2145,1763 2238,1763 2331,1763"/>
+                <TextEquiv>
+                    <Unicode>durch die pꝛieſter die im ouch ſageten er ſolt nit ghedenlꝛen das er welte da mit entghē</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_14" custom="readingOrder {index:13;}">
+                <Coords points="480,1866 572,1863 665,1863 758,1863 851,1863 944,1863 1037,1863 1129,1864 1222,1866 1315,1867 1408,1869 1501,1872 1594,1875 1687,1878 1779,1878 1872,1878 1965,1878 2058,1875 2151,1878 2244,1878 2337,1878 2337,1821 2244,1821 2151,1821 2058,1818 1965,1821 1872,1821 1779,1821 1687,1821 1594,1818 1501,1815 1408,1812 1315,1810 1222,1809 1129,1807 1037,1806 944,1806 851,1806 758,1806 665,1806 572,1806 480,1809"/>
+                <Baseline points="480,1847 572,1844 665,1844 758,1844 851,1844 944,1844 1037,1844 1129,1845 1222,1847 1315,1848 1408,1850 1501,1853 1594,1856 1687,1859 1779,1859 1872,1859 1965,1859 2058,1856 2151,1859 2244,1859 2337,1859"/>
+                <TextEquiv>
+                    <Unicode>dem tot das er Criſten wurde man er muſte ſterben. do antwort er alle cʒeit / er tett das</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_15" custom="readingOrder {index:14;} sic {offset:6; length:1;correction:b;} persName {offset:64; length:6;forename:Mayer;}">
+                <Coords points="474,1962 566,1959 659,1959 752,1959 845,1962 938,1962 1031,1962 1123,1962 1216,1964 1309,1962 1402,1967 1495,1971 1588,1974 1681,1974 1773,1974 1866,1976 1959,1976 2052,1976 2145,1976 2238,1977 2331,1976 2331,1919 2238,1920 2145,1919 2052,1919 1959,1919 1866,1919 1773,1917 1681,1917 1588,1917 1495,1914 1402,1910 1309,1905 1216,1907 1123,1905 1031,1905 938,1905 845,1905 752,1902 659,1902 566,1902 474,1905"/>
+                <Baseline points="474,1943 566,1940 659,1940 752,1940 845,1943 938,1943 1031,1943 1123,1943 1216,1945 1309,1943 1402,1948 1495,1952 1588,1955 1681,1955 1773,1955 1866,1957 1959,1957 2052,1957 2145,1957 2238,1958 2331,1957"/>
+                <TextEquiv>
+                    <Unicode>dar vmh allein das er ain Criſte erſterben wolte. Der ander des Mayers ſun der beeger</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_16" custom="readingOrder {index:15;} abbrev {offset:68; length:2;expansion:en;} abbrev {offset:72; length:2;expansion:nd;} abbrev {offset:88; length:2;expansion:en;}">
+                <Coords points="471,2051 564,2048 657,2048 750,2048 843,2051 936,2054 1029,2053 1122,2056 1215,2057 1308,2057 1401,2060 1494,2063 1587,2066 1680,2066 1773,2069 1866,2069 1959,2069 2052,2069 2145,2068 2238,2069 2331,2069 2331,2012 2238,2012 2145,2011 2052,2012 1959,2012 1866,2012 1773,2012 1680,2009 1587,2009 1494,2006 1401,2003 1308,2000 1215,2000 1122,1999 1029,1996 936,1997 843,1994 750,1991 657,1991 564,1991 471,1994"/>
+                <Baseline points="471,2032 564,2029 657,2029 750,2029 843,2032 936,2035 1029,2034 1122,2037 1215,2038 1308,2038 1401,2041 1494,2044 1587,2047 1680,2047 1773,2050 1866,2050 1959,2050 2052,2050 2145,2049 2238,2050 2331,2050"/>
+                <TextEquiv>
+                    <Unicode>te Criſten ʒu werden an dem tag alſʒ man in auſʒ furte mit dem anderē vn̄ man ſii richtē</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_17" custom="readingOrder {index:16;} date {offset:15; length:35;year:1475; day:22; month:6;} abbrev {offset:19; length:2;expansion:en;} persName {offset:80; length:5;forename:Vital;} abbrev {offset:91; length:2;expansion:an;}">
+                <Coords points="480,2144 572,2141 665,2141 757,2145 850,2149 942,2147 1035,2149 1127,2147 1220,2147 1312,2147 1405,2147 1498,2147 1590,2147 1683,2150 1775,2150 1868,2147 1960,2147 2053,2147 2145,2150 2238,2151 2331,2153 2331,2096 2238,2094 2145,2093 2053,2090 1960,2090 1868,2090 1775,2093 1683,2093 1590,2090 1498,2090 1405,2090 1312,2090 1220,2090 1127,2090 1035,2092 942,2090 850,2092 757,2088 665,2084 572,2084 480,2087"/>
+                <Baseline points="480,2125 572,2122 665,2122 757,2126 850,2130 942,2128 1035,2130 1127,2128 1220,2128 1312,2128 1405,2128 1498,2128 1590,2128 1683,2131 1775,2131 1868,2128 1960,2128 2053,2128 2145,2131 2238,2132 2331,2134"/>
+                <TextEquiv>
+                    <Unicode>ſolt / das was an dē tag der cʒehe tauſent ritter alſʒ ouch ſin vatter mit dem Uital verpꝛāt</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_18" custom="readingOrder {index:17;} abbrev {offset:38; length:2;expansion:k;} sic {offset:50; length:2;correction:k;} date {offset:62; length:18; continued:true;year:1475; day:22; month:6;}">
+                <Coords points="489,2224 580,2224 672,2227 763,2230 855,2236 947,2236 1038,2237 1130,2239 1222,2239 1313,2236 1405,2236 1497,2236 1588,2238 1680,2239 1772,2239 1863,2239 1955,2241 2047,2244 2138,2245 2230,2245 2322,2245 2322,2188 2230,2188 2138,2188 2047,2187 1955,2184 1863,2182 1772,2182 1680,2182 1588,2181 1497,2179 1405,2179 1313,2179 1222,2182 1130,2182 1038,2180 947,2179 855,2179 763,2173 672,2170 580,2167 489,2167"/>
+                <Baseline points="489,2205 580,2205 672,2208 763,2211 855,2217 947,2217 1038,2218 1130,2220 1222,2220 1313,2217 1405,2217 1497,2217 1588,2219 1680,2220 1772,2220 1863,2220 1955,2222 2047,2225 2138,2226 2230,2226 2322,2226"/>
+                <TextEquiv>
+                    <Unicode>wurden voꝛ iren ougen. Der tritte artilꝛel ʒu merclꝛe iſt das an dem haligen tag</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_19" custom="readingOrder {index:18;} date {offset:0; length:26; continued:true;year:1475; day:22; month:6;} abbrev {offset:58; length:2;expansion:nd;} abbrev {offset:66; length:2;expansion:en;}">
+                <Coords points="477,2317 570,2320 663,2320 756,2324 849,2330 942,2332 1035,2335 1128,2336 1221,2336 1314,2333 1407,2335 1500,2335 1593,2338 1686,2338 1779,2338 1872,2338 1965,2338 2058,2341 2151,2341 2244,2342 2337,2350 2337,2293 2244,2285 2151,2284 2058,2284 1965,2281 1872,2281 1779,2281 1686,2281 1593,2281 1500,2278 1407,2278 1314,2276 1221,2279 1128,2279 1035,2278 942,2275 849,2273 756,2267 663,2263 570,2263 477,2260"/>
+                <Baseline points="477,2298 570,2301 663,2301 756,2305 849,2311 942,2313 1035,2316 1128,2317 1221,2317 1314,2314 1407,2316 1500,2316 1593,2319 1686,2319 1779,2319 1872,2319 1965,2319 2058,2322 2151,2322 2244,2323 2337,2331"/>
+                <TextEquiv>
+                    <Unicode>der cʒehent tauſent ritter wurden die cʒwen auſʒ ghefurt vn̄ wiſʒtē anders nicht ſij wir</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_20" custom="readingOrder {index:19;} abbrev {offset:45; length:2;expansion:en;} abbrev {offset:74; length:2;expansion:en;}">
+                <Coords points="474,2394 566,2400 659,2400 752,2404 845,2410 938,2416 1031,2421 1123,2422 1216,2422 1309,2424 1402,2421 1495,2426 1588,2427 1681,2430 1773,2427 1866,2427 1959,2430 2052,2430 2145,2430 2238,2433 2331,2433 2331,2376 2238,2376 2145,2373 2052,2373 1959,2373 1866,2370 1773,2370 1681,2373 1588,2370 1495,2369 1402,2364 1309,2367 1216,2365 1123,2365 1031,2364 938,2359 845,2353 752,2347 659,2343 566,2343 474,2337"/>
+                <Baseline points="474,2375 566,2381 659,2381 752,2385 845,2391 938,2397 1031,2402 1123,2403 1216,2403 1309,2405 1402,2402 1495,2407 1588,2408 1681,2411 1773,2408 1866,2408 1959,2411 2052,2411 2145,2411 2238,2414 2331,2414"/>
+                <TextEquiv>
+                    <Unicode>den ghericht alſʒ bald das ſij ghetoufft wurdē. alſo lieſʒ man ſij ʒu ſehē wie die cʒwen ver¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_21" custom="readingOrder {index:20;} sic {offset:40; length:2;correction:k;} sic {offset:53; length:2;correction:k;} abbrev {offset:63; length:2;expansion:nd;} sic {offset:66; length:2;correction:k;} abbrev {offset:72; length:2;expansion:en;} geogName {offset:82; length:15; continued:true;ref:https\u003a//www.wikidata.org/wiki/Q280529;} abbrev {offset:95; length:2;expansion:en;}">
+                <Coords points="474,2494 566,2488 659,2488 751,2491 844,2494 936,2498 1029,2501 1121,2507 1214,2509 1306,2512 1399,2512 1492,2514 1584,2515 1677,2515 1769,2518 1862,2518 1954,2518 2047,2521 2139,2521 2232,2521 2325,2521 2325,2487 2232,2487 2139,2487 2047,2487 1954,2484 1862,2484 1769,2484 1677,2481 1584,2481 1492,2480 1399,2478 1306,2478 1214,2475 1121,2473 1029,2467 936,2464 844,2460 751,2457 659,2454 566,2454 474,2460"/>
+                <Baseline points="474,2483 566,2477 659,2477 751,2480 844,2483 936,2487 1029,2490 1121,2496 1214,2498 1306,2501 1399,2501 1492,2503 1584,2504 1677,2504 1769,2507 1862,2507 1954,2507 2047,2510 2139,2510 2232,2510 2325,2510"/>
+                <TextEquiv>
+                    <Unicode>pꝛant wirden. dar nach cʒoch man ſij naclꝛet auſʒ ir lꝛlaider vn̄ lꝛnyetē nidder in ain flieſſē</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_23" custom="readingOrder {index:21;} geogName {offset:0; length:31; continued:true;ref:https\u003a//www.wikidata.org/wiki/Q280529;} abbrev {offset:33; length:2;expansion:nd;} abbrev {offset:85; length:2;expansion:en;}">
+                <Coords points="489,2572 581,2575 674,2575 766,2579 859,2584 951,2587 1044,2590 1136,2594 1229,2599 1321,2599 1414,2602 1507,2607 1599,2610 1692,2617 1784,2620 1877,2620 1969,2620 2062,2623 2154,2620 2247,2621 2340,2623 2340,2586 2247,2584 2154,2583 2062,2586 1969,2583 1877,2583 1784,2583 1692,2580 1599,2573 1507,2570 1414,2565 1321,2562 1229,2562 1136,2557 1044,2553 951,2550 859,2547 766,2542 674,2538 581,2538 489,2535"/>
+                <Baseline points="489,2560 581,2563 674,2563 766,2567 859,2572 951,2575 1044,2578 1136,2582 1229,2587 1321,2587 1414,2590 1507,2595 1599,2598 1692,2605 1784,2608 1877,2608 1969,2608 2062,2611 2154,2608 2247,2609 2340,2611"/>
+                <TextEquiv>
+                    <Unicode>waſſer das da haiſt die perſing vn̄ ſpꝛach in fuer alles das in nott was ʒu dem Cristē glou¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_24" custom="readingOrder {index:22;} abbrev {offset:5; length:2;expansion:nd;} abbrev {offset:26; length:2;expansion:on;} sic {offset:63; length:2;correction:k;}">
+                <Coords points="477,2663 570,2666 663,2669 756,2673 849,2678 942,2678 1035,2681 1129,2684 1222,2686 1315,2689 1408,2690 1501,2693 1594,2702 1687,2711 1781,2714 1874,2717 1967,2720 2060,2720 2153,2720 2246,2720 2340,2726 2340,2669 2246,2663 2153,2663 2060,2663 1967,2663 1874,2660 1781,2657 1687,2654 1594,2645 1501,2636 1408,2633 1315,2632 1222,2629 1129,2627 1035,2624 942,2621 849,2621 756,2616 663,2612 570,2609 477,2606"/>
+                <Baseline points="477,2644 570,2647 663,2650 756,2654 849,2659 942,2659 1035,2662 1129,2665 1222,2667 1315,2670 1408,2671 1501,2674 1594,2683 1687,2692 1781,2695 1874,2698 1967,2701 2060,2701 2153,2701 2246,2701 2340,2707"/>
+                <TextEquiv>
+                    <Unicode>ben vn̄ wurden ghetoufft vō der pꝛieſterſchafft. alſo das dem lꝛoch wart ghegheben der</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_25" custom="readingOrder {index:23;} persName {offset:5; length:8;forename:Achacius;} abbrev {offset:45; length:2;expansion:nd;}">
+                <Coords points="486,2764 578,2764 671,2764 763,2768 856,2770 948,2771 1041,2773 1133,2776 1226,2777 1318,2778 1411,2778 1504,2781 1596,2787 1689,2791 1781,2797 1874,2800 1966,2806 2059,2806 2151,2803 2244,2806 2337,2809 2337,2752 2244,2749 2151,2746 2059,2749 1966,2749 1874,2743 1781,2740 1689,2734 1596,2730 1504,2724 1411,2721 1318,2721 1226,2720 1133,2719 1041,2716 948,2714 856,2713 763,2711 671,2707 578,2707 486,2707"/>
+                <Baseline points="486,2745 578,2745 671,2745 763,2749 856,2751 948,2752 1041,2754 1133,2757 1226,2758 1318,2759 1411,2759 1504,2762 1596,2768 1689,2772 1781,2778 1874,2781 1966,2787 2059,2787 2151,2784 2244,2787 2337,2790"/>
+                <TextEquiv>
+                    <Unicode>name achacius dar vmb wen der dach was ſein vn̄ er ain furſt was der cʒehen tauſent rit¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_26" custom="readingOrder {index:24;} persName {offset:27; length:6;forename:Sixtus;} sic {offset:40; length:1;correction:b;} sic {offset:74; length:1;correction:h;}">
+                <Coords points="480,2863 573,2860 666,2860 759,2861 852,2867 945,2870 1038,2875 1131,2875 1224,2877 1317,2878 1410,2878 1503,2878 1596,2884 1689,2890 1782,2893 1875,2896 1968,2899 2061,2897 2154,2899 2247,2900 2340,2905 2340,2848 2247,2843 2154,2842 2061,2840 1968,2842 1875,2839 1782,2836 1689,2833 1596,2827 1503,2821 1410,2821 1317,2821 1224,2820 1131,2818 1038,2818 945,2813 852,2810 759,2804 666,2803 573,2803 480,2806"/>
+                <Baseline points="480,2844 573,2841 666,2841 759,2842 852,2848 945,2851 1038,2856 1131,2856 1224,2858 1317,2859 1410,2859 1503,2859 1596,2865 1689,2871 1782,2874 1875,2877 1968,2880 2061,2878 2154,2880 2247,2881 2340,2886"/>
+                <TextEquiv>
+                    <Unicode>ter / dem iungeren der nam Sixtus dem bahiſt ʒu eren / alſo wart in gnad gbetan das ſi</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_27" custom="readingOrder {index:25;} sic {offset:63; length:1;correction:u;} date {offset:73; length:9; continued:true;year:1475; day:23; month:6;}">
+                <Coords points="474,2958 567,2953 660,2953 753,2950 846,2954 939,2957 1032,2964 1126,2967 1219,2969 1312,2970 1405,2975 1498,2976 1591,2979 1684,2985 1778,2988 1871,2994 1964,2994 2057,2994 2150,2994 2243,2997 2337,2988 2337,2931 2243,2940 2150,2937 2057,2937 1964,2937 1871,2937 1778,2931 1684,2928 1591,2922 1498,2919 1405,2918 1312,2913 1219,2912 1126,2910 1032,2907 939,2900 846,2897 753,2893 660,2896 567,2896 474,2901"/>
+                <Baseline points="474,2939 567,2934 660,2934 753,2931 846,2935 939,2938 1032,2945 1126,2948 1219,2950 1312,2951 1405,2956 1498,2957 1591,2960 1684,2966 1778,2969 1871,2975 1964,2975 2057,2975 2150,2975 2243,2978 2337,2969"/>
+                <TextEquiv>
+                    <Unicode>nit ghericht wurden den tag vmb der eren des ſacramentis des tanfis aber an dem an¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_28" custom="readingOrder {index:26;} date {offset:0; length:9; continued:true;year:1475; day:23; month:6;} abbrev {offset:35; length:2;expansion:nd;} sic {offset:38; length:1;correction:v;} sic {offset:55; length:1;correction:h;} sic {offset:74; length:7;correction:\u0020;} persName {offset:81; length:6;forename:Sixtus;} abbrev {offset:85; length:1;expansion:us;}">
+                <Coords points="477,3036 570,3039 664,3036 758,3036 852,3037 946,3042 1040,3044 1133,3048 1227,3050 1321,3054 1415,3060 1509,3063 1603,3069 1697,3075 1790,3078 1884,3078 1978,3078 2072,3081 2166,3081 2260,3080 2354,3075 2354,3018 2260,3023 2166,3024 2072,3024 1978,3021 1884,3021 1790,3021 1697,3018 1603,3012 1509,3006 1415,3003 1321,2997 1227,2993 1133,2991 1040,2987 946,2985 852,2980 758,2979 664,2979 570,2982 477,2979"/>
+                <Baseline points="477,3017 570,3020 664,3017 758,3017 852,3018 946,3023 1040,3025 1133,3029 1227,3031 1321,3035 1415,3041 1509,3044 1603,3050 1697,3056 1790,3059 1884,3059 1978,3059 2072,3062 2166,3062 2260,3061 2354,3056"/>
+                <TextEquiv>
+                    <Unicode>deren tag wurden ſij auſʒ ghefurt vn̄ wan erſten wart gbericht der iunger iunger sixt9.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_29" custom="readingOrder {index:27;} persName {offset:19; length:8;forename:Achacius;} abbrev {offset:64; length:2;expansion:en;}">
+                <Coords points="480,3135 573,3135 666,3135 759,3138 852,3135 945,3138 1038,3138 1132,3140 1225,3144 1318,3148 1411,3154 1504,3161 1597,3167 1690,3170 1784,3173 1877,3174 1970,3176 2063,3177 2156,3179 2249,3176 2343,3167 2343,3110 2249,3119 2156,3122 2063,3120 1970,3119 1877,3117 1784,3116 1690,3113 1597,3110 1504,3104 1411,3097 1318,3091 1225,3087 1132,3083 1038,3081 945,3081 852,3078 759,3081 666,3078 573,3078 480,3078"/>
+                <Baseline points="480,3116 573,3116 666,3116 759,3119 852,3116 945,3119 1038,3119 1132,3121 1225,3125 1318,3129 1411,3135 1504,3142 1597,3148 1690,3151 1784,3154 1877,3155 1970,3157 2063,3158 2156,3160 2249,3157 2343,3148"/>
+                <TextEquiv>
+                    <Unicode>dar nach der ander achacius der ſterb ſo ritterlich in dem gloubē den im der pꝛieſter voꝛ</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_30" custom="readingOrder {index:28;} unclear {offset:35; length:9;}">
+                <Coords points="486,3224 578,3224 671,3227 764,3227 857,3227 950,3227 1043,3227 1135,3228 1228,3232 1321,3238 1414,3244 1507,3248 1600,3254 1693,3263 1785,3260 1878,3260 1971,3267 2064,3270 2157,3269 2250,3268 2343,3263 2343,3206 2250,3211 2157,3212 2064,3213 1971,3210 1878,3203 1785,3203 1693,3206 1600,3197 1507,3191 1414,3187 1321,3181 1228,3175 1135,3171 1043,3170 950,3170 857,3170 764,3170 671,3170 578,3167 486,3167"/>
+                <Baseline points="486,3205 578,3205 671,3208 764,3208 857,3208 950,3208 1043,3208 1135,3209 1228,3213 1321,3219 1414,3225 1507,3229 1600,3235 1693,3244 1785,3241 1878,3241 1971,3248 2064,3251 2157,3250 2250,3249 2343,3244"/>
+                <TextEquiv>
+                    <Unicode>alſʒ im ſein ougen woꝛen voꝛpunden doiknyet do der preiſter der das creucʒ hilt der da</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_31" custom="readingOrder {index:29;} abbrev {offset:29; length:2;expansion:nd;} abbrev {offset:72; length:2;expansion:nd;}">
+                <Coords points="486,3320 578,3323 671,3326 764,3329 857,3329 950,3328 1043,3327 1135,3326 1228,3329 1321,3334 1414,3338 1507,3343 1600,3346 1693,3352 1785,3352 1878,3352 1971,3353 2064,3358 2157,3355 2250,3355 2343,3352 2343,3295 2250,3298 2157,3298 2064,3301 1971,3296 1878,3295 1785,3295 1693,3295 1600,3289 1507,3286 1414,3281 1321,3277 1228,3272 1135,3269 1043,3270 950,3271 857,3272 764,3272 671,3269 578,3266 486,3263"/>
+                <Baseline points="486,3301 578,3304 671,3307 764,3310 857,3310 950,3309 1043,3308 1135,3307 1228,3310 1321,3315 1414,3319 1507,3324 1600,3327 1693,3333 1785,3333 1878,3333 1971,3334 2064,3339 2157,3336 2250,3336 2343,3333"/>
+                <TextEquiv>
+                    <Unicode>ſprach ghekꝛucʒt gheſtoꝛben vn̄ er ouch ſprach gheſtoꝛben. do ſtarb er vn̄ ſlog der richter</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_32" custom="readingOrder {index:30;} date {offset:13; length:14;year:1475; day:23; month:6;}">
+                <Coords points="480,3409 572,3412 665,3415 757,3422 850,3423 942,3421 1035,3422 1127,3424 1220,3422 1312,3424 1405,3427 1498,3432 1590,3436 1683,3439 1775,3439 1868,3442 1960,3445 2053,3448 2145,3448 2238,3448 2331,3445 2331,3388 2238,3391 2145,3391 2053,3391 1960,3388 1868,3385 1775,3382 1683,3382 1590,3379 1498,3375 1405,3370 1312,3367 1220,3365 1127,3367 1035,3365 942,3364 850,3366 757,3365 665,3358 572,3355 480,3352"/>
+                <Baseline points="480,3390 572,3393 665,3396 757,3403 850,3404 942,3402 1035,3403 1127,3405 1220,3403 1312,3405 1405,3408 1498,3413 1590,3417 1683,3420 1775,3420 1868,3423 1960,3426 2053,3429 2145,3429 2238,3429 2331,3426"/>
+                <TextEquiv>
+                    <Unicode>das houbt ab an dem freytag vmb die cʒeit alſʒ unſer her an dem haligen creucʒ ſtarb.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_2_tl_33" custom="readingOrder {index:31;}">
+                <Coords points="483,3493 553,3499 624,3505 694,3510 765,3512 836,3517 906,3517 977,3520 1047,3520 1118,3520 1189,3520 1259,3520 1330,3520 1400,3521 1471,3526 1542,3526 1612,3527 1683,3529 1753,3529 1824,3532 1895,3535 1895,3478 1824,3475 1753,3472 1683,3472 1612,3470 1542,3469 1471,3469 1400,3464 1330,3463 1259,3463 1189,3463 1118,3463 1047,3463 977,3463 906,3460 836,3460 765,3455 694,3453 624,3448 553,3442 483,3436"/>
+                <Baseline points="483,3474 553,3480 624,3486 694,3491 765,3493 836,3498 906,3498 977,3501 1047,3501 1118,3501 1189,3501 1259,3501 1330,3501 1400,3502 1471,3507 1542,3507 1612,3508 1683,3510 1753,3510 1824,3513 1895,3516"/>
+                <TextEquiv>
+                    <Unicode>alſo woꝛden ſij pede tot verpꝛant das das recht ain vurganck hette.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>DAs cʒwelffte Capittel hat auch drij artikel. Der erſte artikel iſt das vnder&#13;
+den gefangē iuden ſint gheweſt cʒween iung iuden die alle bed hieſſen Saligmā&#13;
+auff das teusch ader boneuentura auff welsch der iunger iunger was alſʒ bij acht&#13;
+cʒehen iaren vn̄ was des Mayer ſun der mit dem leſten verpꝛāt wart. Der ander was&#13;
+in dem elter alſʒ funfvndecʒbeencʒgig iar vn̄ was ain fromder iud vn̄ in Samuels hauſʒ&#13;
+was er koch der anderen iuden vn̄ was ouch der auff den die iuden hatten bekant er het&#13;
+das kint funden in der ricʒen alſʒ er wolte waſſer holen auſʒ der ricʒſen ſi hatten das aber&#13;
+mit im an gheleit er hatt auch belꝛant das er achte ſtich dem ſeligen lꝛint gheben het. vn̄&#13;
+die anderen hatten in auſʒ der lꝛuchen dar ʒu gherufft. Der ander artilꝛel iſt das der&#13;
+lꝛoch von dem aller erſten tag alſʒ er gefangen wart do aſſ er lꝛain iudisch ſpeyſʒ alſʒ die&#13;
+anderen. ſunder er begherte Criſten ʒu werden alle tag ſo lang er gefangen lag bicʒ in&#13;
+die treiʒehen wuchen vn in der cʒeit lerent er das ghepet pater noſter vn̄ den glouben&#13;
+durch die pꝛieſter die im ouch ſageten er ſolt nit ghedenlꝛen das er welte da mit entghē&#13;
+dem tot das er Criſten wurde man er muſte ſterben. do antwort er alle cʒeit / er tett das&#13;
+dar vmh allein das er ain Criſte erſterben wolte. Der ander des Mayers ſun der beeger&#13;
+te Criſten ʒu werden an dem tag alſʒ man in auſʒ furte mit dem anderē vn̄ man ſii richtē&#13;
+ſolt / das was an dē tag der cʒehe tauſent ritter alſʒ ouch ſin vatter mit dem Uital verpꝛāt&#13;
+wurden voꝛ iren ougen. Der tritte artilꝛel ʒu merclꝛe iſt das an dem haligen tag&#13;
+der cʒehent tauſent ritter wurden die cʒwen auſʒ ghefurt vn̄ wiſʒtē anders nicht ſij wir&#13;
+den ghericht alſʒ bald das ſij ghetoufft wurdē. alſo lieſʒ man ſij ʒu ſehē wie die cʒwen ver¬&#13;
+pꝛant wirden. dar nach cʒoch man ſij naclꝛet auſʒ ir lꝛlaider vn̄ lꝛnyetē nidder in ain flieſſē&#13;
+waſſer das da haiſt die perſing vn̄ ſpꝛach in fuer alles das in nott was ʒu dem Cristē glou¬&#13;
+ben vn̄ wurden ghetoufft vō der pꝛieſterſchafft. alſo das dem lꝛoch wart ghegheben der&#13;
+name achacius dar vmb wen der dach was ſein vn̄ er ain furſt was der cʒehen tauſent rit¬&#13;
+ter / dem iungeren der nam Sixtus dem bahiſt ʒu eren / alſo wart in gnad gbetan das ſi&#13;
+nit ghericht wurden den tag vmb der eren des ſacramentis des tanfis aber an dem an¬&#13;
+deren tag wurden ſij auſʒ ghefurt vn̄ wan erſten wart gbericht der iunger iunger sixt9.&#13;
+dar nach der ander achacius der ſterb ſo ritterlich in dem gloubē den im der pꝛieſter voꝛ&#13;
+alſʒ im ſein ougen woꝛen voꝛpunden doiknyet do der preiſter der das creucʒ hilt der da&#13;
+ſprach ghekꝛucʒt gheſtoꝛben vn̄ er ouch ſprach gheſtoꝛben. do ſtarb er vn̄ ſlog der richter&#13;
+das houbt ab an dem freytag vmb die cʒeit alſʒ unſer her an dem haligen creucʒ ſtarb.&#13;
+alſo woꝛden ſij pede tot verpꝛant das das recht ain vurganck hette.</Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

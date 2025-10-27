@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<trpDocMetadata>
+    <docId>11498403</docId>
+    <title>Historie von Simon zu Trient</title>
+    <uploadTimestamp>1760948219894</uploadTimestamp>
+    <scriptType>GOTHIC</scriptType>
+    <uploader>michael.schonhardt@googlemail.com</uploader>
+    <uploaderId>19940</uploaderId>
+    <nrOfPages>28</nrOfPages>
+    <pageId>104573911</pageId>
+    <url>https://files.transkribus.eu/Get?fileType=view&amp;id=UVWPZXURJSMPBCKKYKYEWRCM</url>
+    <thumbUrl>https://files.transkribus.eu/Get?fileType=thumb&amp;id=UVWPZXURJSMPBCKKYKYEWRCM</thumbUrl>
+    <externalId>https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00027835/manifest</externalId>
+    <authority>NA</authority>
+    <status>0</status>
+    <fimgStoreColl>TrpDoc_DEA_11498403</fimgStoreColl>
+    <origDocId>0</origDocId>
+    <collectionList>
+        <colList>
+            <colId>180173</colId>
+            <colName>Historie von Simon zu Trient</colName>
+            <description>created by marco.heiles@gmx.de</description>
+            <crowdsourcing>false</crowdsourcing>
+            <elearning>false</elearning>
+            <nrOfDocuments>0</nrOfDocuments>
+        </colList>
+    </collectionList>
+    <mainColId>180173</mainColId>
+</trpDocMetadata>

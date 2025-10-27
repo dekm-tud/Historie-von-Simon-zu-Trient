@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>Transkribus</Creator>
+        <Created>2025-10-20T10:16:57.877+02:00</Created>
+        <LastChange>2025-10-22T11:01:02.582+02:00</LastChange>
+        <TranskribusMetadata docId="11498403" pageId="104573921" pageNr="15" tsid="258589926" status="DONE" userId="19940" imgUrl="https://files.transkribus.eu/Get?id=LZYHPWBFFGALPQDTYKUNCINB&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=NUQHGZUEQZLREUBLPMLLZQTQ" imageId="87748816"/>
+    </Metadata>
+    <Page imageFilename="00015.jpg" imageWidth="2972" imageHeight="4314">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1761124232058" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="tr_1"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion orientation="0.0" id="tr_1" custom="readingOrder {index:0;}">
+            <Coords points="426,649 426,3306 2295,3306 2295,649"/>
+            <TextLine id="tr_1_tl_1" custom="readingOrder {index:0;} sic {offset:8; length:1;correction:n;}">
+                <Coords points="635,709 713,714 792,715 871,715 950,715 1029,715 1108,713 1186,712 1265,712 1344,712 1423,715 1502,715 1581,715 1660,718 1738,717 1817,719 1896,721 1975,721 2054,726 2133,725 2212,727 2212,667 2133,665 2054,666 1975,661 1896,661 1817,659 1738,657 1660,658 1581,655 1502,655 1423,655 1344,652 1265,652 1186,652 1108,653 1029,655 950,655 871,655 792,655 713,654 635,649"/>
+                <Baseline points="635,689 713,694 792,695 871,695 950,695 1029,695 1108,693 1186,692 1265,692 1344,692 1423,695 1502,695 1581,695 1660,698 1738,697 1817,699 1896,701 1975,701 2054,706 2133,705 2212,707"/>
+                <TextEquiv>
+                    <Unicode>DAs sibeude Capittel lit ouch dreij artikel. also ſij das kint haben verboꝛgen.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_2" custom="readingOrder {index:1;}">
+                <Coords points="644,793 726,796 808,793 891,793 973,793 1056,793 1138,793 1220,793 1303,793 1385,793 1468,794 1550,796 1632,796 1715,796 1797,798 1880,802 1962,805 2044,809 2127,811 2209,814 2292,811 2292,751 2209,754 2127,751 2044,749 1962,745 1880,742 1797,738 1715,736 1632,736 1550,736 1468,734 1385,733 1303,733 1220,733 1138,733 1056,733 973,733 891,733 808,733 726,736 644,733"/>
+                <Baseline points="644,773 726,776 808,773 891,773 973,773 1056,773 1138,773 1220,773 1303,773 1385,773 1468,774 1550,776 1632,776 1715,776 1797,778 1880,782 1962,785 2044,789 2127,791 2209,794 2292,791"/>
+                <TextEquiv>
+                    <Unicode>Zu dem erſten artikel iſt ʒu mercken. das die elteren des kindes mutter vnde</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_3" custom="readingOrder {index:2;}">
+                <Coords points="641,886 723,886 806,883 889,881 971,882 1054,879 1137,880 1219,880 1302,880 1385,880 1468,880 1550,880 1633,883 1716,883 1798,883 1881,886 1964,891 2046,895 2129,899 2212,901 2295,904 2295,849 2212,846 2129,844 2046,840 1964,836 1881,831 1798,828 1716,828 1633,828 1550,825 1468,825 1385,825 1302,825 1219,825 1137,825 1054,824 971,827 889,826 806,828 723,831 641,831"/>
+                <Baseline points="641,868 723,868 806,865 889,863 971,864 1054,861 1137,862 1219,862 1302,862 1385,862 1468,862 1550,862 1633,865 1716,865 1798,865 1881,868 1964,873 2046,877 2129,881 2212,883 2295,886"/>
+                <TextEquiv>
+                    <Unicode>vatter alſo ſij das ſelig kint hatten verloꝛen do ſuchten ſij es vber alſo weit die</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_4" custom="readingOrder {index:3;} placeName {offset:5; length:6;settlement:Trient;} abbrev {offset:32; length:2;expansion:an;} abbrev {offset:38; length:2;expansion:un;} abbrev {offset:56; length:2;expansion:nd;} abbrev {offset:78; length:2;expansion:an;}">
+                <Coords points="441,982 533,982 625,979 718,976 810,973 903,973 995,970 1087,970 1180,970 1272,968 1365,968 1457,970 1549,966 1642,964 1734,964 1827,964 1919,967 2011,972 2104,976 2196,979 2289,979 2289,924 2196,924 2104,921 2011,917 1919,912 1827,909 1734,909 1642,909 1549,911 1457,915 1365,913 1272,913 1180,915 1087,915 995,915 903,918 810,918 718,921 625,924 533,927 441,927"/>
+                <Baseline points="441,964 533,964 625,961 718,958 810,955 903,955 995,952 1087,952 1180,952 1272,950 1365,950 1457,952 1549,948 1642,946 1734,946 1827,946 1919,949 2011,954 2104,958 2196,961 2289,961"/>
+                <TextEquiv>
+                    <Unicode>ſtat Trient was do ſpꝛach ijdermā beſūder die knaben vn̄ kinder eſʒ hat niemāt das kint</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_5" custom="readingOrder {index:4;}">
+                <Coords points="450,1076 542,1079 634,1076 726,1070 819,1064 911,1061 1003,1061 1095,1058 1188,1057 1280,1058 1372,1060 1464,1057 1557,1053 1649,1049 1741,1049 1833,1048 1926,1047 2018,1054 2110,1055 2202,1058 2295,1055 2295,1003 2202,1006 2110,1003 2018,1002 1926,995 1833,996 1741,997 1649,997 1557,1001 1464,1005 1372,1008 1280,1006 1188,1005 1095,1006 1003,1009 911,1009 819,1012 726,1018 634,1024 542,1027 450,1024"/>
+                <Baseline points="450,1059 542,1062 634,1059 726,1053 819,1047 911,1044 1003,1044 1095,1041 1188,1040 1280,1041 1372,1043 1464,1040 1557,1036 1649,1032 1741,1032 1833,1031 1926,1030 2018,1037 2110,1038 2202,1041 2295,1038"/>
+                <TextEquiv>
+                    <Unicode>ghenummen dan die boeſen juden / dar in ʒu mercken was das der hailige gaiſt ret durch</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_6" custom="readingOrder {index:5;} abbrev {offset:35; length:2;expansion:nd;}">
+                <Coords points="450,1166 542,1166 634,1163 726,1154 819,1154 911,1151 1003,1148 1095,1145 1188,1145 1280,1145 1372,1144 1464,1142 1557,1139 1649,1136 1741,1129 1833,1130 1926,1127 2018,1129 2110,1130 2202,1130 2295,1133 2295,1081 2202,1078 2110,1078 2018,1077 1926,1075 1833,1078 1741,1077 1649,1084 1557,1087 1464,1090 1372,1092 1280,1093 1188,1093 1095,1093 1003,1096 911,1099 819,1102 726,1102 634,1111 542,1114 450,1114"/>
+                <Baseline points="450,1149 542,1149 634,1146 726,1137 819,1137 911,1134 1003,1131 1095,1128 1188,1128 1280,1128 1372,1127 1464,1125 1557,1122 1649,1119 1741,1112 1833,1113 1926,1110 2018,1112 2110,1113 2202,1113 2295,1116"/>
+                <TextEquiv>
+                    <Unicode>den munt der vnſchuldigen kinder. vn̄ an hub das vnſchuldig plut rach ʒu reiſſen vber</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_7" custom="readingOrder {index:6;} abbrev {offset:54; length:2;expansion:nd;}">
+                <Coords points="453,1266 545,1263 637,1260 729,1257 821,1251 913,1249 1005,1246 1097,1245 1189,1240 1281,1240 1374,1240 1466,1237 1558,1231 1650,1228 1742,1223 1834,1220 1926,1217 2018,1216 2110,1219 2202,1219 2295,1216 2295,1159 2202,1162 2110,1162 2018,1159 1926,1160 1834,1163 1742,1166 1650,1171 1558,1174 1466,1180 1374,1183 1281,1183 1189,1183 1097,1188 1005,1189 913,1192 821,1194 729,1200 637,1203 545,1206 453,1209"/>
+                <Baseline points="453,1247 545,1244 637,1241 729,1238 821,1232 913,1230 1005,1227 1097,1226 1189,1221 1281,1221 1374,1221 1466,1218 1558,1212 1650,1209 1742,1204 1834,1201 1926,1198 2018,1197 2110,1200 2202,1200 2295,1197"/>
+                <TextEquiv>
+                    <Unicode>die boeſen iuden. dar vmb die elteren des kindes tag vn̄ nacht hatten ir auff ſehen ʒu den</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_8" custom="readingOrder {index:7;} abbrev {offset:36; length:2;expansion:en;} persName {offset:56; length:12;}">
+                <Coords points="447,1347 539,1348 631,1344 724,1341 816,1341 909,1338 1001,1335 1093,1332 1186,1328 1278,1323 1371,1319 1463,1317 1555,1313 1648,1308 1740,1303 1833,1302 1925,1299 2017,1297 2110,1296 2202,1296 2295,1296 2295,1239 2202,1239 2110,1239 2017,1240 1925,1242 1833,1245 1740,1246 1648,1251 1555,1256 1463,1260 1371,1262 1278,1266 1186,1271 1093,1275 1001,1278 909,1281 816,1284 724,1284 631,1287 539,1291 447,1290"/>
+                <Baseline points="447,1328 539,1329 631,1325 724,1322 816,1322 909,1319 1001,1316 1093,1313 1186,1309 1278,1304 1371,1300 1463,1298 1555,1294 1648,1289 1740,1284 1833,1283 1925,1280 2017,1278 2110,1277 2202,1277 2295,1277"/>
+                <TextEquiv>
+                    <Unicode>heuſeren der iuden. beſunder mit ainē man der da haiſt der Sweicʒer der den juden wan</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_9" custom="readingOrder {index:8;} abbrev {offset:67; length:2;expansion:nd;}">
+                <Coords points="447,1428 539,1425 631,1422 724,1422 816,1419 909,1416 1001,1416 1093,1413 1186,1410 1278,1407 1371,1403 1463,1401 1555,1397 1648,1393 1740,1389 1833,1389 1925,1386 2017,1386 2110,1386 2202,1386 2295,1386 2295,1329 2202,1329 2110,1329 2017,1329 1925,1329 1833,1332 1740,1332 1648,1336 1555,1340 1463,1344 1371,1346 1278,1350 1186,1353 1093,1356 1001,1359 909,1359 816,1362 724,1365 631,1365 539,1368 447,1371"/>
+                <Baseline points="447,1409 539,1406 631,1403 724,1403 816,1400 909,1397 1001,1397 1093,1394 1186,1391 1278,1388 1371,1384 1463,1382 1555,1378 1648,1374 1740,1370 1833,1370 1925,1367 2017,1367 2110,1367 2202,1367 2295,1367"/>
+                <TextEquiv>
+                    <Unicode>ſij auſʒ ader in gingen in ir heuſer ſo fragt er ſij von dem kint vn̄ ſchalt ſij. das verdroſʒ</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_10" custom="readingOrder {index:9;} abbrev {offset:61; length:2;expansion:nd;} persName {offset:74; length:12;}">
+                <Coords points="447,1513 538,1513 630,1510 722,1510 814,1509 906,1507 997,1505 1089,1503 1181,1500 1273,1497 1365,1494 1456,1490 1548,1484 1640,1481 1732,1480 1824,1477 1915,1477 2007,1477 2099,1477 2191,1474 2283,1474 2283,1420 2191,1420 2099,1423 2007,1423 1915,1423 1824,1423 1732,1426 1640,1427 1548,1430 1456,1436 1365,1440 1273,1443 1181,1446 1089,1449 997,1451 906,1453 814,1455 722,1456 630,1456 538,1459 447,1459"/>
+                <Baseline points="447,1495 538,1495 630,1492 722,1492 814,1491 906,1489 997,1487 1089,1485 1181,1482 1273,1479 1365,1476 1456,1472 1548,1466 1640,1463 1732,1462 1824,1459 1915,1459 2007,1459 2099,1459 2191,1456 2283,1456"/>
+                <TextEquiv>
+                    <Unicode>die iuden ſo ſer das ſij in ir ghefenkniſʒ bekanten auff in vn̄ ſpꝛochen. der Swaicʒer het in</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_11" custom="readingOrder {index:10;} abbrev {offset:74; length:2;expansion:en;} abbrev {offset:83; length:2;expansion:nd;}">
+                <Coords points="456,1588 547,1585 639,1582 731,1582 823,1582 915,1582 1006,1580 1098,1580 1190,1579 1282,1575 1374,1575 1465,1573 1557,1570 1649,1568 1741,1565 1833,1565 1924,1566 2016,1564 2108,1564 2200,1564 2292,1567 2292,1513 2200,1510 2108,1510 2016,1510 1924,1512 1833,1511 1741,1511 1649,1514 1557,1516 1465,1519 1374,1521 1282,1521 1190,1525 1098,1526 1006,1526 915,1528 823,1528 731,1528 639,1528 547,1531 456,1534"/>
+                <Baseline points="456,1570 547,1567 639,1564 731,1564 823,1564 915,1564 1006,1562 1098,1562 1190,1561 1282,1557 1374,1557 1465,1555 1557,1552 1649,1550 1741,1547 1833,1547 1924,1548 2016,1546 2108,1546 2200,1546 2292,1549"/>
+                <TextEquiv>
+                    <Unicode>das kint bꝛocht in ir hauſʒ. das alles erlogen was. wen er dar vmb ghefangē wart vn̄</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_12" custom="readingOrder {index:11;} abbrev {offset:21; length:2;expansion:en;} abbrev {offset:74; length:2;expansion:en;}">
+                <Coords points="447,1682 538,1682 630,1679 722,1676 814,1678 906,1678 997,1676 1089,1675 1181,1673 1273,1670 1365,1670 1456,1667 1548,1664 1640,1662 1732,1660 1824,1659 1915,1657 2007,1654 2099,1653 2191,1653 2283,1650 2283,1590 2191,1593 2099,1593 2007,1594 1915,1597 1824,1599 1732,1600 1640,1602 1548,1604 1456,1607 1365,1610 1273,1610 1181,1613 1089,1615 997,1616 906,1618 814,1618 722,1616 630,1619 538,1622 447,1622"/>
+                <Baseline points="447,1662 538,1662 630,1659 722,1656 814,1658 906,1658 997,1656 1089,1655 1181,1653 1273,1650 1365,1650 1456,1647 1548,1644 1640,1642 1732,1640 1824,1639 1915,1637 2007,1634 2099,1633 2191,1633 2283,1630"/>
+                <TextEquiv>
+                    <Unicode>in die eijſen gheſlagē do ghelobt er ſich ʒu dem kint das es im ſolt helfē ſo werlich alſʒ er</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_13" custom="readingOrder {index:12;} abbrev {offset:31; length:2;expansion:nd;} abbrev {offset:70; length:2;expansion:en;} abbrev {offset:94; length:2;expansion:en;}">
+                <Coords points="456,1766 547,1766 639,1766 730,1763 822,1763 914,1762 1005,1760 1097,1757 1189,1754 1280,1754 1372,1751 1464,1751 1555,1748 1647,1746 1739,1745 1830,1745 1922,1742 2014,1739 2105,1739 2197,1739 2289,1736 2289,1676 2197,1679 2105,1679 2014,1679 1922,1682 1830,1685 1739,1685 1647,1686 1555,1688 1464,1691 1372,1691 1280,1694 1189,1694 1097,1697 1005,1700 914,1702 822,1703 730,1703 639,1706 547,1706 456,1706"/>
+                <Baseline points="456,1746 547,1746 639,1746 730,1743 822,1743 914,1742 1005,1740 1097,1737 1189,1734 1280,1734 1372,1731 1464,1731 1555,1728 1647,1726 1739,1725 1830,1725 1922,1722 2014,1719 2105,1719 2197,1719 2289,1716"/>
+                <TextEquiv>
+                    <Unicode>vnſchuldig wer an ſeinem tod. vn̄ alſo bald villen die eijſen von ſeinē fueſen / aber die iudē</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_14" custom="readingOrder {index:13;} abbrev {offset:56; length:2;expansion:nd;}">
+                <Coords points="450,1853 541,1859 633,1859 725,1856 817,1852 909,1849 1000,1849 1092,1844 1184,1843 1276,1841 1368,1838 1459,1837 1551,1836 1643,1835 1735,1835 1827,1832 1918,1830 2010,1827 2102,1826 2194,1826 2286,1826 2286,1766 2194,1766 2102,1766 2010,1767 1918,1770 1827,1772 1735,1775 1643,1775 1551,1776 1459,1777 1368,1778 1276,1781 1184,1783 1092,1784 1000,1789 909,1789 817,1792 725,1796 633,1799 541,1799 450,1793"/>
+                <Baseline points="450,1833 541,1839 633,1839 725,1836 817,1832 909,1829 1000,1829 1092,1824 1184,1823 1276,1821 1368,1818 1459,1817 1551,1816 1643,1815 1735,1815 1827,1812 1918,1810 2010,1807 2102,1806 2194,1806 2286,1806"/>
+                <TextEquiv>
+                    <Unicode>hatten im das von haſʒ ghetan dar vmb das er ſij melte vn̄ ſchalt do man das kint ſuchte</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_15" custom="readingOrder {index:14;} abbrev {offset:26; length:2;expansion:en;}">
+                <Coords points="426,1945 519,1948 612,1945 705,1945 798,1943 891,1939 984,1939 1077,1936 1170,1933 1263,1933 1356,1929 1449,1926 1542,1923 1635,1921 1728,1924 1821,1921 1914,1921 2007,1921 2100,1918 2193,1921 2286,1915 2286,1855 2193,1861 2100,1858 2007,1861 1914,1861 1821,1861 1728,1864 1635,1861 1542,1863 1449,1866 1356,1869 1263,1873 1170,1873 1077,1876 984,1879 891,1879 798,1883 705,1885 612,1885 519,1888 426,1885"/>
+                <Baseline points="426,1925 519,1928 612,1925 705,1925 798,1923 891,1919 984,1919 1077,1916 1170,1913 1263,1913 1356,1909 1449,1906 1542,1903 1635,1901 1728,1904 1821,1901 1914,1901 2007,1901 2100,1898 2193,1901 2286,1895"/>
+                <TextEquiv>
+                    <Unicode>Der ander artikel ʒu merckē iſt. do die iuden vernomen das die gancʒ ſtat ging in ir</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_16" custom="readingOrder {index:15;} abbrev {offset:33; length:2;expansion:nd;} abbrev {offset:48; length:2;expansion:on;} persName {offset:73; length:6;forename:Samuel;}">
+                <Coords points="453,2035 544,2035 636,2029 727,2029 819,2029 911,2028 1002,2026 1094,2025 1186,2022 1277,2020 1369,2017 1461,2017 1552,2014 1644,2011 1736,2009 1827,2008 1919,2003 2011,2002 2102,2002 2194,2002 2286,2002 2286,1942 2194,1942 2102,1942 2011,1942 1919,1943 1827,1948 1736,1949 1644,1951 1552,1954 1461,1957 1369,1957 1277,1960 1186,1962 1094,1965 1002,1966 911,1968 819,1969 727,1969 636,1969 544,1975 453,1975"/>
+                <Baseline points="453,2015 544,2015 636,2009 727,2009 819,2009 911,2008 1002,2006 1094,2005 1186,2002 1277,2000 1369,1997 1461,1997 1552,1994 1644,1991 1736,1989 1827,1988 1919,1983 2011,1982 2102,1982 2194,1982 2286,1982"/>
+                <TextEquiv>
+                    <Unicode>heuſer ʒu ſuchen das ſelig kint vn̄ groſſer argwō auff ſij was do hatte Samuel das kint</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_17" custom="readingOrder {index:16;} abbrev {offset:29; length:2;expansion:nd;}">
+                <Coords points="453,2118 544,2117 635,2114 726,2115 817,2116 909,2118 1000,2117 1091,2115 1182,2115 1273,2112 1365,2110 1456,2107 1547,2107 1638,2106 1729,2103 1821,2101 1912,2097 2003,2097 2094,2094 2185,2097 2277,2097 2277,2037 2185,2037 2094,2034 2003,2037 1912,2037 1821,2041 1729,2043 1638,2046 1547,2047 1456,2047 1365,2050 1273,2052 1182,2055 1091,2055 1000,2057 909,2058 817,2056 726,2055 635,2054 544,2057 453,2058"/>
+                <Baseline points="453,2098 544,2097 635,2094 726,2095 817,2096 909,2098 1000,2097 1091,2095 1182,2095 1273,2092 1365,2090 1456,2087 1547,2087 1638,2086 1729,2083 1821,2081 1912,2077 2003,2077 2094,2074 2185,2077 2277,2077"/>
+                <TextEquiv>
+                    <Unicode>auſʒ irer Synagog ghetragen vn̄ bedeckt in ain winckel in ſeinem bauſʒ mit hew vnder</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_18" custom="readingOrder {index:17;} abbrev {offset:32; length:2;expansion:nd;}">
+                <Coords points="453,2202 544,2202 635,2199 727,2199 818,2202 909,2202 1001,2202 1092,2201 1183,2199 1275,2197 1366,2194 1457,2191 1549,2188 1640,2187 1731,2187 1823,2184 1914,2184 2005,2184 2097,2178 2188,2181 2280,2178 2280,2118 2188,2121 2097,2118 2005,2124 1914,2124 1823,2124 1731,2127 1640,2127 1549,2128 1457,2131 1366,2134 1275,2137 1183,2139 1092,2141 1001,2142 909,2142 818,2142 727,2139 635,2139 544,2142 453,2142"/>
+                <Baseline points="453,2182 544,2182 635,2179 727,2179 818,2182 909,2182 1001,2182 1092,2181 1183,2179 1275,2177 1366,2174 1457,2171 1549,2168 1640,2167 1731,2167 1823,2164 1914,2164 2005,2164 2097,2158 2188,2161 2280,2158"/>
+                <TextEquiv>
+                    <Unicode>ain multe dar vber gheſtircʒt. vn̄ do das mumelen in der ſtat ſo groſʒ wart. do trug er</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_19" custom="readingOrder {index:18;} sic {offset:19; length:2;correction:k;} sic {offset:54; length:2;correction:k;}">
+                <Coords points="456,2297 552,2297 649,2297 746,2297 843,2297 939,2300 1036,2300 1133,2297 1230,2297 1327,2291 1423,2288 1520,2285 1617,2285 1714,2282 1811,2279 1907,2277 2004,2277 2101,2274 2198,2273 2295,2271 2295,2211 2198,2213 2101,2214 2004,2217 1907,2217 1811,2219 1714,2222 1617,2225 1520,2225 1423,2228 1327,2231 1230,2237 1133,2237 1036,2240 939,2240 843,2237 746,2237 649,2237 552,2237 456,2237"/>
+                <Baseline points="456,2277 552,2277 649,2277 746,2277 843,2277 939,2280 1036,2280 1133,2277 1230,2277 1327,2271 1423,2268 1520,2265 1617,2265 1714,2262 1811,2259 1907,2257 2004,2257 2101,2254 2198,2253 2295,2251"/>
+                <TextEquiv>
+                    <Unicode>das kint in ſeinen lꝛeller vnder ain miſthauffen ader lꝛet / vnd von groſſer furcht wegen</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_20" custom="readingOrder {index:19;} del {offset:29; length:6;} abbrev {offset:37; length:2;expansion:nd;} abbrev {offset:50; length:2;expansion:en;} abbrev {offset:77; length:2;expansion:en;} sic {offset:80; length:2;correction:k;} abbrev {offset:90; length:2;expansion:en;} abbrev {offset:96; length:2;expansion:en;}">
+                <Coords points="453,2390 544,2390 636,2390 727,2389 819,2388 911,2387 1002,2389 1094,2388 1186,2390 1277,2387 1369,2387 1461,2384 1552,2383 1644,2379 1736,2379 1827,2376 1919,2372 2011,2369 2102,2366 2194,2363 2286,2363 2286,2303 2194,2303 2102,2306 2011,2309 1919,2312 1827,2316 1736,2319 1644,2319 1552,2323 1461,2324 1369,2327 1277,2327 1186,2330 1094,2328 1002,2329 911,2327 819,2328 727,2329 636,2330 544,2330 453,2330"/>
+                <Baseline points="453,2370 544,2370 636,2370 727,2369 819,2368 911,2367 1002,2369 1094,2368 1186,2370 1277,2367 1369,2367 1461,2364 1552,2363 1644,2359 1736,2359 1827,2356 1919,2352 2011,2349 2102,2346 2194,2343 2286,2343"/>
+                <TextEquiv>
+                    <Unicode>ſchutten ſij das plut in ir  ſecret vn̄ hatten ainē Rat wie ſij mit dem tottē lꝛint soltē lebē</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_21" custom="readingOrder {index:20;} sic {offset:65; length:2;correction:k;}">
+                <Coords points="462,2491 553,2488 645,2485 736,2483 828,2482 919,2479 1011,2477 1102,2478 1194,2479 1285,2477 1377,2478 1468,2477 1560,2474 1651,2472 1743,2471 1834,2468 1926,2463 2017,2459 2109,2456 2200,2456 2292,2450 2292,2390 2200,2396 2109,2396 2017,2399 1926,2403 1834,2408 1743,2411 1651,2412 1560,2414 1468,2417 1377,2418 1285,2417 1194,2419 1102,2418 1011,2417 919,2419 828,2422 736,2423 645,2425 553,2428 462,2431"/>
+                <Baseline points="462,2471 553,2468 645,2465 736,2463 828,2462 919,2459 1011,2457 1102,2458 1194,2459 1285,2457 1377,2458 1468,2457 1560,2454 1651,2452 1743,2451 1834,2448 1926,2443 2017,2439 2109,2436 2200,2436 2292,2430"/>
+                <TextEquiv>
+                    <Unicode>die Criſten mumuelten ſer vber ſij. Der tritte artikel hij ʒu merlꝛen iſt das die iuden</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_22" custom="readingOrder {index:21;} sic {offset:20; length:2;correction:k;} sic {offset:32; length:2;correction:k;} sic {offset:70; length:2;correction:k;}">
+                <Coords points="456,2587 547,2584 639,2581 731,2575 823,2572 915,2571 1006,2568 1098,2566 1190,2566 1282,2566 1374,2566 1465,2566 1557,2566 1649,2566 1741,2562 1833,2561 1924,2560 2016,2557 2108,2554 2200,2554 2292,2548 2292,2488 2200,2494 2108,2494 2016,2497 1924,2500 1833,2501 1741,2502 1649,2506 1557,2506 1465,2506 1374,2506 1282,2506 1190,2506 1098,2506 1006,2508 915,2511 823,2512 731,2515 639,2521 547,2524 456,2527"/>
+                <Baseline points="456,2567 547,2564 639,2561 731,2555 823,2552 915,2551 1006,2548 1098,2546 1190,2546 1282,2546 1374,2546 1465,2546 1557,2546 1649,2546 1741,2542 1833,2541 1924,2540 2016,2537 2108,2534 2200,2534 2292,2528"/>
+                <TextEquiv>
+                    <Unicode>nit haben mugen das lꝛint vertillꝛen wen wo ſij das hetten mugen vertilꝛen ſo wer das</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_23" custom="readingOrder {index:22;} sic {offset:52; length:2;correction:k;}">
+                <Coords points="462,2684 553,2681 645,2678 736,2671 828,2668 920,2665 1011,2660 1103,2657 1195,2657 1286,2656 1378,2654 1470,2651 1561,2651 1653,2653 1745,2652 1836,2650 1928,2648 2020,2642 2111,2642 2203,2636 2295,2633 2295,2578 2203,2581 2111,2587 2020,2587 1928,2593 1836,2595 1745,2597 1653,2598 1561,2596 1470,2596 1378,2599 1286,2601 1195,2602 1103,2602 1011,2605 920,2610 828,2613 736,2616 645,2623 553,2626 462,2629"/>
+                <Baseline points="462,2666 553,2663 645,2660 736,2653 828,2650 920,2647 1011,2642 1103,2639 1195,2639 1286,2638 1378,2636 1470,2633 1561,2633 1653,2635 1745,2634 1836,2632 1928,2630 2020,2624 2111,2624 2203,2618 2295,2615"/>
+                <TextEquiv>
+                    <Unicode>vnſchuldig blut nimmer gherochen woꝛden. dar vmb verlꝛart got in ir ſin das ſij nicht</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_24" custom="readingOrder {index:23;} abbrev {offset:5; length:2;expansion:en;} sic {offset:12; length:2;correction:k;} abbrev {offset:14; length:2;expansion:in;} abbrev {offset:25; length:2;expansion:en;} abbrev {offset:40; length:2;expansion:en;} abbrev {offset:44; length:2;expansion:nd;} abbrev {offset:69; length:2;expansion:en;} abbrev {offset:83; length:2;expansion:en;} abbrev {offset:92; length:2;expansion:en;}">
+                <Coords points="465,2758 556,2755 648,2754 739,2752 831,2749 922,2749 1014,2748 1105,2746 1197,2746 1288,2743 1380,2741 1471,2739 1563,2742 1654,2743 1746,2744 1837,2743 1929,2740 2020,2737 2112,2731 2203,2731 2295,2728 2295,2673 2203,2676 2112,2676 2020,2682 1929,2685 1837,2688 1746,2689 1654,2688 1563,2687 1471,2684 1380,2686 1288,2688 1197,2691 1105,2691 1014,2693 922,2694 831,2694 739,2697 648,2699 556,2700 465,2703"/>
+                <Baseline points="465,2740 556,2737 648,2736 739,2734 831,2731 922,2731 1014,2730 1105,2728 1197,2728 1288,2725 1380,2723 1471,2721 1563,2724 1654,2725 1746,2726 1837,2725 1929,2722 2020,2719 2112,2713 2203,2713 2295,2710"/>
+                <TextEquiv>
+                    <Unicode>mochtē das lꝛīt vergrabē oder verſiedē vn̄ alſʒ ghemain red iſt wē ſij es woltē begrabē</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_25" custom="readingOrder {index:24;} sic {offset:11; length:2;correction:k;} abbrev {offset:27; length:2;expansion:en;} abbrev {offset:32; length:2;expansion:nd;} abbrev {offset:63; length:2;expansion:un;}">
+                <Coords points="453,2849 544,2849 636,2849 728,2846 820,2844 912,2846 1003,2845 1095,2840 1187,2839 1279,2836 1371,2833 1462,2829 1554,2828 1646,2830 1738,2829 1830,2829 1921,2828 2013,2826 2105,2822 2197,2819 2289,2816 2289,2759 2197,2762 2105,2765 2013,2769 1921,2771 1830,2772 1738,2772 1646,2773 1554,2771 1462,2772 1371,2776 1279,2779 1187,2782 1095,2783 1003,2788 912,2789 820,2787 728,2789 636,2792 544,2792 453,2792"/>
+                <Baseline points="453,2830 544,2830 636,2830 728,2827 820,2825 912,2827 1003,2826 1095,2821 1187,2820 1279,2817 1371,2814 1462,2810 1554,2809 1646,2811 1738,2810 1830,2810 1921,2809 2013,2807 2105,2803 2197,2800 2289,2797"/>
+                <TextEquiv>
+                    <Unicode>ſo lag das lꝛint ob der erdē. vn̄ wie wol das in irer vergichtūg nit ſtet ſo iſt doch gottes</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_26" custom="readingOrder {index:25;} sic {offset:1; length:1;correction:k;} abbrev {offset:30; length:2;expansion:en;} sic {offset:47; length:2;correction:k;} abbrev {offset:62; length:2;expansion:en;} abbrev {offset:73; length:2;expansion:nd;}">
+                <Coords points="459,2938 550,2935 642,2932 733,2926 825,2925 917,2923 1008,2925 1100,2923 1192,2923 1283,2923 1375,2920 1467,2915 1558,2911 1650,2911 1742,2911 1833,2911 1925,2908 2017,2905 2108,2905 2200,2899 2292,2899 2292,2842 2200,2842 2108,2848 2017,2848 1925,2851 1833,2854 1742,2854 1650,2854 1558,2854 1467,2858 1375,2863 1283,2866 1192,2866 1100,2866 1008,2868 917,2866 825,2868 733,2869 642,2875 550,2878 459,2881"/>
+                <Baseline points="459,2919 550,2916 642,2913 733,2907 825,2906 917,2904 1008,2906 1100,2904 1192,2904 1283,2904 1375,2901 1467,2896 1558,2892 1650,2892 1742,2892 1833,2892 1925,2889 2017,2886 2108,2886 2200,2880 2292,2880"/>
+                <TextEquiv>
+                    <Unicode>lꝛrafft groeſclich do erſchinnē das das ſelig lꝛint ſolt fundē werden vn̄ ſin plut ſolte ghe¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_27" custom="readingOrder {index:26;} sic {offset:38; length:2;correction:k;} abbrev {offset:70; length:2;expansion:mb;} abbrev {offset:87; length:2;expansion:en;}">
+                <Coords points="468,3020 559,3023 650,3017 741,3014 832,3011 924,3008 1015,3008 1106,3006 1197,3005 1288,3005 1380,3005 1471,3005 1562,3000 1653,3001 1744,3003 1836,3002 1927,2996 2018,2996 2109,2996 2200,2996 2292,2999 2292,2939 2200,2936 2109,2936 2018,2936 1927,2936 1836,2942 1744,2943 1653,2941 1562,2940 1471,2945 1380,2945 1288,2945 1197,2945 1106,2946 1015,2948 924,2948 832,2951 741,2954 650,2957 559,2963 468,2960"/>
+                <Baseline points="468,3000 559,3003 650,2997 741,2994 832,2991 924,2988 1015,2988 1106,2986 1197,2985 1288,2985 1380,2985 1471,2985 1562,2980 1653,2981 1744,2983 1836,2982 1927,2976 2018,2976 2109,2976 2200,2976 2292,2979"/>
+                <TextEquiv>
+                    <Unicode>rochen werden / man vint ouch das die lꝛinder die ſii vermalſʒ haben vm̄ bꝛacht die habē</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_28" custom="readingOrder {index:27;} sic {offset:27; length:1;correction:n;} abbrev {offset:34; length:2;expansion:mb;} abbrev {offset:48; length:2;expansion:en;} sic {offset:83; length:2;correction:k;}">
+                <Coords points="468,3112 558,3115 649,3115 740,3111 831,3108 922,3103 1013,3103 1104,3101 1195,3101 1286,3100 1377,3103 1467,3102 1558,3101 1649,3101 1740,3101 1831,3098 1922,3095 2013,3095 2104,3098 2195,3098 2286,3101 2286,3041 2195,3038 2104,3038 2013,3035 1922,3035 1831,3038 1740,3041 1649,3041 1558,3041 1467,3042 1377,3043 1286,3040 1195,3041 1104,3041 1013,3043 922,3043 831,3048 740,3051 649,3055 558,3055 468,3052"/>
+                <Baseline points="468,3092 558,3095 649,3095 740,3091 831,3088 922,3083 1013,3083 1104,3081 1195,3081 1286,3080 1377,3083 1467,3082 1558,3081 1649,3081 1740,3081 1831,3078 1922,3075 2013,3075 2104,3078 2195,3078 2286,3081"/>
+                <TextEquiv>
+                    <Unicode>ſii ghemainlich nit begrabeu dar vm̄ wen ſii ainē vnglouben dar in haben alſo bii lꝛoſtnicʒ</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_29" custom="readingOrder {index:28;} sic {offset:27; length:2;correction:k;} abbrev {offset:39; length:2;expansion:en;} abbrev {offset:53; length:2;expansion:en;} abbrev {offset:74; length:2;expansion:en;} abbrev {offset:91; length:2;expansion:un;}">
+                <Coords points="462,3199 553,3208 645,3208 736,3205 828,3204 919,3198 1011,3196 1102,3193 1194,3193 1285,3193 1377,3193 1468,3193 1560,3195 1651,3198 1743,3197 1834,3196 1926,3193 2017,3193 2109,3196 2200,3196 2292,3196 2292,3136 2200,3136 2109,3136 2017,3133 1926,3133 1834,3136 1743,3137 1651,3138 1560,3135 1468,3133 1377,3133 1285,3133 1194,3133 1102,3133 1011,3136 919,3138 828,3144 736,3145 645,3148 553,3148 462,3139"/>
+                <Baseline points="462,3179 553,3188 645,3188 736,3185 828,3184 919,3178 1011,3176 1102,3173 1194,3173 1285,3173 1377,3173 1468,3173 1560,3175 1651,3178 1743,3177 1834,3176 1926,3173 2017,3173 2109,3176 2200,3176 2292,3176"/>
+                <TextEquiv>
+                    <Unicode>gheſchach do ſii ain todes lꝛint an ainē boum in ainē walte lieſſen hangē das dar nach fū¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="tr_1_tl_30" custom="readingOrder {index:29;} abbrev {offset:10; length:2;expansion:nd;}">
+                <Coords points="465,3304 522,3304 579,3304 636,3306 693,3305 750,3306 807,3304 864,3304 921,3302 978,3301 1035,3298 1092,3298 1149,3298 1206,3295 1263,3294 1320,3290 1377,3289 1434,3289 1491,3289 1548,3289 1606,3286 1606,3226 1548,3229 1491,3229 1434,3229 1377,3229 1320,3230 1263,3234 1206,3235 1149,3238 1092,3238 1035,3238 978,3241 921,3242 864,3244 807,3244 750,3246 693,3245 636,3246 579,3244 522,3244 465,3244"/>
+                <Baseline points="465,3284 522,3284 579,3284 636,3286 693,3285 750,3286 807,3284 864,3284 921,3282 978,3281 1035,3278 1092,3278 1149,3278 1206,3275 1263,3274 1320,3270 1377,3269 1434,3269 1491,3269 1548,3269 1606,3266"/>
+                <TextEquiv>
+                    <Unicode>den wart vn̄ etliche cʒeit groſſe cʒaichen gheſchehen.</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>DAs sibeude Capittel lit ouch dreij artikel. also ſij das kint haben verboꝛgen.&#13;
+Zu dem erſten artikel iſt ʒu mercken. das die elteren des kindes mutter vnde&#13;
+vatter alſo ſij das ſelig kint hatten verloꝛen do ſuchten ſij es vber alſo weit die&#13;
+ſtat Trient was do ſpꝛach ijdermā beſūder die knaben vn̄ kinder eſʒ hat niemāt das kint&#13;
+ghenummen dan die boeſen juden / dar in ʒu mercken was das der hailige gaiſt ret durch&#13;
+den munt der vnſchuldigen kinder. vn̄ an hub das vnſchuldig plut rach ʒu reiſſen vber&#13;
+die boeſen iuden. dar vmb die elteren des kindes tag vn̄ nacht hatten ir auff ſehen ʒu den&#13;
+heuſeren der iuden. beſunder mit ainē man der da haiſt der Sweicʒer der den juden wan&#13;
+ſij auſʒ ader in gingen in ir heuſer ſo fragt er ſij von dem kint vn̄ ſchalt ſij. das verdroſʒ&#13;
+die iuden ſo ſer das ſij in ir ghefenkniſʒ bekanten auff in vn̄ ſpꝛochen. der Swaicʒer het in&#13;
+das kint bꝛocht in ir hauſʒ. das alles erlogen was. wen er dar vmb ghefangē wart vn̄&#13;
+in die eijſen gheſlagē do ghelobt er ſich ʒu dem kint das es im ſolt helfē ſo werlich alſʒ er&#13;
+vnſchuldig wer an ſeinem tod. vn̄ alſo bald villen die eijſen von ſeinē fueſen / aber die iudē&#13;
+hatten im das von haſʒ ghetan dar vmb das er ſij melte vn̄ ſchalt do man das kint ſuchte&#13;
+Der ander artikel ʒu merckē iſt. do die iuden vernomen das die gancʒ ſtat ging in ir&#13;
+heuſer ʒu ſuchen das ſelig kint vn̄ groſſer argwō auff ſij was do hatte Samuel das kint&#13;
+auſʒ irer Synagog ghetragen vn̄ bedeckt in ain winckel in ſeinem bauſʒ mit hew vnder&#13;
+ain multe dar vber gheſtircʒt. vn̄ do das mumelen in der ſtat ſo groſʒ wart. do trug er&#13;
+das kint in ſeinen lꝛeller vnder ain miſthauffen ader lꝛet / vnd von groſſer furcht wegen&#13;
+ſchutten ſij das plut in ir  ſecret vn̄ hatten ainē Rat wie ſij mit dem tottē lꝛint soltē lebē&#13;
+die Criſten mumuelten ſer vber ſij. Der tritte artikel hij ʒu merlꝛen iſt das die iuden&#13;
+nit haben mugen das lꝛint vertillꝛen wen wo ſij das hetten mugen vertilꝛen ſo wer das&#13;
+vnſchuldig blut nimmer gherochen woꝛden. dar vmb verlꝛart got in ir ſin das ſij nicht&#13;
+mochtē das lꝛīt vergrabē oder verſiedē vn̄ alſʒ ghemain red iſt wē ſij es woltē begrabē&#13;
+ſo lag das lꝛint ob der erdē. vn̄ wie wol das in irer vergichtūg nit ſtet ſo iſt doch gottes&#13;
+lꝛrafft groeſclich do erſchinnē das das ſelig lꝛint ſolt fundē werden vn̄ ſin plut ſolte ghe¬&#13;
+rochen werden / man vint ouch das die lꝛinder die ſii vermalſʒ haben vm̄ bꝛacht die habē&#13;
+ſii ghemainlich nit begrabeu dar vm̄ wen ſii ainē vnglouben dar in haben alſo bii lꝛoſtnicʒ&#13;
+gheſchach do ſii ain todes lꝛint an ainē boum in ainē walte lieſſen hangē das dar nach fū¬&#13;
+den wart vn̄ etliche cʒeit groſſe cʒaichen gheſchehen.</Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>
