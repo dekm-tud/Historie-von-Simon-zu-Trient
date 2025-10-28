@@ -1,30 +1,29 @@
 # Historie von Simon zu Trient — Static digital edition
 
-This repository contains the data, transformation scripts, and the static web edition for the edition "Historie von Simon zu Trient". The project demonstrates a simple, sustainable pipeline for publishing a scholarly edition as a static website without a backend, using files scholars commonly already have (TEI XML, Zotero exports, Word→TEI conversions, XSLT and a local XML processor).
+This repository contains the data, transformation scripts, and the static web edition for the edition "Historie von Simon zu Trient". The project demonstrates a simple and sustainable pipeline for publishing a scholarly edition as a static website without any backend, using data scholars commonly already have (Transkribus document, Zotero library, docx), XSLT and a local XML processor.
 
 ## Goals
 
 - Provide an easily reproducible, static publication pipeline for a TEI-based edition.
-- Prioritise getting reliable, well-formed data online quickly rather than full feature parity with research-grade digital editions.
-- Keep everything self-contained so the project can be run locally and archived (GitHub + Zenodo).
+- Prioritise publishing reliable data quickly rather than state of the art encoding.
+- Keep everything self-contained so the project can be run locally and archived using GitHub and Zenodo.
 
-## What's included
+## This repository
 
-Top-level items you will find in the repository:
+In this repository you will find:
 
-- `data/` — assorted project-level XML exports (TEI exports from Transkribus, Zotero TEI export, etc.)
-- `Historie_von_Simon_zu_Trient/` — the primary TEI package containing metadata, METS and page XML for the edition
+- `data/`: XML exports (TEI exports from Transkribus, Zotero TEI export, etc.)
+- `Historie_von_Simon_zu_Trient/`: Images, METS and page XML for exemplar used in this edition
 	- `Historie_von_Simon_zu_Trient/metadata.xml` and `mets.xml`
-	- `page/00001.xml` ... `page/00028.xml` — page XML files (pageimages/page-xml)
-- `xslt/` — XSLT transforms used to turn TEI and other XML sources into the static HTML pages
-	- `transform_edition.xslt` — transforms the TEI edition into the public-facing HTML edition
-	- `transform_introduction.xslt` — transforms the introduction TEI into an HTML page
-	- `transform_literature.xslt` — transforms the Zotero TEI bibliography into an HTML bibliography
-- `Saxon/` — the included XML processor files used to run the XSLT (Saxon distribution, libraries, and notices)
-- `html/` — the generated static website (edition pages, introduction, literature) and site assets
+	- `page/00001.xml` ... `page/00028.xml`
+- `xslt/`: XSLT transforms used to turn TEI and other XML sources into the static HTML pages
+	- `transform_edition.xslt`: transforms the TEI edition into the static HTML edition
+	- `transform_introduction.xslt`: transforms the introduction TEI into an HTML page
+	- `transform_literature.xslt`: transforms the Zotero TEI bibliography into an HTML bibliography
+- `Saxon/`: the used XML processor files used to run the XSLT (Saxon distribution, libraries, and notices)
+- `html/`: the generated static website (edition pages, introduction, literature) and site assets
 	- `html/edition.html`, `html/introduction.html`, `html/literature.html`
-- `doc/` — documentation and styling (a small docs site and stylesheets used for preview)
-- `index.html` — repository/home landing page
+- `index.html`: landing page
 
 ## Provenance and data
 
@@ -116,5 +115,3 @@ If you re-use images or other resources, please check the relevant metadata file
 For questions about the repository or to report issues, please use the GitHub repository issues. The source files contain provenance and metadata for specific editorial contacts where available.
 
 ---
-
-This README was generated from the project notes and repository contents. If you'd like, I can add a short PowerShell or Makefile script to automate the full transform + server workflow next.

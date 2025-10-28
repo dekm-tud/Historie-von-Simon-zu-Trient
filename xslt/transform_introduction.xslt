@@ -5,12 +5,9 @@
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:f="urn:intro-fns"
                 exclude-result-prefixes="tei xs f">
-                
-                
     <xsl:param name="site_title"
                as="xs:string"
                select="'Historie von Simon zu Trient – Digitale Edition'" />
-    
     <xsl:param name="css_href"
                as="xs:string"
                select="'assets/site.css'" />
@@ -21,7 +18,6 @@
                 indent="no"
                 encoding="UTF-8"
                 omit-xml-declaration="yes" />
-    
     <!-- Footnote number helper -->
     <xsl:function name="f:fn-number"
                   as="xs:integer">
@@ -29,7 +25,6 @@
                    as="element(tei:note)" />
         <xsl:sequence select="count($n/preceding::tei:note[@place='foot']) + 1" />
     </xsl:function>
-    
     <xsl:template match="/tei:TEI">
         <html lang="de">
             <head>
@@ -41,6 +36,10 @@
                 </title>
                 <link rel="stylesheet"
                       href="{$css_href}" />
+                <script src="assets/leaflet/dist/leaflet.js"
+                        type="text/javascript" />
+                <link rel="stylesheet"
+                      href="assets/leaflet/dist/leaflet.css" />
             </head>
             <body class="mode-expan">
                 <header class="site-header">
@@ -54,13 +53,13 @@
                                href="introduction.html">Einleitung</a>
                             <a href="edition.html">Edition</a>
                             <a href="literature.html">Literatur</a>
+                            <a href="https://github.com/michaelscho/Historie-von-Simon-zu-Trient">GitHub</a>
                         </div>
                     </nav>
                 </header>
                 <main class="container">
                     <section id="intro">
                         <h1>Einleitung</h1>
-    
                         <xsl:variable name="author"
                                       select="normalize-space(tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author)" />
                         <xsl:variable name="date"
@@ -83,9 +82,7 @@
                                 </xsl:if>
                             </p>
                         </xsl:if>
-    
                         <xsl:apply-templates select="tei:text/tei:body" />
-    
                         <!-- Footnotes -->
                         <xsl:if test="//tei:note[@place='foot']">
                             <h2 style="margin-top:2rem">Anmerkungen</h2>
@@ -97,8 +94,9 @@
                     </section>
                 </main>
                 <footer>
+                    <h2>Impressum</h2>
                     <h3>Angaben gemäß § 5 TMG</h3>
-                    <p>
+                    <p>                        
                         Herausgeber:
                         Dr. phil. Marco Heiles
                         Ulrich Haberland Straße 43
@@ -109,14 +107,13 @@
                     <h3>Lizenzbestimmungen</h3>
                     <p>Die Texte dieser Website stehen unter Creative Commons Attribution 4.0 International Lizenz. Sie dürfen die Texte unter Angabe des Urhebers und der CC-Lizenz sowohl kopieren als auch an anderer Stelle veröffentlichen.</p>
                     <h3>Förderung</h3>
-                    <p>Die Forschung von Dr. Marco Heiles zur Edition der Historie von Simon zu Trient fand im Institut für Germanistische und Allgemeine Literaturwissenschaft der RWTH Aachen University und am Centre for the Study of Manuscript Cultures (CSMC) der Universität Hamburg statt. Sie wurde durch die Deutsche Forschungsgemeinschaft (DFG) im Rahmen der Exzellenzstrategie des Bundes und der Länder – EXC 2176 „Understanding Written Artefacts: Material, Interaction and Transmission in Manuscript Cultures”, Projektnr. 390893796 gefördert.</p>
+                    <p>Die Forschung von <a href="https://hcommons.org/members/marcoheiles/">Dr. Marco Heiles</a> zur Edition der Historie von Simon zu Trient fand im <a href="https://www.germlit.rwth-aachen.de/cms/germlit/Das-Institut/~mpma/Aeltere-deutsche-Literatur/">Institut für Germanistische und Allgemeine Literaturwissenschaft der RWTH Aachen University</a> und am <a href="https://www.csmc.uni-hamburg.de">Centre for the Study of Manuscript Cultures (CSMC) der Universität Hamburg</a> statt. Sie wurde durch die Deutsche Forschungsgemeinschaft (DFG) im Rahmen der Exzellenzstrategie des Bundes und der Länder – EXC 2176 „Understanding Written Artefacts: Material, Interaction and Transmission in Manuscript Cultures”, Projektnr. 390893796 gefördert.</p>
                     <p>Die Einrichtung und Veröffentlichung der Digitalen Edition und der Sicherung der Forschungsdaten erfolgte durch <a href="https://orcid.org/0000-0002-2750-1900">Prof. Dr. Michael Schonhardt</a> im Fachgebiet <a href="https://www.linglit.tu-darmstadt.de/institutlinglit/fachgebiete/digitale_editorik_und_kulturgeschichte_des_mittelalters/index.de.jsp">Digitale Editorik und Kulturgeschichte des Mittelalters</a> der Technischen Universität Darmstadt.</p>
                 </footer>
                 <script src="{$js_href}" />
             </body>
         </html>
     </xsl:template>
-    
     <xsl:template match="tei:body">
         <div>
             <xsl:apply-templates />
@@ -124,7 +121,6 @@
     </xsl:template>
     <xsl:template match="tei:p">
         <p>
-            <!-- preserve simple inline text-align from the Word import -->
             <xsl:if test="@style">
                 <xsl:attribute name="style">
                     <xsl:value-of select="@style" />
@@ -153,30 +149,26 @@
             <xsl:apply-templates />
         </li>
     </xsl:template>
-    <!-- ignore page breaks -->
     <xsl:template match="tei:pb" />
-    <!-- line break -->
     <xsl:template match="tei:lb">
         <br class="lb" />
     </xsl:template>
-    <!-- anchors become in-page targets -->
     <xsl:template match="tei:anchor[@xml:id]">
         <a id="{@xml:id}" />
     </xsl:template>
-    
     <xsl:template match="tei:hi">
         <xsl:variable name="rend"
                       select="normalize-space(@rend)" />
         <xsl:variable name="styles"
                       as="xs:string*"
                       select="(
-&#xA;        if (contains($rend,'italic')) then 'font-style: italic' else (),
-&#xA;        if (contains($rend,'bold')) then 'font-weight: 600' else (),
-&#xA;        if (contains($rend,'underline')) then 'text-decoration: underline' else (),
-&#xA;        if (contains($rend,'superscript')) then 'vertical-align: super; font-size: smaller' else (),
-&#xA;        if (matches($rend,'background\([^)]+\)')) then concat('background:', replace($rend,'.*background\(([^)]+)\).*','$1')) else (),
-&#xA;        if (matches($rend,'color\([^)]+\)')) then concat('color:', replace($rend,'.*color\(([^)]+)\).*','$1')) else ()
-&#xA;      )" />
+&#xA;&#xA;        if (contains($rend,'italic')) then 'font-style: italic' else (),
+&#xA;&#xA;        if (contains($rend,'bold')) then 'font-weight: 600' else (),
+&#xA;&#xA;        if (contains($rend,'underline')) then 'text-decoration: underline' else (),
+&#xA;&#xA;        if (contains($rend,'superscript')) then 'vertical-align: super; font-size: smaller' else (),
+&#xA;&#xA;        if (matches($rend,'background\([^)]+\)')) then concat('background:', replace($rend,'.*background\(([^)]+)\).*','$1')) else (),
+&#xA;&#xA;        if (matches($rend,'color\([^)]+\)')) then concat('color:', replace($rend,'.*color\(([^)]+)\).*','$1')) else ()
+&#xA;&#xA;      )" />
         <span>
             <xsl:if test="exists($styles)">
                 <xsl:attribute name="style"
@@ -185,14 +177,19 @@
             <xsl:apply-templates />
         </span>
     </xsl:template>
-    
     <!-- links -->
     <xsl:template match="tei:ref[@target]">
-        <a href="{@target}">
+        <a href="{@target}"
+           target="_blank">
             <xsl:apply-templates />
         </a>
     </xsl:template>
-    
+    <!-- Karte -->
+    <xsl:template match="tei:div[@type='map']">
+        <div id="map"
+             role="region"
+             aria-label="Interaktive Karte der Orte" />
+    </xsl:template>
     <!-- Footnotes -->
     <xsl:template match="tei:note[@place='foot']">
         <xsl:variable name="num"
@@ -203,13 +200,11 @@
             </a>
         </sup>
     </xsl:template>
-    
     <xsl:template match="tei:note[@place='foot']"
                   mode="foot">
         <xsl:variable name="num"
                       select="if (@n) then @n else f:fn-number(.)" />
         <li id="fn-{(@xml:id, generate-id())[1]}">
-    
             <xsl:choose>
                 <xsl:when test="tei:p">
                     <xsl:apply-templates select="tei:p/node()" />
@@ -222,7 +217,6 @@
                aria-label="Back to content">↩︎</a>
         </li>
     </xsl:template>
-    
     <xsl:template match="text()">
         <xsl:value-of select="." />
     </xsl:template>

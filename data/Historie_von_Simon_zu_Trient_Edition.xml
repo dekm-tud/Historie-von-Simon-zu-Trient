@@ -53,10 +53,11 @@
                             <monogr>
                                 <title level="m">Historie von Simon zu Trient</title>
                                 <imprint>
-                                    <pubPlace>[Place of printing]</pubPlace>
-                                    <publisher>[Printer’s name]</publisher>
-                                    <date when="1475" instant="false">1475</date>
-                                </imprint>
+                            <pubPlace ref="https://www.wikidata.org/wiki/Q3376">Trient</pubPlace>
+                            <publisher ref="https://d-nb.info/gnd/119107228">Albrecht
+                                Kunne</publisher>
+                            <date when="1475-09-06" instant="false">1475</date>
+                        </imprint>
                             </monogr>
                             <note type="copyInfo" anchored="true"> <list>
                                 <item> <orgName type="repository" instant="false" full="yes">BSB München</orgName>
@@ -357,7 +358,7 @@
                 <pb facs="#facs_1" n="1r"/>
                 <div type="other" part="N" org="uniform" sample="complete">
                     <figure type="colorplate" n="1" facs="#facs_1">
-                        <head>Farbkeil</head>
+                        <head>Seite leer, Farbkeil</head>
                     </figure>
                 </div>
 
@@ -943,7 +944,7 @@
                 </div>
                 <pb facs="#facs_11" n="6r"/>
                 <div type="chapter" xml:id="chapter_5" n="5" facs="#facs_11_tr_1" part="N" org="uniform" sample="complete">
-                    <head><lb facs="#facs_11_tr_1_tl_1" n="N001"/><hi>I</hi><choice><sic>U</sic><corr>N</corr></choice> dem funften Capittel <g ref="#long-s">ſ</g>in ouch <g ref="#ezh">ʒ</g>u mercken dreij artikel.</head>
+                    <head><lb facs="#facs_11_tr_1_tl_1" n="N001"/><hi><choice><sic>I</sic><corr>Z</corr></choice></hi>U dem funften Capittel <g ref="#long-s">ſ</g>in ouch <g ref="#ezh">ʒ</g>u mercken dreij artikel.</head>
                     <p n="5.1" part="N"> Der erste artikel <lb facs="#facs_11_tr_1_tl_2" n="N002"/>i<g ref="#long-s">ſ</g>t al<g ref="#long-s">ſ</g><g ref="#ezh">ʒ</g> das Selig
                         kint ver<g ref="#long-s">ſ</g>chaiden was vo<g ref="#r-rotunda">ꝛ</g> der
                         Synagog. do <g ref="#long-s">ſ</g>ammelten <g ref="#long-s">ſ</g>ich die <lb facs="#facs_11_tr_1_tl_3" n="N003"/>juden alle in die Synagog das i<g ref="#long-s">ſ</g>t in ire <g ref="#long-s">ſ</g>chul. vnd nomen den
@@ -1464,7 +1465,7 @@
                 </div>
                 <pb facs="#facs_17" n="9r"/>
                 <div type="chapter" xml:id="chapter_8" n="8" facs="#facs_17_tr_1" part="N" org="uniform" sample="complete">
-                    <head><lb facs="#facs_17_tr_1_tl_1" n="N001"/><choice><sic><hi>I</hi>U</sic><corr>ZU</corr></choice> dem achten Capittel <g ref="#long-s">ſ</g>in ouch <g ref="#ezh">ʒ</g>u merc<g ref="#l-r-rotunda">lꝛ</g>en d<g ref="#r-rotunda">ꝛ</g>eii arti<g ref="#l-r-rotunda">lꝛ</g>el wie das
+                    <head><lb facs="#facs_17_tr_1_tl_1" n="N001"/><hi><choice><sic>I</sic><corr>Z</corr></choice></hi>U dem achten Capittel <g ref="#long-s">ſ</g>in ouch <g ref="#ezh">ʒ</g>u merc<g ref="#l-r-rotunda">lꝛ</g>en d<g ref="#r-rotunda">ꝛ</g>eii arti<g ref="#l-r-rotunda">lꝛ</g>el wie das
                         <g ref="#long-s">ſ</g>elig <g ref="#l-r-rotunda">lꝛ</g>int i<g ref="#long-s">ſ</g>t <lb facs="#facs_17_tr_1_tl_2" n="N002"/>funden wo<g ref="#r-rotunda">ꝛ</g>den /</head>
                     <p n="8.1" part="N">Da i<g ref="#long-s">ſ</g>t <g ref="#ezh">ʒ</g>u merc<g ref="#l-r-rotunda">lꝛ</g>en das die iuden <g ref="#long-s">ſ</g>o <g ref="#long-s">ſ</g>ij merc<g ref="#l-r-rotunda">lꝛ</g>ten das <g ref="#long-s">ſ</g>ij wo<g ref="#r-rotunda">ꝛ</g>en
                         in <lb facs="#facs_17_tr_1_tl_3" n="N003"/>gro<g ref="#long-s">ſ</g><g ref="#long-s">ſ</g>em argwon des <g ref="#l-r-rotunda">lꝛ</g>indes halben v<choice>
@@ -2483,7 +2484,7 @@
                     </choice>funfv<choice>
                     <expan instant="false">nd</expan>
                     <abbr>n̄</abbr>
-                    </choice><g ref="#long-s">ſ</g>ibnc<g ref="#ezh">ʒ</g> iar an dem mitwuchē vo<g ref="#r-rotunda">ꝛ</g></date> <lb facs="#facs_27_tr_1_tl_22" n="N021"/><date when="1475-09-06" instant="false">vnser lieben franwen tage der purt. 1475</date> <lb facs="#facs_27_tr_1_tl_21" n="N022"/>Laus deo. <lb facs="#facs_27_tr_1_tl_23" n="N023"/></p> &gt; <p n="13.5" part="N"><hi>¶</hi> Di<g ref="#long-s">ſ</g>e aufgedrukchte
+                    </choice><g ref="#long-s">ſ</g>ibnc<g ref="#ezh">ʒ</g> iar an dem mitwuchē vo<g ref="#r-rotunda">ꝛ</g></date> <lb facs="#facs_27_tr_1_tl_22" n="N021"/><date when="1475-09-06" instant="false">vnser lieben franwen tage der purt. 1475</date> <lb facs="#facs_27_tr_1_tl_21" n="N022"/>Laus deo. <lb facs="#facs_27_tr_1_tl_23" n="N023"/></p> <p n="13.5" part="N"><hi>¶</hi> Di<g ref="#long-s">ſ</g>e aufgedrukchte
                     ge<g ref="#long-s">ſ</g>ch<g ref="#r-rotunda">ꝛ</g>ift vnd gemel i<g ref="#long-s">ſ</g>t vngeuerlichen be<g ref="#long-s">ſ</g>chehen von d<choice>
                     <expan instant="false">en</expan>
                     <abbr>ē</abbr>
@@ -2501,6 +2502,7 @@
                     <abbr>ē</abbr>
                     </choice> vnd di<g ref="#long-s">ſ</g><g ref="#long-s">ſ</g>e vn<g ref="#long-s">ſ</g>er ge<g ref="#long-s">ſ</g>ch<g ref="#r-rotunda">ꝛ</g>if<lb break="no" facs="#facs_27_tr_1_tl_28" n="N028"/>te vnd gemele <g ref="#long-s">ſ</g>ch<g ref="#r-rotunda">ꝛ</g>iben vnd verla<g ref="#long-s">ſ</g><g ref="#long-s">ſ</g>en. </p> </div>
                 <pb facs="#facs_28" n="14v"/>
+                <div><head>Seite leer</head></div>
             </div>
         </body>
     </text>

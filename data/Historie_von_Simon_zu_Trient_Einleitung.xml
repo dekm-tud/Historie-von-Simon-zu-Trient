@@ -266,7 +266,7 @@
                     >Digitale Wörterbuch der Deutschen Sprache</hi> (<hi rend="italic">DWDS</hi>)
                     erfasst im Zeitungskorpus erst seit 2020 eine nennenswerte Anzahl an Belegen des
                     Wortes (<ref
-                    target="https://www.dwds.de/r/plot/?view=2&amp;corpus=zeitungenxl&amp;norm=abs&amp;smooth=line&amp;genres=0&amp;grand=1&amp;sli-ce=1&amp;prune=0&amp;window=0&amp;wbase=0&amp;logavg=0&amp;logscale=0&amp;xrange=2000%3A2024&amp;q1=Verschw%C3%B6rungserz%C3%A4hlung."
+                    target="https://www.dwds.de/r/plot/?view=2&amp;corpus=zeitungenxl&amp;norm=abs&amp;smooth=line&amp;genres=0&amp;grand=1&amp;sli-ce=1&amp;prune=0&amp;window=0&amp;wbase=0&amp;logavg=0&amp;logscale=0&amp;xrange=2000%3A2024&amp;q1=Verschw%C3%B6rungserz%C3%A4hlung"
                     >Link zur Graphik im <hi rend="italic">DWDS</hi> </ref>).<note place="foot"
                     xml:id="ftn9" n="8"> <p rend="footnote text" style="text-align: left;"> Einzelne
                     Belege gibt es für die Jahre 2001, 2015 und 2019. Vgl. DWDS-Wortverlaufskurve
@@ -354,6 +354,7 @@
                     Massenmedien (wie Anm. 16), S. 32–40; <anchor xml:id="Hlk168570169"/>David
                     Kelman, Counterfeit politics: Secret plots and conspiracy narratives in the
                     Americas, Lanham, MD 2012, S. 17–48.</p> </note> </p>
+                    <!-- <img src="html/assets/img/verschwrungserzhlung-ver.png"/> -->
                 <p>Ich selbst verstehe Verschwörungserzählungen als Textreihe<note place="foot"
                     xml:id="ftn17" n="16"> <p rend="footnote text" style="text-align: left;"> Vgl.
                     zum Begriff der Textreihe ausführlich: <anchor xml:id="Hlk168570177"/>Katharina
@@ -1230,9 +1231,8 @@
                     einem Druckexemplar die Provenienz bekannt ist – das heute in der Münchner
                     Staatsbibliothek aufbewahrte Exemplar stammt aus dem Benediktinerkloster
                     Tegernsee – verraten die Handschriften mehr über die geographische Verbreitung
-                    des Textes und das Sammlungsinteresse der Rezipient*innen (<ref
-                    target="https://umap.openstreetmap.fr/de/map/verbreitung-der-historia-von-simon-zu-trient-exemp_1005959#7/47.776/10.844"
-                    >Link zur Karte des Verbreitungsgebiets</ref>). </p>
+                    des Textes und das Sammlungsinteresse der Rezipient*innen. </p>
+                    <div type="map"/>
                 <p>Zwei der drei Handschriften stammen ebenfalls aus bayerischen Klöstern. Im
                     Zisterzienserkloster Alderbach wurde eine Druckabschrift der <hi rend="italic"
                     >Historie</hi> mit einem Lateinischen Druck des Berichtes des Tiberinus und

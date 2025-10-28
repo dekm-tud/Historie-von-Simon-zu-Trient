@@ -35,7 +35,7 @@
 
   <xsl:template match="/">
     <xsl:variable name="bibl"
-      select="(/*[self::tei:listBibl], /*[local-name()='listBibl'])[1]"/>
+      select="(//*[self::tei:listBibl], //*[local-name()='listBibl'])[1]"/>
 
     <html lang="de">
       <head>
@@ -55,12 +55,16 @@
                   <a href="html/introduction.html">Einleitung</a>
                   <a href="html/edition.html">Edition</a>
                   <a href="html/literature.html" aria-current="page">Literatur</a>
+                  <a href="https://github.com/michaelscho/Historie-von-Simon-zu-Trient">GitHub</a>
+
                 </xsl:when>
                 <xsl:otherwise>
                   <a href="../index.html">Home</a>
                   <a href="introduction.html">Einleitung</a>
                   <a href="edition.html">Edition</a>
                   <a href="literature.html" aria-current="page">Literatur</a>
+                  <a href="https://github.com/michaelscho/Historie-von-Simon-zu-Trient">GitHub</a>
+
                 </xsl:otherwise>
               </xsl:choose>
             </div>
@@ -70,10 +74,13 @@
         <main class="container">
           <section id="literature">
             <div class="section-head">
-              <h1>Literatur</h1>
+              <h1>Historie von Simon zu Trient: Forschungsbibliographie</h1>
+              <h2>von Marco Heiles unter Mitarbeit von Sophie-Elisabeth Grimm</h2>
+              <p>Diese Bibliographie sammelt Forschungsliteratur zur 'Historie von Simon zu Trient' und ihrem historischen Kontext, dem Trienter Ritualmordprozess von 1475-1478. Alle bibliographischen Daten sind auch in <a href="https://www.zotero.org/groups/5071036/historie_von_simon_zu_trient._forschungsbibliographie">Zotero</a> erfasst.</p>
               <div class="toolbar">
+                <h2>Suche</h2>
                 <label class="visually-hidden" for="bibl-search">Suche in der Bibliographie</label>
-                <input id="bibl-search" type="search" placeholder="Suchen (Autor, Titel, Jahr, …)" />
+                <input id="bibl-search" type="search" placeholder="Autor, Titel, Jahr, …" />
               </div>
             </div>
 
@@ -106,6 +113,7 @@
         </main>
 
         <footer>
+                    <h2>Impressum</h2>
                     <h3>Angaben gemäß § 5 TMG</h3>
                     <p>
                         Herausgeber:
@@ -118,9 +126,8 @@
                     <h3>Lizenzbestimmungen</h3>
                     <p>Die Texte dieser Website stehen unter Creative Commons Attribution 4.0 International Lizenz. Sie dürfen die Texte unter Angabe des Urhebers und der CC-Lizenz sowohl kopieren als auch an anderer Stelle veröffentlichen.</p>
                     <h3>Förderung</h3>
-                    <p>Die Forschung von Dr. Marco Heiles zur Edition der Historie von Simon zu Trient fand im Institut für Germanistische und Allgemeine Literaturwissenschaft der RWTH Aachen University und am Centre for the Study of Manuscript Cultures (CSMC) der Universität Hamburg statt. Sie wurde durch die Deutsche Forschungsgemeinschaft (DFG) im Rahmen der Exzellenzstrategie des Bundes und der Länder – EXC 2176 „Understanding Written Artefacts: Material, Interaction and Transmission in Manuscript Cultures”, Projektnr. 390893796 gefördert.</p>
-                    <p>Die Einrichtung und Veröffentlichung der Digitalen Edition und der Sicherung der Forschungsdaten erfolgte durch <a href="https://orcid.org/0000-0002-2750-1900">Prof. Dr. Michael Schonhardt</a> im Fachgebiet <a href="https://www.linglit.tu-darmstadt.de/institutlinglit/fachgebiete/digitale_editorik_und_kulturgeschichte_des_mittelalters/index.de.jsp">Digitale Editorik und Kulturgeschichte des Mittelalters</a> der Technischen Universität Darmstadt.</p>
-                </footer>
+                    <p>Die Forschung von <a href="https://hcommons.org/members/marcoheiles/">Dr. Marco Heiles</a> zur Edition der Historie von Simon zu Trient fand im <a href="https://www.germlit.rwth-aachen.de/cms/germlit/Das-Institut/~mpma/Aeltere-deutsche-Literatur/">Institut für Germanistische und Allgemeine Literaturwissenschaft der RWTH Aachen University</a> und am <a href="https://www.csmc.uni-hamburg.de">Centre for the Study of Manuscript Cultures (CSMC) der Universität Hamburg</a> statt. Sie wurde durch die Deutsche Forschungsgemeinschaft (DFG) im Rahmen der Exzellenzstrategie des Bundes und der Länder – EXC 2176 „Understanding Written Artefacts: Material, Interaction and Transmission in Manuscript Cultures”, Projektnr. 390893796 gefördert.</p>
+                    <p>Die Einrichtung und Veröffentlichung der Digitalen Edition und der Sicherung der Forschungsdaten erfolgte durch <a href="https://orcid.org/0000-0002-2750-1900">Prof. Dr. Michael Schonhardt</a> im Fachgebiet <a href="https://www.linglit.tu-darmstadt.de/institutlinglit/fachgebiete/digitale_editorik_und_kulturgeschichte_des_mittelalters/index.de.jsp">Digitale Editorik und Kulturgeschichte des Mittelalters</a> der Technischen Universität Darmstadt.</p>                </footer>
         <script src="{$js_href}"></script>
       </body>
     </html>

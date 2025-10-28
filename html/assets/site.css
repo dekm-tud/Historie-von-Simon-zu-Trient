@@ -48,7 +48,7 @@ footer{
   color:#e6ecf1;text-align:left;font-size:.9rem;background-color: var(--button-panel);
 }
 
-footer > h3, footer > p { max-width:1200px;margin:0 auto;padding:0.3rem;}
+footer > h2, footer > h3, footer > p { max-width:1200px;margin:0 auto;padding:0.3rem;}
 
 #home, #literature {color:var(--text-color);}
 
@@ -170,3 +170,52 @@ body.layout-original .lb .reading{display:none}
 }
 .outer-handle:hover::after,
 .outer-handle:focus::after { background: rgba(0,0,0,.06); }
+
+#map { height: 65vh; }
+
+.leaflet-interactive.poi {
+  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 6px rgba(0,0,0,.25));
+}
+
+.text-und-bild {
+  display: flex;
+  gap: 1.25rem;              
+  align-items: flex-start;
+}
+
+.text-und-bild .text {
+  flex: 1 1 auto;              
+  min-width: 0;
+}
+
+.text-und-bild .abb {
+  margin: 0;
+  flex: 0 0 clamp(220px, 28vw, 380px); 
+}
+
+.text-und-bild .abb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-und-bild .abb figcaption {
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-top: 0.4rem;
+}
+
+.text-und-bild.row-reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 800px) {
+  .text-und-bild {
+    flex-direction: column;
+  }
+  .text-und-bild .abb {
+    flex: none;
+    width: 100%;
+    max-width: 520px;        
+  }
+}

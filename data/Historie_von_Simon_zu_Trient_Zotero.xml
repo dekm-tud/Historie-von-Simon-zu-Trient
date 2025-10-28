@@ -8,8 +8,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="m" type="main">Historie von Simon zu Trient</title>
-
+                <title level="m" type="main">Historie von Simon zu Trient: Forschungsbibliographie</title>
+                
                 <editor xml:id="MaH" role="scholarly_editing"
                     ref="https://orcid.org/0000-0003-1635-9248">Marco Heiles</editor>
                 <editor xml:id="MiS" role="digital_editing"
