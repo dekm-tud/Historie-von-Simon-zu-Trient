@@ -2,6 +2,8 @@
 
 This repository contains the data, transformation scripts, and the static web edition for the edition "Historie von Simon zu Trient". The project demonstrates a simple and sustainable pipeline for publishing a scholarly edition as a static website without any backend, using data scholars commonly already have (Transkribus document, Zotero library, docx), XSLT and a local XML processor.
 
+Currently, the repository is in beta stage.
+
 ## Goals
 
 - Provide an easily reproducible, static publication pipeline for a TEI-based edition.
