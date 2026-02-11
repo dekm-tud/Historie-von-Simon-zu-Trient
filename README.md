@@ -5,7 +5,7 @@ This repository contains the data, transformation scripts, and the static web ed
 ## Goals
 
 - Provide an easily reproducible, static publication pipeline for a TEI-based edition.
-- Prioritise publishing reliable data quickly rather than state of the art encoding.
+- Prioritise publishing reliable data quickly.
 - Keep everything self-contained so the project can be run locally and archived using GitHub and Zenodo.
 
 ## This repository
@@ -27,7 +27,7 @@ In this repository you will find:
 
 ## Provenance and data
 
-- The edition text was transcribed in Transkribus and exported as TEI. Those TEI files were processed and enriched to conform with TEI conventions used here.
+- The edition text was transcribed in Transkribus and exported as TEI. Those TEI files were processed and enriched to conform with TEI conventions.
 - The introduction was drafted in Microsoft Word and converted to TEI using OxGarage.
 - The bibliography was created with Zotero and exported as TEI.
 - Page images and page-XML are included where available. Images are Public Domain (see the notices and the BSB source reference). Some remote services (e.g., IIIF viewer instances hosted by BSB München) are not included in the package and are referenced externally.
@@ -83,35 +83,14 @@ Notes:
 
 ## Licensing and attribution
 
-- Images in this repository are Public Domain (see notices in `Saxon/notices` and any per-image metadata).
+- Images in this repository are Public Domain.
 - Third-party components (Saxon, other libraries) include their own licenses and notices (see `Saxon/notices/`).
 
 If you re-use images or other resources, please check the relevant metadata files and notices included in the repository for full attribution details.
 
 ## Limitations and external services
 
-- The edition relies on some external services for advanced viewers (for example a IIIF/Manifold viewer hosted by external providers). These services are not distributed in this repo; page images and page XML are provided where possible.
+- The edition relies on some external services for advanced viewers (for example a IIIF/Manifold viewer hosted by external providers). These services are not distributed in this repo. Page images and page XML are provided where possible.
 
-## Troubleshooting
-
-- If the Saxon jar name or location differs from the example commands, list the contents of `Saxon\lib` and substitute the actual filename.
-- If pages look broken after transformation, validate the source TEI for well-formedness and check the XSLT stderr output for errors.
-
-## Development & contributions
-
-- Contributions that improve processing, fix TEI issues, or add documentation are welcome. Please open issues or pull requests on the GitHub repository.
-- If you want to extend the pipeline (e.g., add a Makefile/PowerShell script to automate transforms and server start), consider adding a small script in the project root and documenting its usage here.
-
-## Files of interest
-
-- `xslt/transform_edition.xslt` — main transform for the edition HTML
-- `xslt/transform_introduction.xslt` — introduction transform
-- `xslt/transform_literature.xslt` — bibliography transform
-- `Historie_von_Simon_zu_Trient/` — TEI package with metadata, mets, page XML
-- `html/` — generated site (open `html/edition.html`)
-
-## Contact
-
-For questions about the repository or to report issues, please use the GitHub repository issues. The source files contain provenance and metadata for specific editorial contacts where available.
 
 ---
