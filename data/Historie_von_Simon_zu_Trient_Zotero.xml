@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
-  type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.sch"
-  type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title level="m" type="main">Historie von Simon zu Trient: Forschungsbibliographie</title>
-                
-                <editor xml:id="MaH" role="scholarly_editing"
-                    ref="https://orcid.org/0000-0003-1635-9248">Marco Heiles</editor>
-                <editor xml:id="MiS" role="digital_editing"
-                    ref="https://orcid.org/0000-0002-2750-1900">Michael Schonhardt</editor>
+
+                <editor xml:id="MaH" role="scholarly_editing" ref="https://orcid.org/0000-0003-1635-9248">Marco Heiles</editor>
+                <editor xml:id="MiS" role="digital_editing" ref="https://orcid.org/0000-0002-2750-1900">Michael Schonhardt</editor>
                 <editor xml:id="SoG" role="bibliography">Sophie Elisabeth Grimm</editor>
 
                 <respStmt>
@@ -35,8 +31,10 @@
             </editionStmt>
 
             <publicationStmt>
-                <publisher> <orgName>Fachgebiet Digitale Editorik und Kulturgeschichte des
-                    Mittelalters, TU Darmstadt</orgName> </publisher>
+                <publisher>
+                    <orgName>Fachgebiet Digitale Editorik und Kulturgeschichte des
+                    Mittelalters, TU Darmstadt</orgName>
+                </publisher>
                 <pubPlace>Darmstadt</pubPlace>
                 <date when="2025">2025</date>
                 <idno type="DOI">[DOI]</idno>
@@ -84,44 +82,69 @@
 
 
             <listBibl xmlns="http://www.tei-c.org/ns/1.0">
-                <biblStruct type="bookSection"
-                    xml:id="shalev-eyniEntanglementDisentanglementVisual2016"
-                    corresp="http://zotero.org/groups/5071036/items/EZCPHLEY">
-                    <analytic>
-                        <title level="a">Entanglement and Disentanglement. Visual Expressions of
-                            Late Medieval Ashkenazi Existence</title>
-                        <author> <forename>Sarit</forename> <surname>Shalev-Eyni</surname> </author>
-                    </analytic>
+                <biblStruct type="book" xml:id="Soyer2025" corresp="http://zotero.org/groups/5071036/items/XRFU7MCU">
                     <monogr>
-                        <title level="m">Transkulturelle Verflechtungsprozesse in der
-                            Vormoderne</title>
-                        <idno type="ISBN">978-3-11-044548-0</idno>
-                        <editor> <forename>Wolfgang</forename> <surname>Drews</surname> </editor>
-                        <editor> <forename>Christian</forename> <surname>Scholl</surname> </editor>
+                        <title level="m">The Blood Libel in Medieval Antisemitism</title>
+                        <idno type="ISBN">978-1-80270-180-7</idno>
+                        <author>
+                            <forename>Franois</forename>
+                            <surname>Soyer</surname>
+                        </author>
                         <imprint>
-                            <pubPlace>Berlin/Boston</pubPlace>
-                            <biblScope unit="page">174-196</biblScope>
-                            <publisher>De Gruyter</publisher>
-                            <date>2016</date>
-                            <note type="accessed">2024-06-04T13:41:51Z</note>
-                            <note type="url"
-                                >https://www.degruyter.com/document/doi/10.1515/9783110445480-009/html</note>
+                            <pubPlace>York</pubPlace>
+                            <publisher>ARC Humanities Press</publisher>
+                            <date>2025</date>
                         </imprint>
                     </monogr>
-                    <series> <title level="s">Das Mittelalter. Perspektiven mediävistischer
-                        Forschung. Beihefte</title> </series>
                 </biblStruct>
-                <biblStruct type="book" xml:id="Holzschnitte1927"
-                    corresp="http://zotero.org/groups/5071036/items/DZ4LGECZ">
+                <biblStruct type="book" xml:id="Museo_Diocesano_Tridentino2019" corresp="http://zotero.org/groups/5071036/items/5DSX5KDU">
                     <monogr>
-                        <title level="m">4 (1927) Holzschnitte darstellend religiös-mystische
-                            Allegorien, Lebensalter, Glücksrad, Tod, Kalender, Medizin, Heiligtümer,
-                            Geschichte, Geographie, Satiren, Sittenbilder, Grotesken, Ornamente,
-                            Porträts, Wappen, Bücherzeichen, Münzen : Nr. 1783 - 2047</title>
-                        <title type="short">4 (1927) Holzschnitte darstellend religiös-mystische
-                            Allegorien, Lebensalter, Glücksrad, Tod, Kalender, Medizin, Heiligtümer,
-                            Geschichte, Geographie, Satiren, Sittenbilder, Grotesken, Ornamente,
-                            Porträts, Wappen, Bücherzeichen, Münzen</title>
+                        <title level="m">L'invenzione del Colpevole: il "caso" di Simonino da Trento dalla propaganda alla storia</title>
+                        <title type="short">L'invenzione del Colpevole</title>
+                        <idno type="ISBN">978-88-99910-26-6</idno>
+                        <idno type="callNumber">4 2022.1532</idno>
+                        <author>
+                            <name>Museo Diocesano Tridentino</name>
+                        </author>
+                        <author>
+                            <forename>Domenica</forename>
+                            <surname>Primerano</surname>
+                        </author>
+                        <author>
+                            <forename>Domizio</forename>
+                            <surname>Cattoi</surname>
+                        </author>
+                        <author>
+                            <forename>Lorenza</forename>
+                            <surname>Liandru</surname>
+                        </author>
+                        <author>
+                            <forename>Valentina</forename>
+                            <surname>Perini</surname>
+                        </author>
+                        <author>
+                            <forename>Emanuele</forename>
+                            <surname>Curzel</surname>
+                        </author>
+                        <author>
+                            <forename>Aldo</forename>
+                            <surname>Galli</surname>
+                        </author>
+                        <imprint>
+                            <pubPlace>Trento</pubPlace>
+                            <publisher>Tipografia Editrice Temi Sas</publisher>
+                            <date>2019</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="book" xml:id="Schreiber1927" corresp="http://zotero.org/groups/5071036/items/DZ4LGECZ">
+                    <monogr>
+                        <title level="m">Handbuch der Holz- und Metallschnitte des XV. Jahrhunderts. Band 4: Holzschnitte darstellend religiös-mystische Allegorien, Lebensalter, Glücksrad, Tod, Kalender, Medizin, Heiligtümer, Geschichte, Geographie, Satiren, Sittenbilder, Grotesken, Ornamente, Porträts, Wappen, Bücherzeichen, Münzen. Nr. 1783 - 2047</title>
+                        <title type="short">Schneider, Handbuch der Holz- und Metallschnitte des XV. Jahrhunderts. Band 4</title>
+                        <author>
+                            <forename>Wilhelm Ludwig</forename>
+                            <surname>Schreiber</surname>
+                        </author>
                         <imprint>
                             <date>1927</date>
                             <note type="accessed">2024-04-19T09:20:16Z</note>
@@ -129,50 +152,117 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="arefordViewerPrintedImage2010"
-                    corresp="http://zotero.org/groups/5071036/items/JHF3F6C9">
+                <biblStruct type="journalArticle" xml:id="Colombo2023" corresp="http://zotero.org/groups/5071036/items/RFHQE8SU">
+                    <analytic>
+                        <title level="a">Blood Libels between Trento and the Bodensee: Heinrich Kramer’s 1475 Mission</title>
+                        <idno type="DOI">10.1515/qufiab-2023-0013</idno>
+                        <title type="short">Blood Libels between Trento and the Bodensee</title>
+                        <author>
+                            <forename>Lorenzo</forename>
+                            <surname>Colombo</surname>
+                        </author>
+                    </analytic>
                     <monogr>
-                        <title level="m">The viewer and the printed image in late medieval
-                            Europe</title>
+                        <title level="j">Quellen und Forschungen aus italienischen Archiven und Bibliotheken</title>
+                        <idno type="ISSN">1865-8865</idno>
+                        <imprint>
+                            <biblScope unit="volume">103</biblScope>
+                            <biblScope unit="issue">1</biblScope>
+                            <biblScope unit="page">231-247</biblScope>
+                            <publisher>De Gruyter</publisher>
+                            <date>2023</date>
+                            <note type="accessed">2025-10-23T08:12:49Z</note>
+                            <note type="url">https://www.degruyterbrill.com/document/doi/10.1515/qufiab-2023-0013/html</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="bookSection" xml:id="Shalev-Eyni2016" corresp="http://zotero.org/groups/5071036/items/EZCPHLEY">
+                    <analytic>
+                        <title level="a">Entanglement and Disentanglement. Visual Expressions of Late Medieval Ashkenazi Existence</title>
+                        <idno type="DOI">10.1515/9783110445480-009</idno>
+                        <author>
+                            <forename>Sarit</forename>
+                            <surname>Shalev-Eyni</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">Transkulturelle Verflechtungsprozesse in der Vormoderne</title>
+                        <idno type="ISBN">978-3-11-044548-0</idno>
+                        <editor>
+                            <forename>Wolfgang</forename>
+                            <surname>Drews</surname>
+                        </editor>
+                        <editor>
+                            <forename>Christian</forename>
+                            <surname>Scholl</surname>
+                        </editor>
+                        <imprint>
+                            <pubPlace>Berlin/Boston</pubPlace>
+                            <biblScope unit="page">174-196</biblScope>
+                            <publisher>De Gruyter</publisher>
+                            <date>2016</date>
+                            <note type="accessed">2024-06-04T13:41:51Z</note>
+                            <note type="url">https://www.degruyter.com/document/doi/10.1515/9783110445480-009/html</note>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Das Mittelalter. Perspektiven mediävistischer Forschung. Beihefte</title>
+                    </series>
+                </biblStruct>
+                <biblStruct type="book" xml:id="Areford2010" corresp="http://zotero.org/groups/5071036/items/JHF3F6C9">
+                    <monogr>
+                        <title level="m">The viewer and the printed image in late medieval Europe</title>
                         <idno type="ISBN">978-0-7546-6762-9</idno>
-                        <author> <forename>David S.</forename> <surname>Areford</surname> </author>
+                        <author>
+                            <forename>David S.</forename>
+                            <surname>Areford</surname>
+                        </author>
                         <imprint>
                             <pubPlace>Farnham [u.a</pubPlace>
                             <publisher>Ashgate</publisher>
                             <date>2010</date>
                         </imprint>
                     </monogr>
-                    <series> <title level="s">Visual culture in early modernity</title> </series>
+                    <series>
+                        <title level="s">Visual culture in early modernity</title>
+                    </series>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="maginEttwasSagenIuden2005"
-                    corresp="http://zotero.org/groups/5071036/items/3CR4CADC">
+                <biblStruct type="bookSection" xml:id="Magin2005" corresp="http://zotero.org/groups/5071036/items/3CR4CADC">
                     <analytic>
-                        <title level="a">“Ettwas zu sagen von den iuden”. Themen und Formen
-                            antijüdischer Einblattdrucke im späten 15. Jahrhundert</title>
-                        <author> <forename>Christine</forename> <surname>Magin</surname> </author>
-                        <author> <forename>Falk</forename> <surname>Eisermann</surname> </author>
+                        <title level="a">“Ettwas zu sagen von den iuden”. Themen und Formen antijüdischer Einblattdrucke im späten 15. Jahrhundert</title>
+                        <idno type="DOI">10.1163/9789047416265_017</idno>
+                        <author>
+                            <forename>Christine</forename>
+                            <surname>Magin</surname>
+                        </author>
+                        <author>
+                            <forename>Falk</forename>
+                            <surname>Eisermann</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">Frömmigkeit - Theologie - Frömmigkeitstheologie.
-                            Contributions to European Church History</title>
+                        <title level="m">Frömmigkeit - Theologie - Frömmigkeitstheologie. Contributions to European Church History</title>
                         <idno type="ISBN">978-90-474-1626-5</idno>
                         <imprint>
                             <biblScope unit="page">173-194</biblScope>
                             <publisher>Brill</publisher>
                             <date>2005</date>
                             <note type="accessed">2024-04-17T15:33:38Z</note>
-                            <note type="url"
-                                >https://brill.com/display/book/9789047416265/B9789047416265_s017.xml</note>
+                            <note type="url">https://brill.com/display/book/9789047416265/B9789047416265_s017.xml</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="journalArticle" xml:id="maginTwoJewishBroadsides2009"
-                    corresp="http://zotero.org/groups/5071036/items/2QKZE4XK">
+                <biblStruct type="journalArticle" xml:id="Magin2009" corresp="http://zotero.org/groups/5071036/items/2QKZE4XK">
                     <analytic>
-                        <title level="a">Two Anti-Jewish Broadsides from the Late Fifteenth
-                            Century</title>
-                        <author> <forename>Christine</forename> <surname>Magin</surname> </author>
-                        <author> <forename>Falk</forename> <surname>Eisermann</surname> </author>
+                        <title level="a">Two Anti-Jewish Broadsides from the Late Fifteenth Century</title>
+                        <author>
+                            <forename>Christine</forename>
+                            <surname>Magin</surname>
+                        </author>
+                        <author>
+                            <forename>Falk</forename>
+                            <surname>Eisermann</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="j">Studies in the History of Art</title>
@@ -180,20 +270,21 @@
                         <imprint>
                             <biblScope unit="volume">75</biblScope>
                             <biblScope unit="page">190-203</biblScope>
+                            <publisher>National Gallery of Art</publisher>
                             <date>2009</date>
                             <note type="accessed">2024-04-17T14:57:18Z</note>
                             <note type="url">https://www.jstor.org/stable/42622518</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="thesis" xml:id="bolpagniGiovanniMattiaTiberino2012"
-                    corresp="http://zotero.org/groups/5071036/items/DKUQYCQG">
+                <biblStruct type="thesis" xml:id="Bolpagni2012" corresp="http://zotero.org/groups/5071036/items/DKUQYCQG">
                     <monogr>
-                        <title level="m">Giovanni Mattia Tiberino e la Passio beati Simonis pueri
-                            Tridentini: Edizione e commento</title>
-                        <title type="short">GIOVANNI MATTIA TIBERINO E LA PASSIO BEATI SIMONIS PUERI
-                            TRIDENTINI</title>
-                        <author> <forename>Gaia</forename> <surname>Bolpagni</surname> </author>
+                        <title level="m">Giovanni Mattia Tiberino e la Passio beati Simonis pueri Tridentini: Edizione e commento</title>
+                        <title type="short">GIOVANNI MATTIA TIBERINO E LA PASSIO BEATI SIMONIS PUERI TRIDENTINI</title>
+                        <author>
+                            <forename>Gaia</forename>
+                            <surname>Bolpagni</surname>
+                        </author>
                         <imprint>
                             <date>2012</date>
                             <note type="accessed">2024-02-26T14:02:43Z</note>
@@ -202,11 +293,13 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="encyclopediaArticle" xml:id="luflingKunneAlbrecht1982"
-                    corresp="http://zotero.org/groups/5071036/items/GGNFZFTW">
+                <biblStruct type="encyclopediaArticle" xml:id="Lüfling1982" corresp="http://zotero.org/groups/5071036/items/GGNFZFTW">
                     <analytic>
                         <title level="a">Kunne, Albrecht</title>
-                        <author> <forename>Hans</forename> <surname>Lüfling</surname> </author>
+                        <author>
+                            <forename>Hans</forename>
+                            <surname>Lüfling</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Neue Deutsche Biographie</title>
@@ -215,22 +308,28 @@
                             <biblScope unit="volume">13</biblScope>
                             <biblScope unit="page">299</biblScope>
                             <date>1982</date>
-                            <note type="url"
-                                >https://www.deutsche-biographie.de/pnd119107228.html</note>
+                            <note type="url">https://www.deutsche-biographie.de/pnd119107228.html</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="quaglioniInquisitionsverfahrenGegenJuden2003"
-                    corresp="http://zotero.org/groups/5071036/items/JVICNNZC">
+                <biblStruct type="bookSection" xml:id="Quaglioni2003" corresp="http://zotero.org/groups/5071036/items/JVICNNZC">
                     <analytic>
-                        <title level="a">Das Inquisitionsverfahren gegen die Juden von Trient
-                            (1475–1478)</title>
-                        <author> <forename>Diego</forename> <surname>Quaglioni</surname> </author>
+                        <title level="a">Das Inquisitionsverfahren gegen die Juden von Trient (1475–1478)</title>
+                        <author>
+                            <forename>Diego</forename>
+                            <surname>Quaglioni</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Ritualmord. Legenden in der europäischen Geschichte</title>
-                        <editor> <forename>Susanna</forename> <surname>Buttaroni</surname> </editor>
-                        <editor> <forename>Stanislaw</forename> <surname>Musial</surname> </editor>
+                        <editor>
+                            <forename>Susanna</forename>
+                            <surname>Buttaroni</surname>
+                        </editor>
+                        <editor>
+                            <forename>Stanislaw</forename>
+                            <surname>Musial</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Wien u.a.</pubPlace>
                             <biblScope unit="page">85-130</biblScope>
@@ -238,16 +337,20 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="erbZurErforschungEuropaischen1993"
-                    corresp="http://zotero.org/groups/5071036/items/TIP33U3U">
+                <biblStruct type="bookSection" xml:id="Erb1993" corresp="http://zotero.org/groups/5071036/items/TIP33U3U">
                     <analytic>
-                        <title level="a">Zur Erforschung der europäischen
-                            Ritualmordbeschuldigungen</title>
-                        <author> <forename>Rainer</forename> <surname>Erb</surname> </author>
+                        <title level="a">Zur Erforschung der europäischen Ritualmordbeschuldigungen</title>
+                        <author>
+                            <forename>Rainer</forename>
+                            <surname>Erb</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Die Legende vom Ritualmord</title>
-                        <editor> <forename>Rainer</forename> <surname>Erb</surname> </editor>
+                        <editor>
+                            <forename>Rainer</forename>
+                            <surname>Erb</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Berlin</pubPlace>
                             <publisher>Metropol</publisher>
@@ -255,17 +358,24 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="espositoStereotypRitualmordesTrienter2003"
-                    corresp="http://zotero.org/groups/5071036/items/2AJF4QV2">
+                <biblStruct type="bookSection" xml:id="Esposito2003" corresp="http://zotero.org/groups/5071036/items/2AJF4QV2">
                     <analytic>
-                        <title level="a">Das Stereotyp des Ritualmordes in den Trienter Prozessen
-                            und die Verehrung des „Seligen“ Si-mone</title>
-                        <author> <forename>Anna</forename> <surname>Esposito</surname> </author>
+                        <title level="a">Das Stereotyp des Ritualmordes in den Trienter Prozessen und die Verehrung des „Seligen“ Si-mone</title>
+                        <author>
+                            <forename>Anna</forename>
+                            <surname>Esposito</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Ritualmord. Legenden in der europäischen Geschichte</title>
-                        <editor> <forename>Susanna</forename> <surname>Buttaroni</surname> </editor>
-                        <editor> <forename>Stanislaw</forename> <surname>Musial</surname> </editor>
+                        <editor>
+                            <forename>Susanna</forename>
+                            <surname>Buttaroni</surname>
+                        </editor>
+                        <editor>
+                            <forename>Stanislaw</forename>
+                            <surname>Musial</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Wien u.a.</pubPlace>
                             <biblScope unit="page">131-172</biblScope>
@@ -273,16 +383,24 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="erbRitualmord1995"
-                    corresp="http://zotero.org/groups/5071036/items/6976CRZ7">
+                <biblStruct type="bookSection" xml:id="Erb1995" corresp="http://zotero.org/groups/5071036/items/6976CRZ7">
                     <analytic>
                         <title level="a">Der "Ritualmord"</title>
-                        <author> <forename>Rainer</forename> <surname>Erb</surname> </author>
+                        <author>
+                            <forename>Rainer</forename>
+                            <surname>Erb</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Antisemitismus. Vorurteile und Mythen</title>
-                        <editor> <forename>Julius</forename> <surname>Schoeps</surname> </editor>
-                        <editor> <forename>Joachim</forename> <surname>Schlör</surname> </editor>
+                        <editor>
+                            <forename>Julius</forename>
+                            <surname>Schoeps</surname>
+                        </editor>
+                        <editor>
+                            <forename>Joachim</forename>
+                            <surname>Schlör</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>München</pubPlace>
                             <biblScope unit="page">74-79</biblScope>
@@ -290,12 +408,13 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="journalArticle" xml:id="shoepsJustizfolterUndGestandnis1977"
-                    corresp="http://zotero.org/groups/5071036/items/ANA8RAS5">
+                <biblStruct type="journalArticle" xml:id="Shoeps1977" corresp="http://zotero.org/groups/5071036/items/ANA8RAS5">
                     <analytic>
-                        <title level="a">Justizfolter und Geständnis. Der Trienter Ritualmordprozeß
-                            von 1475</title>
-                        <author> <forename>Julius</forename> <surname>Shoeps</surname> </author>
+                        <title level="a">Justizfolter und Geständnis. Der Trienter Ritualmordprozeß von 1475</title>
+                        <author>
+                            <forename>Julius</forename>
+                            <surname>Shoeps</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="j">Zeitschrift für Religions- und Geistesgeschichte</title>
@@ -307,16 +426,20 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="erbRitualmordbeschuldigung2010"
-                    corresp="http://zotero.org/groups/5071036/items/5QXEQHSS">
+                <biblStruct type="bookSection" xml:id="Erb2010" corresp="http://zotero.org/groups/5071036/items/5QXEQHSS">
                     <analytic>
                         <title level="a">Ritualmordbeschuldigung</title>
-                        <author> <forename>Rainer</forename> <surname>Erb</surname> </author>
+                        <author>
+                            <forename>Rainer</forename>
+                            <surname>Erb</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">Handbuch des Antisemitismus, Judenfeindschaft in Geschichte
-                            und Gegenwart</title>
-                        <editor> <forename>Wolfgang</forename> <surname>Benz</surname> </editor>
+                        <title level="m">Handbuch des Antisemitismus, Judenfeindschaft in Geschichte und Gegenwart</title>
+                        <editor>
+                            <forename>Wolfgang</forename>
+                            <surname>Benz</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Berlin/New York</pubPlace>
                             <biblScope unit="volume">3</biblScope>
@@ -324,32 +447,42 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="erbRitualmordlegendeAnfangenBis2003"
-                    corresp="http://zotero.org/groups/5071036/items/NH45BHMF">
+                <biblStruct type="bookSection" xml:id="Erb2003" corresp="http://zotero.org/groups/5071036/items/NH45BHMF">
                     <analytic>
-                        <title level="a">Die Ritualmordlegende: Von den Anfängen bis ins 20.
-                            Jahrhundert</title>
-                        <author> <forename>Rainer</forename> <surname>Erb</surname> </author>
+                        <title level="a">Die Ritualmordlegende: Von den Anfängen bis ins 20. Jahrhundert</title>
+                        <author>
+                            <forename>Rainer</forename>
+                            <surname>Erb</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Ritualmord. Legenden in der europäischen Geschichte</title>
-                        <editor> <forename>Susanna</forename> <surname>Buttaroni</surname> </editor>
-                        <editor> <forename>Stnislaw</forename> <surname>Musial</surname> </editor>
+                        <editor>
+                            <forename>Susanna</forename>
+                            <surname>Buttaroni</surname>
+                        </editor>
+                        <editor>
+                            <forename>Stnislaw</forename>
+                            <surname>Musial</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Wien u.a.</pubPlace>
                             <date>2003</date>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="bowdEveryonesLipsHumists2012"
-                    corresp="http://zotero.org/groups/5071036/items/RIN3K2JK">
+                <biblStruct type="book" xml:id="Bowd2012" corresp="http://zotero.org/groups/5071036/items/RIN3K2JK">
                     <monogr>
-                        <title level="m">„On Everyone’s Lips“. Humists, Jews, and the Tale of Simon
-                            of Trent</title>
-                        <editor> <forename>Stephen</forename> <surname>Bowd</surname> </editor>
+                        <title level="m">„On Everyone’s Lips“. Humists, Jews, and the Tale of Simon of Trent</title>
+                        <editor>
+                            <forename>Stephen</forename>
+                            <surname>Bowd</surname>
+                        </editor>
                         <respStmt>
                             <resp>translator</resp>
-                            <persName> <forename>J. Donald</forename> <surname>Cullington</surname>
+                            <persName>
+                                <forename>J. Donald</forename>
+                                <surname>Cullington</surname>
                             </persName>
                         </respStmt>
                         <imprint>
@@ -357,20 +490,25 @@
                             <date>2012</date>
                         </imprint>
                     </monogr>
-                    <series> <title level="s">Medieval and Renaiassance Texts and Studies</title>
-                        <biblScope unit="volume">418</biblScope> </series>
+                    <series>
+                        <title level="s">Medieval and Renaiassance Texts and Studies</title>
+                        <biblScope unit="volume">418</biblScope>
+                    </series>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="periniIconografiaSimoninoModelli2019"
-                    corresp="http://zotero.org/groups/5071036/items/5WSG6RU6">
+                <biblStruct type="bookSection" xml:id="Perini2019" corresp="http://zotero.org/groups/5071036/items/5WSG6RU6">
                     <analytic>
-                        <title level="a">Iconografia del Simonino: modelli, varianti,
-                            transformazoni</title>
-                        <author> <forename>Valentini</forename> <surname>Perini</surname> </author>
+                        <title level="a">Iconografia del Simonino: modelli, varianti, transformazoni</title>
+                        <author>
+                            <forename>Valentini</forename>
+                            <surname>Perini</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">L’invencione del colpevole. Il ‘caso’ di Simonino da Trento
-                            dalla propaganda alla storia</title>
-                        <editor> <forename>Domenica</forename> <surname>Primerano</surname> </editor>
+                        <title level="m">L’invencione del colpevole. Il ‘caso’ di Simonino da Trento dalla propaganda alla storia</title>
+                        <editor>
+                            <forename>Domenica</forename>
+                            <surname>Primerano</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Trient</pubPlace>
                             <biblScope unit="page">265-289</biblScope>
@@ -378,28 +516,33 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="randoJohannesHinderbach141814862008"
-                    corresp="http://zotero.org/groups/5071036/items/MCBVSAUH">
+                <biblStruct type="book" xml:id="Rando2008" corresp="http://zotero.org/groups/5071036/items/MCBVSAUH">
                     <monogr>
-                        <title level="m">Johannes Hinderbach (1418–1486). Eine
-                            „Selbst“-Biographie</title>
-                        <author> <forename>Daniela</forename> <surname>Rando</surname> </author>
+                        <title level="m">Johannes Hinderbach (1418–1486). Eine „Selbst“-Biographie</title>
+                        <author>
+                            <forename>Daniela</forename>
+                            <surname>Rando</surname>
+                        </author>
                         <imprint>
                             <pubPlace>Berlin</pubPlace>
                             <date>2008</date>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="espositoRuoloDestinoDonne2019"
-                    corresp="http://zotero.org/groups/5071036/items/A8PZXSAS">
+                <biblStruct type="bookSection" xml:id="Esposito2019" corresp="http://zotero.org/groups/5071036/items/A8PZXSAS">
                     <analytic>
                         <title level="a">Ruolo e destino delle donne ebree /1475–1476)</title>
-                        <author> <forename>Anna</forename> <surname>Esposito</surname> </author>
+                        <author>
+                            <forename>Anna</forename>
+                            <surname>Esposito</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">L’invencione del colpevole. Il ‘caso’ di Simonino da Trento
-                            dalla propaganda alla storia</title>
-                        <editor> <forename>Domenica</forename> <surname>Primerano</surname> </editor>
+                        <title level="m">L’invencione del colpevole. Il ‘caso’ di Simonino da Trento dalla propaganda alla storia</title>
+                        <editor>
+                            <forename>Domenica</forename>
+                            <surname>Primerano</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Trient</pubPlace>
                             <biblScope unit="page">59-65</biblScope>
@@ -407,10 +550,12 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="MedievalJusticeTrial1989"
-                    corresp="http://zotero.org/groups/5071036/items/MAWGQG9J">
+                <biblStruct type="book" xml:id="N._N.1989" corresp="http://zotero.org/groups/5071036/items/MAWGQG9J">
                     <monogr>
                         <title level="m">Medieval Justice. The Trial of the Jews of Trent</title>
+                        <author>
+                            <name>N. N.</name>
+                        </author>
                         <imprint>
                             <pubPlace>New York</pubPlace>
                             <publisher>The Museum</publisher>
@@ -418,20 +563,24 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="trevisansemiHarugeTrientAssassinati1992"
-                    corresp="http://zotero.org/groups/5071036/items/9QMX9S7R">
+                <biblStruct type="bookSection" xml:id="Trevisan_Semi1992" corresp="http://zotero.org/groups/5071036/items/9QMX9S7R">
                     <analytic>
-                        <title level="a">Gli Haruge trient (gli assassinati di Trento) e lo herem di
-                            Trento nella tradizione ebraica</title>
-                        <author> <forename>Emanuela</forename> <surname>Trevisan Semi</surname>
+                        <title level="a">Gli Haruge trient (gli assassinati di Trento) e lo herem di Trento nella tradizione ebraica</title>
+                        <author>
+                            <forename>Emanuela</forename>
+                            <surname>Trevisan Semi</surname>
                         </author>
                     </analytic>
                     <monogr>
-                        <title level="m">: Il principe vescovo Johannes Hinderbach (1465-1486) fra
-                            tardo Medioevo e Umanesimo. Atti del Convegno promosso dalla Biblioteca
-                            Comunale di Trento, 2-6 ottobre 1989</title>
-                        <editor> <forename>Rogger</forename> <surname>Igino</surname> </editor>
-                        <editor> <forename>Marco</forename> <surname>Bellabarba</surname> </editor>
+                        <title level="m">: Il principe vescovo Johannes Hinderbach (1465-1486) fra tardo Medioevo e Umanesimo. Atti del Convegno promosso dalla Biblioteca Comunale di Trento, 2-6 ottobre 1989</title>
+                        <editor>
+                            <forename>Rogger</forename>
+                            <surname>Igino</surname>
+                        </editor>
+                        <editor>
+                            <forename>Marco</forename>
+                            <surname>Bellabarba</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Bologna</pubPlace>
                             <biblScope unit="page">407-416</biblScope>
@@ -439,18 +588,16 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="journalArticle" xml:id="defreitasmoraisCicloIconograficoBeato2019"
-                    corresp="http://zotero.org/groups/5071036/items/NP8MKZTQ">
+                <biblStruct type="journalArticle" xml:id="de_Freitas_Morais2019" corresp="http://zotero.org/groups/5071036/items/NP8MKZTQ">
                     <analytic>
-                        <title level="a">O ciclo iconográfico do beato Simão de Trento e a difusão
-                            do culto ao menino mártir no final do século XV</title>
-                        <author> <forename>Vinícus</forename> <surname>de Freitas Morais</surname>
+                        <title level="a">O ciclo iconográfico do beato Simão de Trento e a difusão do culto ao menino mártir no final do século XV</title>
+                        <author>
+                            <forename>Vinícus</forename>
+                            <surname>de Freitas Morais</surname>
                         </author>
                     </analytic>
                     <monogr>
-                        <title level="j">XII Encontro Internacional de Estudos Medievais, III:
-                            Seminario Internacional sobre Hagiografia Medieval = Anais do Encontros
-                            Internacionais de Estudos Medievais</title>
+                        <title level="j">XII Encontro Internacional de Estudos Medievais, III: Seminario Internacional sobre Hagiografia Medieval = Anais do Encontros Internacionais de Estudos Medievais</title>
                         <imprint>
                             <biblScope unit="volume">3</biblScope>
                             <biblScope unit="issue">1</biblScope>
@@ -459,12 +606,12 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="journalArticle" xml:id="astleithnerHistorieSimonTrient2021"
-                    corresp="http://zotero.org/groups/5071036/items/AZ2DJQH5">
+                <biblStruct type="journalArticle" xml:id="Astleithner2021" corresp="http://zotero.org/groups/5071036/items/AZ2DJQH5">
                     <analytic>
-                        <title level="a">Die Historie von Simon von Trient – antijudaistische „Fake
-                            News“ im späten 15. Jahrhundert</title>
-                        <author> <forename>Theresa</forename> <surname>Astleithner</surname>
+                        <title level="a">Die Historie von Simon von Trient – antijudaistische „Fake News“ im späten 15. Jahrhundert</title>
+                        <author>
+                            <forename>Theresa</forename>
+                            <surname>Astleithner</surname>
                         </author>
                     </analytic>
                     <monogr>
@@ -477,46 +624,46 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="spenglerSihmLeidenGheglicht2002"
-                    corresp="http://zotero.org/groups/5071036/items/FZ5IE2CZ">
+                <biblStruct type="bookSection" xml:id="Spengler2002" corresp="http://zotero.org/groups/5071036/items/FZ5IE2CZ">
                     <analytic>
-                        <title level="a">das ein sihm leiden gheglicht ist der marter vnsers heren.
-                            Legendenbildung um Simon von Trient – ein Ritualmordkonstrukt</title>
-                        <author> <forename>Nicole</forename> <surname>Spengler</surname> </author>
+                        <title level="a">das ein sihm leiden gheglicht ist der marter vnsers heren. Legendenbildung um Simon von Trient – ein Ritualmordkonstrukt</title>
+                        <author>
+                            <forename>Nicole</forename>
+                            <surname>Spengler</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">Juden in der deutschen Literatur des Mittelalters.
-                            Religiöse Konzepte – Feindbilder – Rechtfertigungen</title>
+                        <title level="m">Juden in der deutschen Literatur des Mittelalters. Religiöse Konzepte – Feindbilder – Rechtfertigungen</title>
                         <idno type="ISBN">978-3-484-10846-2</idno>
                         <imprint>
                             <pubPlace>Tübigen</pubPlace>
                             <biblScope unit="page">211-232</biblScope>
                             <date>2002</date>
-                            <note type="url"
-                                >https://doi-1org-100c00eoo00d5.emedien3.sub.uni-hamburg.de/10.1515/9783110933048</note>
+                            <note type="url">https://doi-1org-100c00eoo00d5.emedien3.sub.uni-hamburg.de/10.1515/9783110933048</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="schulzeJudenDeutschenLiteratur2002"
-                    corresp="http://zotero.org/groups/5071036/items/Q3KN2G53">
+                <biblStruct type="book" xml:id="Schulze2002" corresp="http://zotero.org/groups/5071036/items/Q3KN2G53">
                     <monogr>
-                        <title level="m">Juden in der deutschen Literatur des Mittelalters.
-                            Religiöse Konzepte – Feindbilder – Rechtfertigungen</title>
+                        <title level="m">Juden in der deutschen Literatur des Mittelalters. Religiöse Konzepte – Feindbilder – Rechtfertigungen</title>
                         <idno type="ISBN">978-3-484-10846-2</idno>
-                        <author> <forename>Ursula</forename> <surname>Schulze</surname> </author>
+                        <author>
+                            <forename>Ursula</forename>
+                            <surname>Schulze</surname>
+                        </author>
                         <imprint>
                             <pubPlace>Tübigen</pubPlace>
                             <date>2002</date>
-                            <note type="url"
-                                >https://doi-1org-100c00eoo00d5.emedien3.sub.uni-hamburg.de/10.1515/9783110933048</note>
+                            <note type="url">https://doi-1org-100c00eoo00d5.emedien3.sub.uni-hamburg.de/10.1515/9783110933048</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="encyclopediaArticle" xml:id="fasbenderSimonTrient2012"
-                    corresp="http://zotero.org/groups/5071036/items/BF6QSEKB">
+                <biblStruct type="encyclopediaArticle" xml:id="Fasbender2012" corresp="http://zotero.org/groups/5071036/items/BF6QSEKB">
                     <analytic>
                         <title level="a">Simon von Trient</title>
-                        <author> <forename>Christoph</forename> <surname>Fasbender</surname>
+                        <author>
+                            <forename>Christoph</forename>
+                            <surname>Fasbender</surname>
                         </author>
                     </analytic>
                     <monogr>
@@ -528,61 +675,53 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="vondomenicaprimeranoLinvencioneColpevoleCaso2019"
-                    corresp="http://zotero.org/groups/5071036/items/TVUQM3Q2">
+                <biblStruct type="book" xml:id="Knowles_Frazier2015" corresp="http://zotero.org/groups/5071036/items/R8EHE7EG">
                     <monogr>
-                        <title level="m">L’invencione del colpevole. Il ‘caso’ di Simonino da Trento
-                            dalla propaganda alla storia</title>
-                        <editor> <name>Von Domenica Primerano</name> </editor>
-                        <imprint>
-                            <pubPlace>Trient</pubPlace>
-                            <date>2019</date>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
-                <biblStruct type="book" xml:id="knowlesfrazierSaintManuscriptPrint2015"
-                    corresp="http://zotero.org/groups/5071036/items/R8EHE7EG">
-                    <monogr>
-                        <title level="m">The Saint Between Manuscript and Print. Italy,
-                            1400-1600</title>
-                        <author> <forename>Alison</forename> <surname>Knowles Frazier</surname> </author>
+                        <title level="m">The Saint Between Manuscript and Print. Italy, 1400-1600</title>
+                        <author>
+                            <forename>Alison</forename>
+                            <surname>Knowles Frazier</surname>
+                        </author>
                         <imprint>
                             <date>2015</date>
                         </imprint>
                     </monogr>
-                    <series> <title level="s">CRRS Essays and Studies</title> <biblScope
-                        unit="volume">37</biblScope> </series>
+                    <series>
+                        <title level="s">CRRS Essays and Studies</title>
+                        <biblScope unit="volume">37</biblScope>
+                    </series>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="bowdTalesTrentConstruction2015"
-                    corresp="http://zotero.org/groups/5071036/items/5TQ8CS87">
+                <biblStruct type="bookSection" xml:id="Bowd2015" corresp="http://zotero.org/groups/5071036/items/5TQ8CS87">
                     <analytic>
-                        <title level="a">Tales from Trent. The construction of “Saint” Simon in
-                            manuscript and print, 475-1511</title>
-                        <author> <forename>Stephen D.</forename> <surname>Bowd</surname> </author>
+                        <title level="a">Tales from Trent. The construction of “Saint” Simon in manuscript and print, 475-1511</title>
+                        <author>
+                            <forename>Stephen D.</forename>
+                            <surname>Bowd</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">The Saint Between Manuscript and Print. Italy,
-                            1400-1600</title>
+                        <title level="m">The Saint Between Manuscript and Print. Italy, 1400-1600</title>
                         <imprint>
                             <pubPlace>Toronto</pubPlace>
                             <biblScope unit="page">183-218</biblScope>
                             <date>2015</date>
                         </imprint>
                     </monogr>
-                    <series> <title level="s">CRRS Essays and Studies</title> <biblScope
-                        unit="volume">37</biblScope> </series>
+                    <series>
+                        <title level="s">CRRS Essays and Studies</title>
+                        <biblScope unit="volume">37</biblScope>
+                    </series>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="hamsterPrimarliteraturSimonTrient1991"
-                    corresp="http://zotero.org/groups/5071036/items/JETAUNSX">
+                <biblStruct type="bookSection" xml:id="Hamster1991" corresp="http://zotero.org/groups/5071036/items/JETAUNSX">
                     <analytic>
-                        <title level="a">Primärliteratur zu Simon von Trient: Drucke und
-                            Handschriften von 1475 bis 1500 mit Standortnachweisen</title>
-                        <author> <forename>Frank</forename> <surname>Hamster</surname> </author>
+                        <title level="a">Primärliteratur zu Simon von Trient: Drucke und Handschriften von 1475 bis 1500 mit Standortnachweisen</title>
+                        <author>
+                            <forename>Frank</forename>
+                            <surname>Hamster</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">Per Padre Frumenzio Ghetta. Scritti di storia e cultura
-                            ladina, trentina, tirolese e nota bio-bibliografica. In occasione del
-                            settantesimo compleanno</title>
+                        <title level="m">Per Padre Frumenzio Ghetta. Scritti di storia e cultura ladina, trentina, tirolese e nota bio-bibliografica. In occasione del settantesimo compleanno</title>
                         <imprint>
                             <pubPlace>Trient</pubPlace>
                             <biblScope unit="page">307-334</biblScope>
@@ -590,51 +729,59 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="vigodifassaPadreFrumenzioGhetta1991"
-                    corresp="http://zotero.org/groups/5071036/items/I69TRCQS">
+                <biblStruct type="book" xml:id="Biblioteca_comunale_di_Trento_e_dell_Istitut_cultural_ladin_Majon_di_Fashegn_VichVigo_di_Fassa1991" corresp="http://zotero.org/groups/5071036/items/I69TRCQS">
                     <monogr>
-                        <title level="m">Per Padre Frumenzio Ghetta. Scritti di storia e cultura
-                            ladina, trentina, tirolese e nota bio-bibliografica. In occasione del
-                            settantesimo compleanno</title>
-                        <editor> <name>Biblioteca comunale di Trento e dell’Istitut cultural ladin
-                            ‘Majon di Fashegn’ Vich/Vigo di Fassa</name> </editor>
+                        <title level="m">Per Padre Frumenzio Ghetta. Scritti di storia e cultura ladina, trentina, tirolese e nota bio-bibliografica. In occasione del settantesimo compleanno</title>
+                        <editor>
+                            <name>Biblioteca comunale di Trento e dell’Istitut cultural ladin ‘Majon di Fashegn’ Vich/Vigo di Fassa</name>
+                        </editor>
                         <imprint>
                             <pubPlace>Trient</pubPlace>
                             <date>1991</date>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="espositoProcessiControEbrei2008"
-                    corresp="http://zotero.org/groups/5071036/items/M2WGZQHK">
+                <biblStruct type="book" xml:id="Esposito2008" corresp="http://zotero.org/groups/5071036/items/M2WGZQHK">
                     <monogr>
-                        <title level="m">Processi contro gli Ebrei di Trento (1475-1478). Bd. 2. I
-                            processi alle donne (1475-1476)</title>
-                        <editor> <forename>Anna</forename> <surname>Esposito</surname> </editor>
-                        <editor> <forename>Diego</forename> <surname>Quaglioni</surname> </editor>
+                        <title level="m">Processi contro gli Ebrei di Trento (1475-1478). Bd. 2. I processi alle donne (1475-1476)</title>
+                        <editor>
+                            <forename>Anna</forename>
+                            <surname>Esposito</surname>
+                        </editor>
+                        <editor>
+                            <forename>Diego</forename>
+                            <surname>Quaglioni</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Padova</pubPlace>
                             <date>2008</date>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="espositoProcessiControEbrei1990"
-                    corresp="http://zotero.org/groups/5071036/items/4DRSRXHZ">
+                <biblStruct type="book" xml:id="Esposito1990" corresp="http://zotero.org/groups/5071036/items/4DRSRXHZ">
                     <monogr>
-                        <title level="m">Processi contro gli Ebrei di Trento (1475-1478). Bd. 1. I
-                            processi del 1475</title>
-                        <editor> <forename>Anna</forename> <surname>Esposito</surname> </editor>
-                        <editor> <forename>Diego</forename> <surname>Quaglioni</surname> </editor>
+                        <title level="m">Processi contro gli Ebrei di Trento (1475-1478). Bd. 1. I processi del 1475</title>
+                        <editor>
+                            <forename>Anna</forename>
+                            <surname>Esposito</surname>
+                        </editor>
+                        <editor>
+                            <forename>Diego</forename>
+                            <surname>Quaglioni</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Padova</pubPlace>
                             <date>1990</date>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="hsiaTrient1475Geschichte1997"
-                    corresp="http://zotero.org/groups/5071036/items/QGDUFVSA">
+                <biblStruct type="book" xml:id="Hsia1997" corresp="http://zotero.org/groups/5071036/items/QGDUFVSA">
                     <monogr>
                         <title level="m">Trient 1475. Geschichte eines Rituamordprozesses</title>
-                        <author> <forename>Ronnie Po-Chia</forename> <surname>Hsia</surname> </author>
+                        <author>
+                            <forename>Ronnie Po-Chia</forename>
+                            <surname>Hsia</surname>
+                        </author>
                         <imprint>
                             <pubPlace>Frankfurt a. M.</pubPlace>
                             <publisher>Fischer</publisher>
@@ -642,11 +789,13 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="hsiaTrent1475Stories1992"
-                    corresp="http://zotero.org/groups/5071036/items/VGBJPWK2">
+                <biblStruct type="book" xml:id="Hsia1992" corresp="http://zotero.org/groups/5071036/items/VGBJPWK2">
                     <monogr>
                         <title level="m">Trent 1475. Stories of a ritual murder trial</title>
-                        <author> <forename>Ronnie Po-Chia</forename> <surname>Hsia</surname> </author>
+                        <author>
+                            <forename>Ronnie Po-Chia</forename>
+                            <surname>Hsia</surname>
+                        </author>
                         <imprint>
                             <pubPlace>New Haven</pubPlace>
                             <publisher>Yale UP</publisher>
@@ -654,16 +803,16 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="encyclopediaArticle" xml:id="worstbrockSimonTrient2004"
-                    corresp="http://zotero.org/groups/5071036/items/C594EJQG">
+                <biblStruct type="encyclopediaArticle" xml:id="Worstbrock2004" corresp="http://zotero.org/groups/5071036/items/C594EJQG">
                     <analytic>
                         <title level="a">Simon von Trient</title>
-                        <author> <forename>Franz Josef</forename> <surname>Worstbrock</surname>
+                        <author>
+                            <forename>Franz Josef</forename>
+                            <surname>Worstbrock</surname>
                         </author>
                     </analytic>
                     <monogr>
-                        <title level="m">Die deutsche Literatur des Mittelalters -
-                            Verfasserlexikon</title>
+                        <title level="m">Die deutsche Literatur des Mittelalters - Verfasserlexikon</title>
                         <imprint>
                             <pubPlace>Berlin; New York</pubPlace>
                             <biblScope unit="volume">11</biblScope>
@@ -673,61 +822,65 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="encyclopediaArticle" xml:id="worstbrockSimonTrient1992"
-                    corresp="http://zotero.org/groups/5071036/items/JXNUQ8Z7">
+                <biblStruct type="encyclopediaArticle" xml:id="Worstbrock1992" corresp="http://zotero.org/groups/5071036/items/JXNUQ8Z7">
                     <analytic>
                         <title level="a">Simon von Trient</title>
-                        <author> <forename>Franz Josef</forename> <surname>Worstbrock</surname>
+                        <author>
+                            <forename>Franz Josef</forename>
+                            <surname>Worstbrock</surname>
                         </author>
                     </analytic>
                     <monogr>
-                        <title level="m">Die deutsche Literatur des Mittelalters.
-                            Verfasserlexikon</title>
+                        <title level="m">Die deutsche Literatur des Mittelalters. Verfasserlexikon</title>
                         <imprint>
                             <pubPlace>Berlin; New York</pubPlace>
                             <biblScope unit="volume">8</biblScope>
                             <biblScope unit="page">1260-1275</biblScope>
                             <publisher>De Gruyter</publisher>
                             <date>1992</date>
-                            <note type="url"
-                                >https://www-1degruyter-1com-100c00eoo0090.emedien3.sub.uni-hamburg.de/database/VDBO/entry/vdbo.vlma.4015/html</note>
+                            <note type="url">https://www-1degruyter-1com-100c00eoo0090.emedien3.sub.uni-hamburg.de/database/VDBO/entry/vdbo.vlma.4015/html</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="book" xml:id="donatiLinizioStampaTrente1952"
-                    corresp="http://zotero.org/groups/5071036/items/4FQZC53X">
+                <biblStruct type="book" xml:id="Donati1952" corresp="http://zotero.org/groups/5071036/items/4FQZC53X">
                     <monogr>
                         <title level="m">L’inizio della stampa a Trente ed il Beato Simone</title>
-                        <author> <forename>Lamberto</forename> <surname>Donati</surname> </author>
+                        <author>
+                            <forename>Lamberto</forename>
+                            <surname>Donati</surname>
+                        </author>
                         <imprint>
                             <pubPlace>Trient</pubPlace>
                             <date>1952</date>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="webpage" xml:id="horzAggressionenUndAengste2016"
-                    corresp="http://zotero.org/groups/5071036/items/VAF85UET">
+                <biblStruct type="webpage" xml:id="Horz2016" corresp="http://zotero.org/groups/5071036/items/VAF85UET">
                     <analytic>
                         <title level="a">Aggressionen und Ängste. Judenhass</title>
-                        <author> <forename>Andrea</forename> <surname>Horz</surname> </author>
+                        <author>
+                            <forename>Andrea</forename>
+                            <surname>Horz</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">Musikleben des Spätmittelalters in der Region
-                            Österreich</title>
+                        <title level="m">Musikleben des Spätmittelalters in der Region Österreich</title>
                         <imprint>
                             <date>2016</date>
                             <note type="accessed">2023-05-23T21:22:50Z</note>
-                            <note type="url"
-                                >https://musical-life.net/essays/aggressionen-und-angste-judenhass</note>
+                            <note type="url">https://musical-life.net/essays/aggressionen-und-angste-judenhass</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="teterBloodLibelTrail2020"
-                    corresp="http://zotero.org/groups/5071036/items/WNTZ4C3W">
+                <biblStruct type="bookSection" xml:id="Teter2020" corresp="http://zotero.org/groups/5071036/items/WNTZ4C3W">
                     <analytic>
                         <title level="a">Blood Libel: On the Trail of an Antisemitic Myth</title>
+                        <idno type="DOI">10.4159/9780674243545</idno>
                         <title type="short">Blood Libel</title>
-                        <author> <forename>Magda</forename> <surname>Teter</surname> </author>
+                        <author>
+                            <forename>Magda</forename>
+                            <surname>Teter</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Blood Libel</title>
@@ -736,39 +889,36 @@
                             <publisher>Harvard University Press</publisher>
                             <date>2020</date>
                             <note type="accessed">2023-08-21T22:58:07Z</note>
-                            <note type="url"
-                                >https://www.degruyter.com/document/doi/10.4159/9780674243545/html</note>
+                            <note type="url">https://www.degruyter.com/document/doi/10.4159/9780674243545/html</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="TausentVirhundertFunfundsibentzig1475"
-                    corresp="http://zotero.org/groups/5071036/items/6H666NT3">
+                <biblStruct type="bookSection" xml:id="Frick2020" corresp="http://zotero.org/groups/5071036/items/XMA9K3TS">
                     <analytic>
-                        <title level="a">Da tausent virhundert funfundsibentzig jar. Nach cristi
-                            gepurt die iarzal war ...</title>
+                        <title level="a">'Alternative Fakten‘. Narrativierung von Vergangenheit am Beispiel des Trienter Judenprozesses (1475)</title>
+                        <author>
+                            <forename>Julia</forename>
+                            <surname>Frick</surname>
+                        </author>
                     </analytic>
                     <monogr>
-                        <title level="m">Da tausent virhundert funfundsibentzig jar. Nach cristi
-                            gepurt die iarzal war ...</title>
-                        <imprint>
-                            <date>1475</date>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
-                <biblStruct type="bookSection" xml:id="frickAlternativeFaktenNarrativierung2020"
-                    corresp="http://zotero.org/groups/5071036/items/XMA9K3TS">
-                    <analytic>
-                        <title level="a">'Alternative Fakten‘. Narrativierung von Vergangenheit am
-                            Beispiel des Trienter Judenprozesses (1475)</title>
-                        <author> <forename>Julia</forename> <surname>Frick</surname> </author>
-                    </analytic>
-                    <monogr>
-                        <title level="m">Geschichte erzählen. Strategien der Narrativierung von
-                            Vergangenheit im Mittelalter</title>
-                        <editor> <forename>Sarah</forename> <surname>Bowden</surname> </editor>
-                        <editor> <forename>Manfred</forename> <surname>Eikelmann</surname> </editor>
-                        <editor> <forename>Stephen</forename> <surname>Mossman</surname> </editor>
-                        <editor> <forename>Michael</forename> <surname>Stolz</surname> </editor>
+                        <title level="m">Geschichte erzählen. Strategien der Narrativierung von Vergangenheit im Mittelalter</title>
+                        <editor>
+                            <forename>Sarah</forename>
+                            <surname>Bowden</surname>
+                        </editor>
+                        <editor>
+                            <forename>Manfred</forename>
+                            <surname>Eikelmann</surname>
+                        </editor>
+                        <editor>
+                            <forename>Stephen</forename>
+                            <surname>Mossman</surname>
+                        </editor>
+                        <editor>
+                            <forename>Michael</forename>
+                            <surname>Stolz</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Tübingen</pubPlace>
                             <biblScope unit="page">379-403</biblScope>
@@ -776,15 +926,13 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="journalArticle"
-                    xml:id="brandstatterAntijudischeRitualmordvorwurfeTrient2005"
-                    corresp="http://zotero.org/groups/5071036/items/4LUCWJ8V">
+                <biblStruct type="journalArticle" xml:id="Brandstätter2005" corresp="http://zotero.org/groups/5071036/items/4LUCWJ8V">
                     <analytic>
-                        <title level="a">Antijüdische Ritualmordvorwürfe in Trient und Tirol: neuere
-                            Forschungen zu Simon von Trient und Andreas von Rinn</title>
-                        <title type="short">Antijüdische Ritualmordvorwürfe in Trient und
-                            Tirol</title>
-                        <author> <forename>Klaus</forename> <surname>Brandstätter</surname>
+                        <title level="a">Antijüdische Ritualmordvorwürfe in Trient und Tirol: neuere Forschungen zu Simon von Trient und Andreas von Rinn</title>
+                        <title type="short">Antijüdische Ritualmordvorwürfe in Trient und Tirol</title>
+                        <author>
+                            <forename>Klaus</forename>
+                            <surname>Brandstätter</surname>
                         </author>
                     </analytic>
                     <monogr>
@@ -793,86 +941,80 @@
                             <biblScope unit="volume">125</biblScope>
                             <biblScope unit="page">495-536</biblScope>
                             <date>2005</date>
-                            <note type="url"
-                                >http://www.digizeitschriften.de/main/dms/img/?PPN=PPN385984421_0125&amp;DMDID=DMDLOG_0025</note>
+                            <note type="url">http://www.digizeitschriften.de/main/dms/img/?PPN=PPN385984421_0125&amp;DMDID=DMDLOG_0025</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="encyclopediaArticle" xml:id="SimonTrient2023"
-                    corresp="http://zotero.org/groups/5071036/items/BCXN5VD4">
+                <biblStruct type="encyclopediaArticle" xml:id="N._N.2023" corresp="http://zotero.org/groups/5071036/items/BCXN5VD4">
                     <analytic>
                         <title level="a">Simon von Trient</title>
+                        <author>
+                            <name>N. N.</name>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Wikipedia</title>
                         <imprint>
                             <date>2023</date>
                             <note type="accessed">2023-05-23T21:23:41Z</note>
-                            <note type="url"
-                                >https://de.wikipedia.org/w/index.php?title=Simon_von_Trient&amp;oldid=230339300</note>
+                            <note type="url">https://de.wikipedia.org/w/index.php?title=Simon_von_Trient&amp;oldid=230339300</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="webpage" xml:id="HandschriftencensusNewYork"
-                    corresp="http://zotero.org/groups/5071036/items/G26IYIAK">
+                <biblStruct type="bookSection" xml:id="Treue2015" corresp="http://zotero.org/groups/5071036/items/KXWZ5534">
                     <analytic>
-                        <title level="a">Handschriftencensus | New York, Yeshiva University Museum,
-                            Ms. 1246</title>
-                    </analytic>
-                    <monogr>
-                        <imprint>
-                            <date/>
-                            <note type="accessed">2023-05-23T21:11:21Z</note>
-                            <note type="url">https://handschriftencensus.de/25029</note>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
-                <biblStruct type="bookSection" xml:id="treueDiplomatenRechtsgelehrteIntriganten2015"
-                    corresp="http://zotero.org/groups/5071036/items/KXWZ5534">
-                    <analytic>
-                        <title level="a">Diplomaten, Rechtsgelehrte, Intriganten: der Trienter
-                            Judenprozess vor der römischen Kurie 1475 - 1478</title>
+                        <title level="a">Diplomaten, Rechtsgelehrte, Intriganten: der Trienter Judenprozess vor der römischen Kurie 1475 - 1478</title>
                         <title type="short">Diplomaten, Rechtsgelehrte, Intriganten</title>
-                        <author> <forename>Wolfgang</forename> <surname>Treue</surname> </author>
+                        <author>
+                            <forename>Wolfgang</forename>
+                            <surname>Treue</surname>
+                        </author>
                     </analytic>
                     <monogr>
                         <title level="m">Dominikaner und Juden</title>
-                        <editor> <forename>Elias H.</forename> <surname>Füllenbach</surname> </editor>
-                        <editor> <forename>Gianfranco</forename> <surname>Miletto</surname> </editor>
+                        <editor>
+                            <forename>Elias H.</forename>
+                            <surname>Füllenbach</surname>
+                        </editor>
+                        <editor>
+                            <forename>Gianfranco</forename>
+                            <surname>Miletto</surname>
+                        </editor>
                         <imprint>
                             <pubPlace>Berlin [u.a.]</pubPlace>
                             <biblScope unit="page">331-347</biblScope>
                             <date>2015</date>
                         </imprint>
                     </monogr>
-                    <series> <title level="s">uellen und Forschungen zur Geschichte des
-                        Dominikanerordens</title> <biblScope unit="volume">NF 14</biblScope>
+                    <series>
+                        <title level="s">uellen und Forschungen zur Geschichte des Dominikanerordens</title>
+                        <biblScope unit="volume">NF 14</biblScope>
                     </series>
                 </biblStruct>
-                <biblStruct type="book" xml:id="treueTrienterJudenprozessVoraussetzungen1996"
-                    corresp="http://zotero.org/groups/5071036/items/DCESKJP4">
+                <biblStruct type="book" xml:id="Treue1996" corresp="http://zotero.org/groups/5071036/items/DCESKJP4">
                     <monogr>
-                        <title level="m">Der Trienter Judenprozeß. Voraussetzungen, Abläufe,
-                            Auswirkungen (1475-1588)</title>
-                        <author> <forename>Wolfgang</forename> <surname>Treue</surname> </author>
+                        <title level="m">Der Trienter Judenprozeß. Voraussetzungen, Abläufe, Auswirkungen (1475-1588)</title>
+                        <author>
+                            <forename>Wolfgang</forename>
+                            <surname>Treue</surname>
+                        </author>
                         <imprint>
                             <biblScope unit="volume">4</biblScope>
                             <date>1996</date>
-                            <note type="url"
-                                >https://ubt.opus.hbz-nrw.de/frontdoor/index/index/docId/779</note>
+                            <note type="url">https://ubt.opus.hbz-nrw.de/frontdoor/index/index/docId/779</note>
                         </imprint>
                     </monogr>
-                    <series> <title level="s">Forschungen zur Geschichte der Juden. Abt. A.
-                        Abhandlungen</title> </series>
+                    <series>
+                        <title level="s">Forschungen zur Geschichte der Juden. Abt. A. Abhandlungen</title>
+                    </series>
                 </biblStruct>
-                <biblStruct type="journalArticle" xml:id="deigendeschJudenfeindschaftAmUracher2005"
-                    corresp="http://zotero.org/groups/5071036/items/6INM4IEB">
+                <biblStruct type="journalArticle" xml:id="Deigendesch2005" corresp="http://zotero.org/groups/5071036/items/6INM4IEB">
                     <analytic>
-                        <title level="a">Judenfeindschaft am Uracher Hof? zu einer verschollenen und
-                            wieder entdeckten Handschrift aus dem Umkreis Graf Eberhards V. von
-                            Württemberg</title>
+                        <title level="a">Judenfeindschaft am Uracher Hof? zu einer verschollenen und wieder entdeckten Handschrift aus dem Umkreis Graf Eberhards V. von Württemberg</title>
                         <title type="short">Judenfeindschaft am Uracher Hof?</title>
-                        <author> <forename>Roland 1962-</forename> <surname>Deigendesch</surname>
+                        <author>
+                            <forename>Roland 1962-</forename>
+                            <surname>Deigendesch</surname>
                         </author>
                     </analytic>
                     <monogr>
@@ -885,16 +1027,37 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="blogPost" xml:id="graf500JahreReuchlins2011"
-                    corresp="http://zotero.org/groups/5071036/items/KCARW7W8">
+                <biblStruct type="blogPost" xml:id="Graf2011" corresp="http://zotero.org/groups/5071036/items/KCARW7W8">
                     <monogr>
-                        <title level="m">500 Jahre Reuchlins Augenspiegel – Mitteilungen über Erhard
-                            von Pappenheim OP</title>
-                        <author> <forename>Klaus</forename> <surname>Graf</surname> </author>
+                        <title level="m">500 Jahre Reuchlins Augenspiegel – Mitteilungen über Erhard von Pappenheim OP</title>
+                        <author>
+                            <forename>Klaus</forename>
+                            <surname>Graf</surname>
+                        </author>
                         <imprint>
                             <date>2011</date>
                             <note type="accessed">2023-05-23T21:17:16Z</note>
                             <note type="url">https://frueheneuzeit.hypotheses.org/590</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Frick2025" corresp="http://zotero.org/groups/5071036/items/S2RQJM8B">
+                    <analytic>
+                        <title level="a">Trient 1475. Die Stadt als Projektionsraum literarisch konstruierter Geschichte</title>
+                        <idno type="DOI">10.29091/9783752003444/014</idno>
+                        <author>
+                            <forename>Julia</forename>
+                            <surname>Frick</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Jahrbuch der Oswald von Wolkenstein-Gesellschaft</title>
+                        <imprint>
+                            <biblScope unit="volume">25</biblScope>
+                            <biblScope unit="page">243–261</biblScope>
+                            <publisher>Reichert Verlag</publisher>
+                            <date>2025</date>
+                            <note type="url">https://medialibrary.reichert-verlag.de/de/article/jowg/2025/1/14/</note>
                         </imprint>
                     </monogr>
                 </biblStruct>

@@ -21,7 +21,30 @@
     <xsl:variable name="p"
       select="($b/tei:analytic/(tei:author|tei:editor) |
                $b/tei:monogr/(tei:author|tei:editor))[1]"/>
-    <xsl:sequence select="normalize-space(string( ($p/tei:surname, $p/tei:name)[1] ))"/>
+    <xsl:sequence select="normalize-space(string( ($p/tei:surname, $p/tei:name, $p/tei:forename, $p)[1] ))"/>
+  </xsl:function>
+
+  <xsl:function name="local:sort-title" as="xs:string">
+    <xsl:param name="b" as="element()"/>
+    <xsl:sequence select="normalize-space(string((
+      $b/tei:analytic/tei:title[@level='a'],
+      $b/tei:monogr/tei:title[@level=('m','j')],
+      $b/tei:analytic/tei:title,
+      $b/tei:monogr/tei:title
+    )[1]))"/>
+  </xsl:function>
+
+  <xsl:function name="local:sort-key" as="xs:string">
+    <xsl:param name="b" as="element()"/>
+    <xsl:variable name="person" select="local:sort-person($b)"/>
+    <xsl:sequence select="if ($person != '') then $person else local:sort-title($b)"/>
+  </xsl:function>
+
+  <xsl:function name="local:group-key" as="xs:string">
+    <xsl:param name="b" as="element()"/>
+    <xsl:variable name="lead" select="replace(local:sort-key($b), '^[^\p{L}\p{N}]+', '')"/>
+    <xsl:variable name="k" select="upper-case(substring($lead, 1, 1))"/>
+    <xsl:sequence select="if ($k != '') then $k else '#'"/>
   </xsl:function>
 
   <xsl:function name="local:sort-year" as="xs:string">
@@ -55,7 +78,7 @@
                   <a href="html/introduction.html">Einleitung</a>
                   <a href="html/edition.html">Edition</a>
                   <a href="html/literature.html" aria-current="page">Literatur</a>
-                  <a href="https://github.com/michaelscho/Historie-von-Simon-zu-Trient">GitHub</a>
+                  <a href="https://github.com/dekm-tud/Historie-von-Simon-zu-Trient/">GitHub</a>
 
                 </xsl:when>
                 <xsl:otherwise>
@@ -63,7 +86,7 @@
                   <a href="introduction.html">Einleitung</a>
                   <a href="edition.html">Edition</a>
                   <a href="literature.html" aria-current="page">Literatur</a>
-                  <a href="https://github.com/michaelscho/Historie-von-Simon-zu-Trient">GitHub</a>
+                  <a href="https://github.com/dekm-tud/Historie-von-Simon-zu-Trient/">GitHub</a>
 
                 </xsl:otherwise>
               </xsl:choose>
@@ -81,6 +104,7 @@
                 <h2>Suche</h2>
                 <label class="visually-hidden" for="bibl-search">Suche in der Bibliographie</label>
                 <input id="bibl-search" type="search" placeholder="Autor, Titel, Jahr, …" />
+                <p id="bibl-search-status" class="muted" aria-live="polite"/>
               </div>
             </div>
 
@@ -100,14 +124,43 @@
             (function(){
               var q = document.getElementById('bibl-search');
               var root = document.getElementById('biblio');
+              var status = document.getElementById('bibl-search-status');
               if (!q || !root) return;
-              q.addEventListener('input', function(){
-                var needle = this.value.trim().toLowerCase();
-                root.querySelectorAll('.bibl-entry').forEach(function(li){
+
+              var entries = Array.prototype.slice.call(root.querySelectorAll('.bibl-entry'));
+              var groups = Array.prototype.slice.call(root.querySelectorAll('.bibl-group'));
+
+              function setStatus(visible, total, needle) {
+                if (!status) return;
+                if (!needle) {
+                  status.textContent = 'Einträge: ' + total;
+                  return;
+                }
+                status.textContent = 'Treffer: ' + visible + ' / ' + total;
+              }
+
+              function applyFilter() {
+                var needle = q.value.trim().toLowerCase();
+
+                entries.forEach(function(li){
                   var txt = li.textContent.toLowerCase();
                   li.style.display = needle && !txt.includes(needle) ? 'none' : '';
                 });
-              });
+
+                groups.forEach(function(section){
+                  var hasVisible = Array.prototype.some.call(
+                    section.querySelectorAll('.bibl-entry'),
+                    function(li){ return li.style.display !== 'none'; }
+                  );
+                  section.style.display = hasVisible ? '' : 'none';
+                });
+
+                var visibleCount = entries.filter(function(li){ return li.style.display !== 'none'; }).length;
+                setStatus(visibleCount, entries.length, needle);
+              }
+
+              q.addEventListener('input', applyFilter);
+              applyFilter.call(q);
             })();
           ]]></script>
         </main>
@@ -136,7 +189,7 @@
 
   <xsl:template match="tei:listBibl | listBibl" mode="biblio">
     <xsl:for-each-group select="tei:biblStruct | *[local-name()='biblStruct']"
-                        group-by="upper-case(substring(local:sort-person(.),1,1))">
+                        group-by="local:group-key(.)">
       <xsl:sort select="current-grouping-key()"/>
       <section class="bibl-group" aria-labelledby="bibl-h-{current-grouping-key()}">
         <h2 id="bibl-h-{current-grouping-key()}">
@@ -144,12 +197,9 @@
         </h2>
         <ul class="bibl">
           <xsl:for-each select="current-group()">
-            <xsl:sort select="local:sort-person(.)"/>
+            <xsl:sort select="local:sort-key(.)"/>
             <xsl:sort select="local:sort-year(.)"/>
-            <xsl:sort select="normalize-space((tei:analytic/tei:title[@level='a']|
-                                               tei:monogr/tei:title[@level='m']|
-                                               *[local-name()='analytic']/*[@level='a']|
-                                               *[local-name()='monogr']/*[@level='m'])[1])"/>
+            <xsl:sort select="local:sort-title(.)"/>
             <li class="bibl-entry" id="{@xml:id}">
               <xsl:apply-templates select="." mode="bibl-line"/>
             </li>
@@ -173,11 +223,13 @@
   </xsl:template>
 
   <xsl:template name="b-book">
-    <span class="people"><xsl:call-template name="people">
+    <xsl:call-template name="emit-people-prefix">
       <xsl:with-param name="nodes" select="tei:monogr/(tei:author|tei:editor)"/>
-    </xsl:call-template></span>
-    <xsl:text>: </xsl:text>
-    <span class="title-m"><xsl:value-of select="tei:monogr/tei:title[@level='m'][1]"/></span>
+    </xsl:call-template>
+    <xsl:variable name="titleM" select="normalize-space(string((tei:monogr/tei:title[@level=('m','j')], tei:monogr/tei:title)[1]))"/>
+    <xsl:if test="$titleM != ''">
+      <span class="title-m"><xsl:value-of select="$titleM"/></span>
+    </xsl:if>
     <xsl:call-template name="series"/>
     <xsl:call-template name="imprint"/>
     <xsl:call-template name="ids"/>
@@ -185,21 +237,35 @@
   </xsl:template>
 
   <xsl:template name="b-bookSection">
-    <span class="people"><xsl:call-template name="people">
-      <xsl:with-param name="nodes" select="tei:analytic/(tei:author|tei:editor)"/>
-    </xsl:call-template></span>
-    <xsl:text>: </xsl:text>
-    <span class="title-a">„<xsl:value-of select="tei:analytic/tei:title[@level='a'][1]"/>“</span>
-    <xsl:text>. In: </xsl:text>
-    <xsl:variable name="eds" select="tei:monogr/tei:editor"/>
-    <xsl:if test="$eds">
-      <xsl:call-template name="people">
-        <xsl:with-param name="nodes" select="$eds"/>
-        <xsl:with-param name="role" select="'(Hg.)'"/>
-      </xsl:call-template>
-      <xsl:text>, </xsl:text>
+    <xsl:call-template name="emit-people-prefix">
+      <xsl:with-param name="nodes" select="
+        if (exists(tei:analytic/(tei:author|tei:editor)))
+        then tei:analytic/(tei:author|tei:editor)
+        else tei:monogr/(tei:author|tei:editor)
+      "/>
+    </xsl:call-template>
+    <xsl:variable name="titleA" select="normalize-space(string((tei:analytic/tei:title[@level='a'], tei:analytic/tei:title)[1]))"/>
+    <xsl:if test="$titleA != ''">
+      <span class="title-a">„<xsl:value-of select="$titleA"/>“</span>
+      <xsl:text>. </xsl:text>
     </xsl:if>
-    <span class="title-m"><xsl:value-of select="tei:monogr/tei:title[@level='m'][1]"/></span>
+    <xsl:variable name="eds" select="tei:monogr/tei:editor"/>
+    <xsl:variable name="titleM" select="normalize-space(string((tei:monogr/tei:title[@level=('m','j')], tei:monogr/tei:title)[1]))"/>
+    <xsl:if test="$eds or $titleM != ''">
+      <xsl:text>In: </xsl:text>
+      <xsl:if test="$eds">
+        <xsl:call-template name="people">
+          <xsl:with-param name="nodes" select="$eds"/>
+          <xsl:with-param name="role" select="'(Hg.)'"/>
+        </xsl:call-template>
+        <xsl:if test="$titleM != ''">
+          <xsl:text>, </xsl:text>
+        </xsl:if>
+      </xsl:if>
+      <xsl:if test="$titleM != ''">
+        <span class="title-m"><xsl:value-of select="$titleM"/></span>
+      </xsl:if>
+    </xsl:if>
     <xsl:call-template name="series"/>
     <xsl:call-template name="imprint"/>
     <xsl:call-template name="ids"/>
@@ -207,65 +273,110 @@
   </xsl:template>
 
   <xsl:template name="b-journal">
-    <span class="people"><xsl:call-template name="people">
-      <xsl:with-param name="nodes" select="tei:analytic/tei:author"/>
-    </xsl:call-template></span>
-    <xsl:text>: </xsl:text>
-    <span class="title-a">„<xsl:value-of select="tei:analytic/tei:title[@level='a'][1]"/>“</span>
-    <xsl:text>. </xsl:text>
-    <span class="title-m"><xsl:value-of select="tei:monogr/tei:title[@level='j'][1]"/></span>
-    <span class="imprint">
-      <xsl:text> </xsl:text>
-      <xsl:value-of select="tei:monogr/tei:imprint/tei:biblScope[@unit='volume'][1]"/>
-      <xsl:if test="tei:monogr/tei:imprint/tei:biblScope[@unit='issue']">
-        <xsl:text>(</xsl:text><xsl:value-of select="tei:monogr/tei:imprint/tei:biblScope[@unit='issue'][1]"/><xsl:text>)</xsl:text>
+    <xsl:call-template name="emit-people-prefix">
+      <xsl:with-param name="nodes" select="
+        if (exists(tei:analytic/tei:author))
+        then tei:analytic/tei:author
+        else tei:monogr/tei:author
+      "/>
+    </xsl:call-template>
+    <xsl:variable name="titleA" select="normalize-space(string((tei:analytic/tei:title[@level='a'], tei:analytic/tei:title)[1]))"/>
+    <xsl:variable name="titleJ" select="normalize-space(string((tei:monogr/tei:title[@level=('j','m')], tei:monogr/tei:title)[1]))"/>
+    <xsl:if test="$titleA != ''">
+      <span class="title-a">„<xsl:value-of select="$titleA"/>“</span>
+      <xsl:if test="$titleJ != ''">
+        <xsl:text>. </xsl:text>
       </xsl:if>
-      <xsl:if test="tei:monogr/tei:imprint/tei:date">
-        <xsl:text> </xsl:text><xsl:value-of select="tei:monogr/tei:imprint/tei:date[1]"/>
-      </xsl:if>
-      <xsl:if test="tei:monogr/tei:imprint/tei:biblScope[@unit='page']">
-        <xsl:text>, </xsl:text><xsl:value-of select="tei:monogr/tei:imprint/tei:biblScope[@unit='page'][1]"/>
-      </xsl:if>
-    </span>
+    </xsl:if>
+    <xsl:if test="$titleJ != ''">
+      <span class="title-m"><xsl:value-of select="$titleJ"/></span>
+    </xsl:if>
+    <xsl:variable name="vol" select="normalize-space(string(tei:monogr/tei:imprint/tei:biblScope[@unit='volume'][1]))"/>
+    <xsl:variable name="issue" select="normalize-space(string(tei:monogr/tei:imprint/tei:biblScope[@unit='issue'][1]))"/>
+    <xsl:variable name="date" select="normalize-space(string(tei:monogr/tei:imprint/tei:date[1]))"/>
+    <xsl:variable name="pages" select="normalize-space(string(tei:monogr/tei:imprint/tei:biblScope[@unit='page'][1]))"/>
+    <xsl:if test="$vol != '' or $issue != '' or $date != '' or $pages != ''">
+      <span class="imprint">
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="$vol"/>
+        <xsl:if test="$issue != ''">
+          <xsl:text>(</xsl:text><xsl:value-of select="$issue"/><xsl:text>)</xsl:text>
+        </xsl:if>
+        <xsl:if test="$date != ''">
+          <xsl:text> </xsl:text><xsl:value-of select="$date"/>
+        </xsl:if>
+        <xsl:if test="$pages != ''">
+          <xsl:text>, </xsl:text><xsl:value-of select="$pages"/>
+        </xsl:if>
+      </span>
+    </xsl:if>
     <xsl:call-template name="ids"/>
     <xsl:call-template name="links"/>
   </xsl:template>
 
   <xsl:template name="b-thesis">
-    <span class="people"><xsl:call-template name="people">
-      <xsl:with-param name="nodes" select="tei:monogr/tei:author"/>
-    </xsl:call-template></span>
-    <xsl:text>: </xsl:text>
-    <span class="title-m"><xsl:value-of select="tei:monogr/tei:title[@level='m'][1]"/></span>
-    <xsl:text>. </xsl:text>
-    <span class="imprint">
-      <xsl:variable name="tt" select="tei:monogr/tei:imprint/tei:note[@type='thesisType'][1]"/>
-      <xsl:if test="$tt"><xsl:value-of select="$tt"/><xsl:text>. </xsl:text></xsl:if>
-      <xsl:value-of select="tei:monogr/tei:imprint/tei:date[1]"/>
-    </span>
+    <xsl:call-template name="emit-people-prefix">
+      <xsl:with-param name="nodes" select="tei:monogr/(tei:author|tei:editor)"/>
+    </xsl:call-template>
+    <xsl:variable name="titleM" select="normalize-space(string((tei:monogr/tei:title[@level=('m','j')], tei:monogr/tei:title)[1]))"/>
+    <xsl:if test="$titleM != ''">
+      <span class="title-m"><xsl:value-of select="$titleM"/></span>
+    </xsl:if>
+    <xsl:variable name="tt" select="normalize-space(string(tei:monogr/tei:imprint/tei:note[@type='thesisType'][1]))"/>
+    <xsl:variable name="date" select="normalize-space(string(tei:monogr/tei:imprint/tei:date[1]))"/>
+    <xsl:if test="$tt != '' or $date != ''">
+      <xsl:if test="$titleM != ''"><xsl:text>. </xsl:text></xsl:if>
+      <span class="imprint">
+        <xsl:if test="$tt != ''"><xsl:value-of select="$tt"/><xsl:if test="$date != ''"><xsl:text>. </xsl:text></xsl:if></xsl:if>
+        <xsl:if test="$date != ''"><xsl:value-of select="$date"/></xsl:if>
+      </span>
+    </xsl:if>
     <xsl:call-template name="links"/>
   </xsl:template>
 
   <xsl:template name="b-encyclo">
-    <span class="people"><xsl:call-template name="people">
-      <xsl:with-param name="nodes" select="tei:analytic/tei:author"/>
-    </xsl:call-template></span>
-    <xsl:text>: </xsl:text>
-    <span class="title-a">„<xsl:value-of select="tei:analytic/tei:title[@level='a'][1]"/>“</span>
-    <xsl:text>. </xsl:text>
-    <span class="title-m"><xsl:value-of select="tei:monogr/tei:title[@level='m'][1]"/></span>
+    <xsl:call-template name="emit-people-prefix">
+      <xsl:with-param name="nodes" select="
+        if (exists(tei:analytic/tei:author))
+        then tei:analytic/tei:author
+        else tei:monogr/tei:author
+      "/>
+    </xsl:call-template>
+    <xsl:variable name="titleA" select="normalize-space(string((tei:analytic/tei:title[@level='a'], tei:analytic/tei:title)[1]))"/>
+    <xsl:variable name="titleM" select="normalize-space(string((tei:monogr/tei:title[@level=('m','j')], tei:monogr/tei:title)[1]))"/>
+    <xsl:if test="$titleA != ''">
+      <span class="title-a">„<xsl:value-of select="$titleA"/>“</span>
+      <xsl:if test="$titleM != ''"><xsl:text>. </xsl:text></xsl:if>
+    </xsl:if>
+    <xsl:if test="$titleM != ''">
+      <span class="title-m"><xsl:value-of select="$titleM"/></span>
+    </xsl:if>
     <xsl:call-template name="imprint"/>
     <xsl:call-template name="links"/>
   </xsl:template>
 
   <xsl:template name="b-web">
-    <span class="people"><xsl:call-template name="people">
-      <xsl:with-param name="nodes" select="tei:analytic/tei:author"/>
-    </xsl:call-template></span>
-    <xsl:text>: </xsl:text>
-    <span class="title-a">„<xsl:value-of select="tei:analytic/tei:title[@level='a'][1]"/>“</span>
-    <xsl:text>. </xsl:text>
-    <span class="title-m"><xsl:value-of select="tei:monogr/tei:title[@level='m'][1]"/></span>
+    <xsl:call-template name="emit-people-prefix">
+      <xsl:with-param name="nodes" select="
+        if (exists(tei:analytic/tei:author))
+        then tei:analytic/tei:author
+        else tei:monogr/tei:author
+      "/>
+    </xsl:call-template>
+    <xsl:variable name="titleA" select="normalize-space(string((tei:analytic/tei:title[@level='a'], tei:analytic/tei:title)[1]))"/>
+    <xsl:variable name="titleM" select="normalize-space(string((tei:monogr/tei:title[@level=('m','j')], tei:monogr/tei:title)[1]))"/>
+    <xsl:choose>
+      <xsl:when test="$titleA != ''">
+        <span class="title-a">„<xsl:value-of select="$titleA"/>“</span>
+        <xsl:if test="$titleM != '' and $titleM != $titleA">
+          <xsl:text>. </xsl:text>
+          <span class="title-m"><xsl:value-of select="$titleM"/></span>
+        </xsl:if>
+      </xsl:when>
+      <xsl:when test="$titleM != ''">
+        <span class="title-m"><xsl:value-of select="$titleM"/></span>
+      </xsl:when>
+    </xsl:choose>
     <xsl:call-template name="imprint"/>
     <xsl:call-template name="links"/>
   </xsl:template>
@@ -275,6 +386,23 @@
       <xsl:when test="tei:analytic/tei:title"><xsl:call-template name="b-bookSection"/></xsl:when>
       <xsl:otherwise><xsl:call-template name="b-book"/></xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="emit-people-prefix">
+    <xsl:param name="nodes" as="element()*"/>
+    <xsl:param name="role"  as="xs:string" select="''"/>
+    <xsl:variable name="people-fragment">
+      <xsl:call-template name="people">
+        <xsl:with-param name="nodes" select="$nodes"/>
+        <xsl:with-param name="role" select="$role"/>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:if test="normalize-space(string($people-fragment)) != ''">
+      <span class="people">
+        <xsl:copy-of select="$people-fragment/node()"/>
+      </span>
+      <xsl:text>: </xsl:text>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="people">
@@ -293,6 +421,7 @@
           <xsl:if test="tei:forename"><xsl:text>, </xsl:text><xsl:value-of select="normalize-space(tei:forename)"/></xsl:if>
         </xsl:when>
         <xsl:when test="tei:name"><xsl:value-of select="normalize-space(tei:name)"/></xsl:when>
+        <xsl:otherwise><xsl:value-of select="normalize-space(.)"/></xsl:otherwise>
       </xsl:choose>
     </xsl:for-each>
     <xsl:if test="$role and count($nodes) &gt; 0"><xsl:text> </xsl:text><xsl:value-of select="$role"/></xsl:if>
@@ -313,20 +442,24 @@
 
   <xsl:template name="imprint">
     <xsl:variable name="imp" select="tei:monogr/tei:imprint"/>
-    <xsl:if test="$imp">
+    <xsl:variable name="place" select="normalize-space(string($imp/tei:pubPlace[1]))"/>
+    <xsl:variable name="publisher" select="normalize-space(string($imp/tei:publisher[1]))"/>
+    <xsl:variable name="date" select="normalize-space(string($imp/tei:date[1]))"/>
+    <xsl:variable name="pages" select="normalize-space(string($imp/tei:biblScope[@unit='page'][1]))"/>
+    <xsl:if test="$place != '' or $publisher != '' or $date != '' or $pages != ''">
       <xsl:text>. </xsl:text>
       <span class="imprint">
-        <xsl:if test="$imp/tei:pubPlace">
-          <xsl:value-of select="normalize-space($imp/tei:pubPlace[1])"/>
-          <xsl:if test="$imp/tei:publisher or $imp/tei:date"><xsl:text>: </xsl:text></xsl:if>
+        <xsl:if test="$place != ''">
+          <xsl:value-of select="$place"/>
+          <xsl:if test="$publisher != '' or $date != ''"><xsl:text>: </xsl:text></xsl:if>
         </xsl:if>
-        <xsl:if test="$imp/tei:publisher">
-          <xsl:value-of select="$imp/tei:publisher[1]"/>
-          <xsl:if test="$imp/tei:date"><xsl:text>, </xsl:text></xsl:if>
+        <xsl:if test="$publisher != ''">
+          <xsl:value-of select="$publisher"/>
+          <xsl:if test="$date != ''"><xsl:text>, </xsl:text></xsl:if>
         </xsl:if>
-        <xsl:if test="$imp/tei:date"><xsl:value-of select="$imp/tei:date[1]"/></xsl:if>
-        <xsl:if test="$imp/tei:biblScope[@unit='page']">
-          <xsl:text>, </xsl:text><xsl:value-of select="$imp/tei:biblScope[@unit='page'][1]"/>
+        <xsl:if test="$date != ''"><xsl:value-of select="$date"/></xsl:if>
+        <xsl:if test="$pages != ''">
+          <xsl:text>, </xsl:text><xsl:value-of select="$pages"/>
         </xsl:if>
       </span>
     </xsl:if>

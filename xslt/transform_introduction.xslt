@@ -53,7 +53,7 @@
                                href="introduction.html">Einleitung</a>
                             <a href="edition.html">Edition</a>
                             <a href="literature.html">Literatur</a>
-                            <a href="https://github.com/michaelscho/Historie-von-Simon-zu-Trient">GitHub</a>
+                            <a href="https://github.com/dekm-tud/Historie-von-Simon-zu-Trient/">GitHub</a>
                         </div>
                     </nav>
                 </header>

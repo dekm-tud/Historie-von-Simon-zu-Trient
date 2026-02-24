@@ -1,4 +1,4 @@
-# Historie von Simon zu Trient — Static digital edition
+# Historie von Simon zu Trient - Static digital edition
 
 This repository contains the data, transformation scripts, and the static web edition for the edition "Historie von Simon zu Trient". The project demonstrates a simple and sustainable pipeline for publishing a scholarly edition as a static website without any backend, using data scholars commonly already have (Transkribus document, Zotero library, docx), XSLT and a local XML processor.
 
@@ -29,12 +29,12 @@ In this repository you will find:
 
 ## Provenance and data
 
-- The edition text was transcribed in Transkribus and exported as TEI. Those TEI files were processed and enriched to conform with TEI conventions.
+- The edition text was transcribed in Transkribus and exported as TEI. Those TEI files were processed and enriched to conform with TEI conventions and scholarily practice.
 - The introduction was drafted in Microsoft Word and converted to TEI using OxGarage.
 - The bibliography was created with Zotero and exported as TEI.
 - Page images and page-XML are included where available. Images are Public Domain (see the notices and the BSB source reference). Some remote services (e.g., IIIF viewer instances hosted by BSB München) are not included in the package and are referenced externally.
 
-## Quick start — view the edition locally
+## View the edition locally
 
 1. Clone the repository or download the archive.
 2. From the repository root, start a simple HTTP server and open the site in your browser.
@@ -55,33 +55,40 @@ After the server starts, open `http://localhost:8000/` (or your browser should o
 
 ## Regenerating the static site (XSLT + Saxon)
 
-This repository includes the XSLT transforms in `xslt/` and a Saxon distribution in `Saxon/`. To regenerate the HTML pages from the TEI sources you can run the Saxon processor. The exact Saxon jar name may vary; adjust the path/filename as necessary.
+The site can be built locally. Transforms are run with Saxon against XML files in `data/`.
 
-Example command (PowerShell):
+Input/output overview:
 
-```powershell
-# replace saxon-he.jar with the actual jar filename in Saxon\lib
-java -jar .\Saxon\lib\saxon-he.jar -s:Historie_von_Simon_zu_Trient\Historie_von_Simon_zu_Trient\metadata.xml -xsl:xslt\transform_edition.xslt -o:html\edition.html
-java -jar .\Saxon\lib\saxon-he.jar -s:data\Historie_von_Simon_zu_Trien_Einleitung.xml -xsl:xslt\transform_introduction.xslt -o:html\introduction.html
-java -jar .\Saxon\lib\saxon-he.jar -s:data\Historie_von_Simon_zu_Trient_Zotero.xml -xsl:xslt\transform_literature.xslt -o:html\literature.html
-```
-
-Example command (macOS / Linux):
+- `data/Historie_von_Simon_zu_Trient_Edition.xml` + `xslt/transform_edition.xslt` -> `html/edition.html` and `index.html`
+- `data/Historie_von_Simon_zu_Trient_Einleitung.xml` + `xslt/transform_introduction.xslt` -> `html/introduction.html`
+- `data/Historie_von_Simon_zu_Trient_Zotero.xml` + `xslt/transform_literature.xslt` -> `html/literature.html`
 
 ```bash
-# replace saxon-he.jar with the actual jar filename in Saxon/lib
-java -jar ./Saxon/lib/saxon-he.jar -s:Historie_von_Simon_zu_Trient/Historie_von_Simon_zu_Trient/metadata.xml -xsl:xslt/transform_edition.xslt -o:html/edition.html
+mkdir -p ./build
+
+# Edition + root index
+java -jar ./Saxon/saxon-he-12.9.jar \
+  -s:data/Historie_von_Simon_zu_Trient_Edition.xml \
+  -xsl:xslt/transform_edition.xslt outdir=./html/
+
+# Introduction
+java -jar ./Saxon/saxon-he-12.9.jar \
+  -s:data/Historie_von_Simon_zu_Trient_Einleitung.xml \
+  -xsl:xslt/transform_introduction.xslt \
+  -o:html/introduction.html
+
+# Literature
+java -jar ./Saxon/saxon-he-12.9.jar \
+  -s:data/Historie_von_Simon_zu_Trient_Zotero.xml \
+  -xsl:xslt/transform_literature.xslt \
+  -o:html/literature.html
 ```
 
-Notes:
-- The `-s:` source argument should point to the TEI (or other XML) input for the transform. For the edition we use the `metadata.xml` inside the package as the entry point.
-- The `-xsl:` option selects the transform file from `xslt/`.
-- The `-o:` option writes the output HTML to `html/` (overwrite as-needed).
-- If you have an alternative Saxon installation (on PATH) you can use that instead of the included Saxon distribution.
+If you use another Saxon installation, replace the jar path accordingly.
 
 ## Hosting and preservation
 
-- The live edition is hosted using GitHub Pages. The repository is mirrored on Zenodo for long-term preservation (check the project page for DOI and mirror links).
+- The live edition is hosted using GitHub Pages. The repository is mirrored on Zenodo for long-term preservation.
 
 ## Licensing and attribution
 
@@ -92,7 +99,7 @@ If you re-use images or other resources, please check the relevant metadata file
 
 ## Limitations and external services
 
-- The edition relies on some external services for advanced viewers (for example a IIIF/Manifold viewer hosted by external providers). These services are not distributed in this repo. Page images and page XML are provided where possible.
+- The edition relies on some external services for advanced viewers (for example a IIIF/Manifold viewer hosted by external providers). These services are not distributed in this repo. Page images and page XML are provided where possible for longterm accessability.
 
 
 ---

@@ -37,6 +37,18 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+    <xsl:function name="tei:slug"
+                  as="xs:string">
+        <xsl:param name="raw"
+                   as="xs:string?" />
+        <xsl:variable name="norm"
+                      select="normalize-space($raw)" />
+        <xsl:variable name="sanitized"
+                      select="replace($norm, '[^A-Za-z0-9]+', '-')" />
+        <xsl:variable name="trimmed"
+                      select="replace(replace($sanitized, '^-+', ''), '-+$', '')" />
+        <xsl:sequence select="if ($trimmed != '') then lower-case($trimmed) else 'x'" />
+    </xsl:function>
     <xsl:variable name="register-map"
                   as="map(xs:string, xs:string)">
         <xsl:map>
@@ -274,10 +286,10 @@
                             <xsl:variable name="prefix"
                                           select="if ($atRoot) then '' else '../'" />
                             <a href="{concat($prefix, 'index.html')}">Home</a>
-                            <a href="{concat($prefix, $outdir, '/introduction.html')}">Einleitung</a>
-                            <a href="{concat($prefix, $outdir, '/edition.html')}">Edition</a>
-                            <a href="{concat($prefix, $outdir, '/literature.html')}">Literatur</a>
-                            <a href="https://github.com/michaelscho/Historie-von-Simon-zu-Trient">GitHub</a>
+                            <a href="{concat($prefix, $outdir, 'introduction.html')}">Einleitung</a>
+                            <a href="{concat($prefix, $outdir, 'edition.html')}">Edition</a>
+                            <a href="{concat($prefix, $outdir, 'literature.html')}">Literatur</a>
+                            <a href="https://github.com/dekm-tud/Historie-von-Simon-zu-Trient/">GitHub</a>
                         </div>
                     </nav>
                 </header>
@@ -416,6 +428,84 @@
     <section class="{if (@type = 'illustration') then 'illustration' else ()}">
         <xsl:apply-templates />
     </section>
+</xsl:template>
+<xsl:template match="tei:div[@type='chapter']">
+    <xsl:variable name="cid"
+                  select="string((@xml:id, concat('hszt-chapter-', (normalize-space(@n), count(preceding::tei:div[@type='chapter']) + 1)[1]))[1])" />
+    <section class="chapter citable"
+             id="{$cid}">
+        <xsl:call-template name="emit-cite-handle">
+            <xsl:with-param name="id"
+                            select="$cid" />
+            <xsl:with-param name="kind-label"
+                            select="'Kapitel'" />
+        </xsl:call-template>
+        <xsl:apply-templates />
+    </section>
+</xsl:template>
+<xsl:template match="tei:div[@type='illustration']">
+    <section class="illustration">
+        <xsl:apply-templates />
+    </section>
+</xsl:template>
+<xsl:template match="tei:figure">
+    <xsl:variable name="fid"
+                  select="string((@xml:id, concat('hszt-figure-', tei:slug((@type, 'figure')[1]), '-', tei:slug((@n, count(preceding::tei:figure) + 1)[1])))[1])" />
+    <figure class="edition-figure citable"
+            id="{$fid}">
+        <xsl:call-template name="emit-cite-handle">
+            <xsl:with-param name="id"
+                            select="$fid" />
+            <xsl:with-param name="kind-label"
+                            select="'Abbildung'" />
+        </xsl:call-template>
+        <xsl:if test="tei:head">
+            <b>
+                <xsl:apply-templates select="tei:head/node()" />
+            </b>
+        </xsl:if>
+        <xsl:if test="tei:figDesc">
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates select="tei:figDesc/node()" />
+        </xsl:if>
+    </figure>
+</xsl:template>
+<xsl:template name="emit-cite-handle">
+    <xsl:param name="id"
+               as="xs:string?" />
+    <xsl:param name="kind-label"
+               as="xs:string"
+               select="'Abschnitt'" />
+    <xsl:if test="normalize-space($id) != ''">
+        <a class="cite-handle"
+           href="#{$id}"
+           title="{concat($kind-label, ' verlinken: #', $id)}"
+           aria-label="{concat($kind-label, ' verlinken: #', $id)}">
+            <span class="cite-symbol"
+                  aria-hidden="true">id</span>
+            <span class="cite-id">
+                <code>
+                    <xsl:value-of select="$id" />
+                </code>
+            </span>
+        </a>
+    </xsl:if>
+</xsl:template>
+<xsl:template match="tei:div[@type='chapter']/tei:p">
+    <xsl:variable name="chapter-id"
+                  select="string((ancestor::tei:div[@type='chapter'][1]/@xml:id, concat('hszt-chapter-', (normalize-space(ancestor::tei:div[@type='chapter'][1]/@n), count(ancestor::tei:div[@type='chapter'][1]/preceding::tei:div[@type='chapter']) + 1)[1]))[1])" />
+    <xsl:variable name="pid"
+                  select="string((@xml:id, concat($chapter-id, '-paragraph-', tei:slug((@n, concat('p', count(preceding-sibling::tei:p) + 1))[1])))[1])" />
+    <p class="edition-paragraph citable"
+       id="{$pid}">
+        <xsl:call-template name="emit-cite-handle">
+            <xsl:with-param name="id"
+                            select="$pid" />
+            <xsl:with-param name="kind-label"
+                            select="'Absatz'" />
+        </xsl:call-template>
+        <xsl:apply-templates />
+    </p>
 </xsl:template>
 <xsl:template match="tei:p">
     <p>
