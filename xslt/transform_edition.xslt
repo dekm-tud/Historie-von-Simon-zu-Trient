@@ -5,6 +5,7 @@
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:map="http://www.w3.org/2005/xpath-functions/map"
                 exclude-result-prefixes="tei xs map">
+    <xsl:import href="common.xslt" />
     <xsl:param name="site_title"
                select="'Historie von Simon zu Trient – Digital Edition'" />
     <xsl:param name="iiif_manifest"
@@ -61,6 +62,49 @@
     <xsl:variable name="register-json"
                   as="xs:string"
                   select="serialize($register-map, map{'method':'json'})" />
+
+    <xsl:variable name="prefixDefs" select="//tei:teiHeader//tei:prefixDef" />
+
+    <xsl:function name="tei:resolve-cRef" as="xs:string?">
+        <xsl:param name="cRef" as="xs:string?" />
+        <xsl:if test="contains($cRef, ':')">
+            <xsl:variable name="prefix" select="substring-before($cRef, ':')" />
+            <xsl:variable name="value" select="substring-after($cRef, ':')" />
+            <xsl:variable name="def" select="$prefixDefs[@ident = $prefix]" />
+            <xsl:if test="$def">
+                <xsl:value-of select="replace($def/@replacementPattern, '\$1', $value)" />
+            </xsl:if>
+        </xsl:if>
+    </xsl:function>
+
+    <xsl:function name="tei:pretty-cRef" as="xs:string?">
+        <xsl:param name="cRef" as="xs:string?" />
+        <xsl:choose>
+            <xsl:when test="contains($cRef, ':')">
+                <xsl:variable name="prefix" select="substring-before($cRef, ':')" />
+                <xsl:variable name="value" select="substring-after($cRef, ':')" />
+                <xsl:variable name="book" select="substring-before($value, '.')" />
+                <xsl:variable name="chapter-verse" select="replace(substring-after($value, '.'), '\.', ',')" />
+                <xsl:variable name="bookName">
+                    <xsl:choose>
+                        <xsl:when test="$book = 'PHP'">Phil</xsl:when>
+                        <xsl:when test="$book = 'JHN'">Joh</xsl:when>
+                        <xsl:when test="$book = 'MAT'">Mt</xsl:when>
+                        <xsl:when test="$book = 'MAR'">Mk</xsl:when>
+                        <xsl:when test="$book = 'LUK'">Lk</xsl:when>
+                        <xsl:when test="$book = 'ACT'">Apg</xsl:when>
+                        <xsl:when test="$book = 'ROM'">Röm</xsl:when>
+                        <xsl:when test="$book = 'GEN'">Gen</xsl:when>
+                        <xsl:when test="$book = 'PSA'">Ps</xsl:when>
+                        <xsl:otherwise><xsl:value-of select="$book"/></xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="concat($bookName, ' ', $chapter-verse)" />
+            </xsl:when>
+            <xsl:otherwise><xsl:value-of select="$cRef"/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+
     <xsl:template match="/tei:TEI">
         <xsl:result-document href="{concat($outdir, '/edition.html')}"
                              method="html"
@@ -75,6 +119,10 @@
                                 select="'assets/site.js'" />
                 <xsl:with-param name="atRoot"
                                 select="false()" />
+                <xsl:with-param name="outdir"
+                                select="$outdir" />
+                <xsl:with-param name="site_title"
+                                select="$site_title" />
                 <xsl:with-param name="head-extra">
                     <link rel="stylesheet"
                           href="https://unpkg.com/mirador@3.3.0/dist/mirador.min.css" />
@@ -100,6 +148,27 @@
                         }
                         .register-lookup {
                         cursor: help; /* Indicate clickable */
+                        }
+
+                        /* Commentary Note Styles */
+                        .note-commentary {
+                            font-size: 0.8em;
+                            vertical-align: super;
+                            cursor: pointer;
+                            color: #a00;
+                            margin-left: 2px;
+                            font-weight: bold;
+                        }
+                        .commentary-content {
+                            display: none;
+                            background-color: #f9f9f9;
+                            border-left: 3px solid #a00;
+                            padding: 0.5em 1em;
+                            margin: 0.5em 0;
+                            font-size: 0.9em;
+                        }
+                        .commentary-active .commentary-content {
+                            display: block;
                         }
                     </style>
                 </xsl:with-param>
@@ -196,196 +265,8 @@
                 </xsl:with-param>
             </xsl:call-template>
         </xsl:result-document>
-        <xsl:result-document href="index.html"
-                             method="html"
-                             encoding="UTF-8"
-                             omit-xml-declaration="yes">
-            <xsl:call-template name="page-shell">
-                <xsl:with-param name="title"
-                                select="$site_title" />
-                <xsl:with-param name="css-href"
-                                select="concat($outdir, '/assets/site.css')" />
-                <xsl:with-param name="js-href"
-                                select="concat($outdir, '/assets/site.js')" />
-                <xsl:with-param name="atRoot"
-                                select="true()" />
-                <xsl:with-param name="body_extra_bottom">
-                    <div id="register-popup-element"
-                         class="register-popup"
-                         aria-live="polite" />
-                </xsl:with-param>
-                <xsl:with-param name="content">
-                    <main class="container">
-                        <section id="home">
-                            <h1>Historie von Simon zu Trient – Digitale Edition</h1>
-                            <section class="text-und-bild">
-                                <div class="text">
-                                    <p>Die <em>Historie von Simon zu Trient</em> ist eine judenfeindliche Verschwörungserzählung aus dem Jahre 1475 und sollte vielleicht besser <em>Historie von der Ermordung der Trienter Juden</em> genannt werden. Der Text wurde 6. September 1475 von Albrecht Kunne in Trient gedruckt und erzählt von der angeblichen Entführung, Folterung und Tötung des zweijährigen Simon durch die Männer der jüdischen Gemeinde in Trient, deren Verhaftung, Folterung und Ermordung sowie dem Totenkult um Simon.</p>
-                                    <p>Die hier vorgelegte Edition ist Teil eines Forschungsprojekts von Marco Heiles, das die <em>Historie von Simon zu Trient</em> durch eine Digitale Edition und eine begleitende Artikelserie im Blog <em>
-                                        <a href="https://mittelalter.hypotheses.org/">Das Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte</a>
-                                    </em> für die Forschung und vor allem die akademische Lehre zugänglich machen möchte.</p>
-                                    <p>Anlass für diese Auseinandersetzung mit dem Text war dabei ein germanistisches Master-Hauptseminar zu <em>Verschwörungserzählungen im Spätmittelalter und heute</em>, das Marco Heiles im Wintersemester 2022/2023 an der RWTH Aachen University durchgeführt hat. In diesem wurden – ausgehend von den eigenen aktuellen Erfahrungen mit Verschwörungserzählungen während der Coronapandemie – eine ganze Reihe spätmittelalterlicher Texte auf strukturelle Gemeinsamkeiten mit und motivische Kontinuitäten zu heutigen Verschwörungserzählungen untersucht. Da mehrere Studierende Hausarbeiten zur 'Historie von Simon zu Trient' schreiben wollten und eine zitierfähige und leicht lesbare Ausgabe des Textes fehlt, hat Marco Heiles mithilfe von 'Transkribus' eine Transkription des Druckes erstellt. Dank der technischen Unterstützung von Michael Schonhardt und dem Fachgebiet Digitale Editorik und Kulturgeschichte des Mittelalters der Technischen Universität Darmstadt kann diese Transkription jetzt hier als Digitale Edition erscheinen.</p>
-                                    <p>Publikationen im Projekt <em>Historie von der Ermordung der Trienter Juden</em>:</p>
-                                    <ul>
-                                        <li>Historie von Simon zu Trient. Digitale Edition, hg. von Marco Heiles und Michael Schonhardt, Darmstadt 2025, URL: ##github</li>
-                                        <li>Historie von Simon zu Trient. Dataset zur digitalen Edition, hg. von Marco Heiles und Michael Schonhardt, Darmstadt 2025, DOI:  ##zenodo</li>
-                                        <li>Marco Heiles, Die Historie von Simon zu Trient – eine judenfeindliche Verschwörungserzählung aus dem Jahre 1475, in: Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte 8 (2025), S. xx–yy, DOI: : #xyz.</li>
-                                        <li>Kevin Reinardy, Kein Märtyrer ohne Ritualmord. Die Historie von Simon zu Trient als Verschwörungstheorie?, in: Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte 8 (2025), S. xx–yy, DOI: #xyz.</li>
-                                        <li>Hannah Heinrichs, Zwischen Märtyrerkult und antijüdischen Feindbildern. Eine Untersuchung des Ritualmordkonstruks in Text und Bild der Historie von Simon zu Trient, in: Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte 8 (2025), S. xx–yy, DOI: #xyz.</li>
-                                        <li>Tobias Esser, Judenfeindliche Ikonographie – Verwendung und Umkehr christlicher Abendmahlmotivik in Text und Bild der Historie von Simon zu Trient, in: Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte 8 (2025), S. xx–yy, DOI: #xyz.</li>
-                                    </ul>
-                                </div>
-                                <figure class="abb">
-                                    <img src="html/assets/img/HAB_5_xylogr_2_00118.png"
-                                         alt="Historie von Simon zu Trient, Trient 06.09.1475: Albrecht Kunne. Exemplar: HAB, 5 Xylogr. (2)"
-                                         loading="lazy" />
-                                    <figcaption>
-                                        <em>Historie von Simon zu Trient, Trient 06.09.1475: Albrecht Kunne. Exemplar: Wolfenbüttel, Herzog August Bibliothek, 5 Xylogr. (2)</em>
-                                    </figcaption>
-                                </figure>
-                            </section>
-                        </section>
-                    </main>
-                </xsl:with-param>
-            </xsl:call-template>
-        </xsl:result-document>
     </xsl:template>
-    <xsl:template name="page-shell">
-        <xsl:param name="title" />
-        <xsl:param name="css-href" />
-        <xsl:param name="js-href" />
-        <xsl:param name="content"
-                   as="node()*" />
-        <xsl:param name="head-extra"
-                   as="node()*" />
-        <xsl:param name="body_extra_bottom"
-                   as="node()*" />
-        <xsl:param name="atRoot"
-                   as="xs:boolean"
-                   select="false()" />
-        <html lang="de"
-              data-manifest="{$iiif_manifest}">
-            <head>
-                <meta charset="utf-8" />
-                <meta name="viewport"
-                      content="width=device-width, initial-scale=1" />
-                <title>
-                    <xsl:value-of select="$title" />
-                </title>
-                <link rel="stylesheet"
-                      href="{$css-href}" />
-                <xsl:copy-of select="$head-extra" />
-            </head>
-            <body class="mode-expan layout-reading">
-                <header class="site-header">
-                    <nav class="nav">
-                        <div class="brand">
-                            <xsl:value-of select="normalize-space(//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main'])" />
-                        </div>
-                        <div class="menu">
-                            <xsl:variable name="prefix"
-                                          select="if ($atRoot) then '' else '../'" />
-                            <a href="{concat($prefix, 'index.html')}">Home</a>
-                            <a href="{concat($prefix, $outdir, 'introduction.html')}">Einleitung</a>
-                            <a href="{concat($prefix, $outdir, 'edition.html')}">Edition</a>
-                            <a href="{concat($prefix, $outdir, 'literature.html')}">Literatur</a>
-                            <a href="https://github.com/dekm-tud/Historie-von-Simon-zu-Trient/">GitHub</a>
-                        </div>
-                    </nav>
-                </header>
-                <xsl:copy-of select="$content" />
-                <footer>
-                    <h2>Impressum</h2>
-                    <h3>Angaben gemäß § 5 TMG</h3>
-                    <p>                        
-                        Herausgeber:
-                        Dr. phil. Marco Heiles
-                        Ulrich Haberland Straße 43
-                        53121 Bonn
-                        Deutschland
-                        marco.heiles @ uni-hamburg.de
-                    </p>
-                    <h3>Lizenzbestimmungen</h3>
-                    <p>Die Texte dieser Website stehen unter Creative Commons Attribution 4.0 International Lizenz. Sie dürfen die Texte unter Angabe des Urhebers und der CC-Lizenz sowohl kopieren als auch an anderer Stelle veröffentlichen.</p>
-                    <h3>Förderung</h3>
-                    <p>Die Forschung von <a href="https://hcommons.org/members/marcoheiles/">Dr. Marco Heiles</a> zur Edition der Historie von Simon zu Trient fand im <a href="https://www.germlit.rwth-aachen.de/cms/germlit/Das-Institut/~mpma/Aeltere-deutsche-Literatur/">Institut für Germanistische und Allgemeine Literaturwissenschaft der RWTH Aachen University</a> und am <a href="https://www.csmc.uni-hamburg.de">Centre for the Study of Manuscript Cultures (CSMC) der Universität Hamburg</a> statt. Sie wurde durch die Deutsche Forschungsgemeinschaft (DFG) im Rahmen der Exzellenzstrategie des Bundes und der Länder – EXC 2176 „Understanding Written Artefacts: Material, Interaction and Transmission in Manuscript Cultures”, Projektnr. 390893796 gefördert.</p>
-                    <p>Die Einrichtung und Veröffentlichung der Digitalen Edition und der Sicherung der Forschungsdaten erfolgte durch <a href="https://orcid.org/0000-0002-2750-1900">Prof. Dr. Michael Schonhardt</a> im Fachgebiet <a href="https://www.linglit.tu-darmstadt.de/institutlinglit/fachgebiete/digitale_editorik_und_kulturgeschichte_des_mittelalters/index.de.jsp">Digitale Editorik und Kulturgeschichte des Mittelalters</a> der Technischen Universität Darmstadt.</p>
-                </footer>
-                <xsl:copy-of select="$body_extra_bottom" />
-                <script src="{$js-href}" />
-                <script>                    
-                    document.addEventListener('DOMContentLoaded', () =&gt; {
-                    const registerDataElement = document.getElementById('register-data');
-                    const popupElement = document.getElementById('register-popup-element');
-                    let registerLookup = {};
-                    
-                    if (!popupElement) {
-                    console.warn("Popup element not found.");
-                    return;
-                    }
-                    
-                    if (registerDataElement) {
-                    try {
-                    registerLookup = JSON.parse(registerDataElement.textContent || '{}');
-                    } catch (e) {
-                    console.error("Failed to parse register data:", e);
-                    }
-                    } else {
-                    console.warn("Register data element not found (this is expected on some pages).");
-                    }
-                    
-                    const annotatedSpans = document.querySelectorAll('.register-lookup');
-                    
-                    const getPopupText = (el) =&gt; {
-                    return el.dataset.popupContent || (el.dataset.refid ? registerLookup[el.dataset.refid] : undefined);
-                    };
-                    
-                    const showPopup = (el) =&gt; {
-                    const text = getPopupText(el);
-                    if (!text) {
-                    popupElement.style.display = 'none';
-                    const idInfo = el.dataset.refid ? ` (refid: ${el.dataset.refid})` : '';
-                    console.warn(`No popup content found${idInfo}.`);
-                    return;
-                    }
-                    popupElement.textContent = text;
-                    const rect = el.getBoundingClientRect();
-                    popupElement.style.left = `${window.scrollX + rect.left}px`;
-                    popupElement.style.top  = `${window.scrollY + rect.bottom + 5}px`;
-                    popupElement.style.display = 'block';
-                    };
-                    
-                    annotatedSpans.forEach((span) =&gt; {
-                    if (!span.hasAttribute('tabindex')) span.setAttribute('tabindex', '0');
-                    
-                    span.addEventListener('click', (event) =&gt; {
-                    event.stopPropagation();
-                    showPopup(span);
-                    });
-                    
-                    span.addEventListener('keydown', (event) =&gt; {
-                    if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    showPopup(span);
-                    }
-                    });
-                    });
-                    
-                    document.addEventListener('click', () =&gt; {
-                    if (popupElement.style.display === 'block') popupElement.style.display = 'none';
-                    });
-                    
-                    document.addEventListener('keydown', (event) =&gt; {
-                    if (event.key === 'Escape' &amp;&amp; popupElement.style.display === 'block') {
-                    popupElement.style.display = 'none';
-                    }
-                    });
-                    });
-                </script>
-            </body>
-        </html>
-    </xsl:template>
+
     <xsl:template match="tei:text">
         <xsl:apply-templates select="tei:body" />
     </xsl:template>
@@ -566,30 +447,71 @@
     </xsl:if>
 </xsl:template>
 <xsl:template match="tei:persName | tei:rs[@type='person']">
-    <span class="ann person register-lookup"
-          title="Person">
-        <xsl:attribute name="data-refid"
-                       select="replace(@ref, '^#', '')" />
+    <xsl:variable name="refid" select="replace(@ref, '^#', '')" />
+    <xsl:variable name="normName" select="map:get($register-map, $refid)" />
+    <span class="ann person register-lookup">
+        <xsl:attribute name="title" select="if ($normName) then $normName else 'Person'" />
+        <xsl:attribute name="data-refid" select="$refid" />
         <xsl:apply-templates />
         <xsl:call-template name="maybe-ref-link" />
     </span>
 </xsl:template>
 <xsl:template match="tei:placeName | tei:geogName | tei:rs[@type='place']">
-    <span class="ann place register-lookup"
-          title="{if (self::tei:geogName) then 'Geographic name' else 'Place'}">
-        <xsl:attribute name="data-refid"
-                       select="replace(@ref, '^#', '')" />
+    <xsl:variable name="refid" select="replace(@ref, '^#', '')" />
+    <xsl:variable name="normName" select="map:get($register-map, $refid)" />
+    <span class="ann place register-lookup">
+        <xsl:attribute name="title" select="if ($normName) then $normName else (if (self::tei:geogName) then 'Geographic name' else 'Place')" />
+        <xsl:attribute name="data-refid" select="$refid" />
         <xsl:apply-templates />
         <xsl:call-template name="maybe-ref-link" />
     </span>
 </xsl:template>
 <xsl:template match="tei:rs[@type='work']">
-    <span class="ann work register-lookup"
-          title="Work">
-        <xsl:attribute name="data-refid"
-                       select="replace(@ref, '^#', '')" />
+    <xsl:variable name="refid" select="replace(@ref, '^#', '')" />
+    <xsl:variable name="normName" select="map:get($register-map, $refid)" />
+    <span class="ann work register-lookup">
+        <xsl:attribute name="title" select="if ($normName) then $normName else 'Work'" />
+        <xsl:attribute name="data-refid" select="$refid" />
         <xsl:apply-templates />
         <xsl:call-template name="maybe-ref-link" />
+    </span>
+</xsl:template>
+
+<xsl:template match="tei:quote">
+    <xsl:variable name="sourceLink" select="tei:resolve-cRef(@source)" />
+    <span class="quote">
+        <xsl:variable name="pretty-source" select="tei:pretty-cRef(@source)" />
+        <xsl:attribute name="title" select="if ($pretty-source) then concat('Quelle: ', $pretty-source) else 'Zitat'" />
+        <xsl:apply-templates />
+        <xsl:if test="$sourceLink">
+            <a href="{$sourceLink}" class="source-link" target="_blank" title="{if ($pretty-source) then concat('Quelle aufrufen: ', $pretty-source) else concat('Quelle aufrufen: ', @source)}">
+                <xsl:text> [↗]</xsl:text>
+            </a>
+        </xsl:if>
+    </span>
+</xsl:template>
+
+<xsl:template match="tei:ref[@cRef]">
+    <xsl:variable name="link" select="tei:resolve-cRef(@cRef)" />
+    <a href="{$link}" class="cRef-link" target="_blank">
+        <xsl:if test="not(node())">
+            <xsl:value-of select="tei:pretty-cRef(@cRef)" />
+        </xsl:if>
+        <xsl:apply-templates />
+    </a>
+</xsl:template>
+
+<xsl:template match="tei:note[@type='commentary'] | tei:note[@type='comment']">
+    <span class="note-commentary register-lookup" title="Kommentar anzeigen">
+        <xsl:variable name="comment-content">
+            <xsl:apply-templates />
+        </xsl:variable>
+        <xsl:attribute name="data-popup-content">
+            <!-- Serialize the templates result to a string so it can be passed to innerHTML.
+                 Method xml/xhtml is safer here to preserve tags inside the attribute. -->
+            <xsl:value-of select="serialize($comment-content, map{'method':'xhtml', 'omit-xml-declaration':true()})" />
+        </xsl:attribute>
+        <xsl:text> ⓘ</xsl:text>
     </span>
 </xsl:template>
 <xsl:template match="tei:rs[not(@type=('person','place','work'))]">
@@ -611,18 +533,30 @@
     </span>
 </xsl:template>
 <xsl:template match="tei:foreign">
+    <xsl:variable name="quote" select="ancestor::tei:quote[1]" />
+    <xsl:variable name="sourceLink" select="if ($quote) then tei:resolve-cRef($quote/@source) else ()" />
     <span class="ann foreign">
         <xsl:if test="@xml:lang or @lang">
             <xsl:attribute name="title">Foreign (<xsl:value-of select="(@xml:lang, @lang)[1]" />)</xsl:attribute>
         </xsl:if>
-        <xsl:apply-templates />
+        <xsl:choose>
+            <xsl:when test="$sourceLink">
+                <xsl:variable name="pretty-source" select="tei:pretty-cRef($quote/@source)" />
+                <a href="{$sourceLink}" class="foreign-link" target="_blank" title="{if ($pretty-source) then concat('Quelle aufrufen: ', $pretty-source) else concat('Quelle aufrufen: ', $quote/@source)}">
+                    <xsl:apply-templates />
+                </a>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates />
+            </xsl:otherwise>
+        </xsl:choose>
     </span>
 </xsl:template>
 <xsl:template match="tei:date">
     <xsl:variable name="when"
                   select="string(@when)" />
-    <time class="ann date { if ($when != '') then 'register-lookup' else '' }"
-          title="Date">
+    <time class="ann date { if ($when != '') then 'register-lookup' else '' }">
+        <xsl:attribute name="title" select="if ($when != '') then $when else 'Datum'" />
         <xsl:if test="$when != ''">
             <xsl:attribute name="datetime"
                            select="$when" />
@@ -652,6 +586,11 @@
           title="Unclear">
         <xsl:apply-templates />
     </span>
+</xsl:template>
+<xsl:template match="tei:ptr">
+    <a href="{@target}" target="_blank">
+        <xsl:value-of select="@target" />
+    </a>
 </xsl:template>
 <xsl:template match="text()">
     <xsl:value-of select="." />

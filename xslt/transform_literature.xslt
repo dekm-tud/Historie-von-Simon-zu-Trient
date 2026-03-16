@@ -7,6 +7,7 @@
   xmlns:local="urn:local"
   exclude-result-prefixes="#all">
 
+  <xsl:import href="common.xslt"/>
   <xsl:param name="site_title" select="'Historie von Simon zu Trient – Digital Edition'"/>
   <xsl:param name="css_href"    select="'assets/site.css'"/>
   <xsl:param name="js_href"     select="'assets/site.js'"/>
@@ -60,40 +61,13 @@
     <xsl:variable name="bibl"
       select="(//*[self::tei:listBibl], //*[local-name()='listBibl'])[1]"/>
 
-    <html lang="de">
-      <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title><xsl:value-of select="concat($site_title, ' — Literatur')"/></title>
-        <link rel="stylesheet" href="{$css_href}"/>
-      </head>
-      <body class="mode-expan layout-reading">
-        <header class="site-header">
-          <nav class="nav">
-            <div class="brand"><xsl:value-of select="$site_title"/></div>
-            <div class="menu">
-              <xsl:choose>
-                <xsl:when test="$atRoot">
-                  <a href="index.html">Home</a>
-                  <a href="html/introduction.html">Einleitung</a>
-                  <a href="html/edition.html">Edition</a>
-                  <a href="html/literature.html" aria-current="page">Literatur</a>
-                  <a href="https://github.com/dekm-tud/Historie-von-Simon-zu-Trient/">GitHub</a>
-
-                </xsl:when>
-                <xsl:otherwise>
-                  <a href="../index.html">Home</a>
-                  <a href="introduction.html">Einleitung</a>
-                  <a href="edition.html">Edition</a>
-                  <a href="literature.html" aria-current="page">Literatur</a>
-                  <a href="https://github.com/dekm-tud/Historie-von-Simon-zu-Trient/">GitHub</a>
-
-                </xsl:otherwise>
-              </xsl:choose>
-            </div>
-          </nav>
-        </header>
-
+    <xsl:call-template name="page-shell">
+      <xsl:with-param name="title" select="concat($site_title, ' — Literatur')"/>
+      <xsl:with-param name="css-href" select="$css_href"/>
+      <xsl:with-param name="js-href" select="$js_href"/>
+      <xsl:with-param name="atRoot" select="$atRoot"/>
+      <xsl:with-param name="site_title" select="$site_title"/>
+      <xsl:with-param name="content">
         <main class="container">
           <section id="literature">
             <div class="section-head">
@@ -164,27 +138,10 @@
             })();
           ]]></script>
         </main>
-
-        <footer>
-                    <h2>Impressum</h2>
-                    <h3>Angaben gemäß § 5 TMG</h3>
-                    <p>
-                        Herausgeber:
-                        Dr. phil. Marco Heiles
-                        Ulrich Haberland Straße 43
-                        53121 Bonn
-                        Deutschland
-                        marco.heiles @ uni-hamburg.de
-                    </p>
-                    <h3>Lizenzbestimmungen</h3>
-                    <p>Die Texte dieser Website stehen unter Creative Commons Attribution 4.0 International Lizenz. Sie dürfen die Texte unter Angabe des Urhebers und der CC-Lizenz sowohl kopieren als auch an anderer Stelle veröffentlichen.</p>
-                    <h3>Förderung</h3>
-                    <p>Die Forschung von <a href="https://hcommons.org/members/marcoheiles/">Dr. Marco Heiles</a> zur Edition der Historie von Simon zu Trient fand im <a href="https://www.germlit.rwth-aachen.de/cms/germlit/Das-Institut/~mpma/Aeltere-deutsche-Literatur/">Institut für Germanistische und Allgemeine Literaturwissenschaft der RWTH Aachen University</a> und am <a href="https://www.csmc.uni-hamburg.de">Centre for the Study of Manuscript Cultures (CSMC) der Universität Hamburg</a> statt. Sie wurde durch die Deutsche Forschungsgemeinschaft (DFG) im Rahmen der Exzellenzstrategie des Bundes und der Länder – EXC 2176 „Understanding Written Artefacts: Material, Interaction and Transmission in Manuscript Cultures”, Projektnr. 390893796 gefördert.</p>
-                    <p>Die Einrichtung und Veröffentlichung der Digitalen Edition und der Sicherung der Forschungsdaten erfolgte durch <a href="https://orcid.org/0000-0002-2750-1900">Prof. Dr. Michael Schonhardt</a> im Fachgebiet <a href="https://www.linglit.tu-darmstadt.de/institutlinglit/fachgebiete/digitale_editorik_und_kulturgeschichte_des_mittelalters/index.de.jsp">Digitale Editorik und Kulturgeschichte des Mittelalters</a> der Technischen Universität Darmstadt.</p>                </footer>
-        <script src="{$js_href}"></script>
-      </body>
-    </html>
+      </xsl:with-param>
+    </xsl:call-template>
   </xsl:template>
+
 
 
   <xsl:template match="tei:listBibl | listBibl" mode="biblio">

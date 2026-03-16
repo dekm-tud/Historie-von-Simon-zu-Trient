@@ -85,14 +85,12 @@
                 <biblStruct type="book" xml:id="Soyer2025" corresp="http://zotero.org/groups/5071036/items/XRFU7MCU">
                     <monogr>
                         <title level="m">The Blood Libel in Medieval Antisemitism</title>
-                        <idno type="ISBN">978-1-80270-180-7</idno>
                         <author>
                             <forename>Franois</forename>
                             <surname>Soyer</surname>
                         </author>
                         <imprint>
                             <pubPlace>York</pubPlace>
-                            <publisher>ARC Humanities Press</publisher>
                             <date>2025</date>
                         </imprint>
                     </monogr>
@@ -100,39 +98,36 @@
                 <biblStruct type="book" xml:id="Museo_Diocesano_Tridentino2019" corresp="http://zotero.org/groups/5071036/items/5DSX5KDU">
                     <monogr>
                         <title level="m">L'invenzione del Colpevole: il "caso" di Simonino da Trento dalla propaganda alla storia</title>
-                        <title type="short">L'invenzione del Colpevole</title>
-                        <idno type="ISBN">978-88-99910-26-6</idno>
                         <idno type="callNumber">4 2022.1532</idno>
-                        <author>
+                        <editor>
                             <name>Museo Diocesano Tridentino</name>
-                        </author>
-                        <author>
+                        </editor>
+                        <editor>
                             <forename>Domenica</forename>
                             <surname>Primerano</surname>
-                        </author>
-                        <author>
+                        </editor>
+                        <editor>
                             <forename>Domizio</forename>
                             <surname>Cattoi</surname>
-                        </author>
-                        <author>
+                        </editor>
+                        <editor>
                             <forename>Lorenza</forename>
                             <surname>Liandru</surname>
-                        </author>
-                        <author>
+                        </editor>
+                        <editor>
                             <forename>Valentina</forename>
                             <surname>Perini</surname>
-                        </author>
-                        <author>
+                        </editor>
+                        <editor>
                             <forename>Emanuele</forename>
                             <surname>Curzel</surname>
-                        </author>
-                        <author>
+                        </editor>
+                        <editor>
                             <forename>Aldo</forename>
                             <surname>Galli</surname>
-                        </author>
+                        </editor>
                         <imprint>
                             <pubPlace>Trento</pubPlace>
-                            <publisher>Tipografia Editrice Temi Sas</publisher>
                             <date>2019</date>
                         </imprint>
                     </monogr>
@@ -140,14 +135,12 @@
                 <biblStruct type="book" xml:id="Schreiber1927" corresp="http://zotero.org/groups/5071036/items/DZ4LGECZ">
                     <monogr>
                         <title level="m">Handbuch der Holz- und Metallschnitte des XV. Jahrhunderts. Band 4: Holzschnitte darstellend religiös-mystische Allegorien, Lebensalter, Glücksrad, Tod, Kalender, Medizin, Heiligtümer, Geschichte, Geographie, Satiren, Sittenbilder, Grotesken, Ornamente, Porträts, Wappen, Bücherzeichen, Münzen. Nr. 1783 - 2047</title>
-                        <title type="short">Schneider, Handbuch der Holz- und Metallschnitte des XV. Jahrhunderts. Band 4</title>
                         <author>
                             <forename>Wilhelm Ludwig</forename>
                             <surname>Schreiber</surname>
                         </author>
                         <imprint>
                             <date>1927</date>
-                            <note type="accessed">2024-04-19T09:20:16Z</note>
                             <note type="url">http://digital.ub.uni-duesseldorf.de/ihd/3558861</note>
                         </imprint>
                     </monogr>
@@ -167,59 +160,22 @@
                         <idno type="ISSN">1865-8865</idno>
                         <imprint>
                             <biblScope unit="volume">103</biblScope>
-                            <biblScope unit="issue">1</biblScope>
                             <biblScope unit="page">231-247</biblScope>
                             <publisher>De Gruyter</publisher>
                             <date>2023</date>
-                            <note type="accessed">2025-10-23T08:12:49Z</note>
                             <note type="url">https://www.degruyterbrill.com/document/doi/10.1515/qufiab-2023-0013/html</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="Shalev-Eyni2016" corresp="http://zotero.org/groups/5071036/items/EZCPHLEY">
-                    <analytic>
-                        <title level="a">Entanglement and Disentanglement. Visual Expressions of Late Medieval Ashkenazi Existence</title>
-                        <idno type="DOI">10.1515/9783110445480-009</idno>
-                        <author>
-                            <forename>Sarit</forename>
-                            <surname>Shalev-Eyni</surname>
-                        </author>
-                    </analytic>
-                    <monogr>
-                        <title level="m">Transkulturelle Verflechtungsprozesse in der Vormoderne</title>
-                        <idno type="ISBN">978-3-11-044548-0</idno>
-                        <editor>
-                            <forename>Wolfgang</forename>
-                            <surname>Drews</surname>
-                        </editor>
-                        <editor>
-                            <forename>Christian</forename>
-                            <surname>Scholl</surname>
-                        </editor>
-                        <imprint>
-                            <pubPlace>Berlin/Boston</pubPlace>
-                            <biblScope unit="page">174-196</biblScope>
-                            <publisher>De Gruyter</publisher>
-                            <date>2016</date>
-                            <note type="accessed">2024-06-04T13:41:51Z</note>
-                            <note type="url">https://www.degruyter.com/document/doi/10.1515/9783110445480-009/html</note>
-                        </imprint>
-                    </monogr>
-                    <series>
-                        <title level="s">Das Mittelalter. Perspektiven mediävistischer Forschung. Beihefte</title>
-                    </series>
-                </biblStruct>
                 <biblStruct type="book" xml:id="Areford2010" corresp="http://zotero.org/groups/5071036/items/JHF3F6C9">
                     <monogr>
                         <title level="m">The viewer and the printed image in late medieval Europe</title>
-                        <idno type="ISBN">978-0-7546-6762-9</idno>
                         <author>
                             <forename>David S.</forename>
                             <surname>Areford</surname>
                         </author>
                         <imprint>
-                            <pubPlace>Farnham [u.a</pubPlace>
-                            <publisher>Ashgate</publisher>
+                            <pubPlace>Farnham</pubPlace>
                             <date>2010</date>
                         </imprint>
                     </monogr>
@@ -227,60 +183,9 @@
                         <title level="s">Visual culture in early modernity</title>
                     </series>
                 </biblStruct>
-                <biblStruct type="bookSection" xml:id="Magin2005" corresp="http://zotero.org/groups/5071036/items/3CR4CADC">
-                    <analytic>
-                        <title level="a">“Ettwas zu sagen von den iuden”. Themen und Formen antijüdischer Einblattdrucke im späten 15. Jahrhundert</title>
-                        <idno type="DOI">10.1163/9789047416265_017</idno>
-                        <author>
-                            <forename>Christine</forename>
-                            <surname>Magin</surname>
-                        </author>
-                        <author>
-                            <forename>Falk</forename>
-                            <surname>Eisermann</surname>
-                        </author>
-                    </analytic>
-                    <monogr>
-                        <title level="m">Frömmigkeit - Theologie - Frömmigkeitstheologie. Contributions to European Church History</title>
-                        <idno type="ISBN">978-90-474-1626-5</idno>
-                        <imprint>
-                            <biblScope unit="page">173-194</biblScope>
-                            <publisher>Brill</publisher>
-                            <date>2005</date>
-                            <note type="accessed">2024-04-17T15:33:38Z</note>
-                            <note type="url">https://brill.com/display/book/9789047416265/B9789047416265_s017.xml</note>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
-                <biblStruct type="journalArticle" xml:id="Magin2009" corresp="http://zotero.org/groups/5071036/items/2QKZE4XK">
-                    <analytic>
-                        <title level="a">Two Anti-Jewish Broadsides from the Late Fifteenth Century</title>
-                        <author>
-                            <forename>Christine</forename>
-                            <surname>Magin</surname>
-                        </author>
-                        <author>
-                            <forename>Falk</forename>
-                            <surname>Eisermann</surname>
-                        </author>
-                    </analytic>
-                    <monogr>
-                        <title level="j">Studies in the History of Art</title>
-                        <idno type="ISSN">0091-7338</idno>
-                        <imprint>
-                            <biblScope unit="volume">75</biblScope>
-                            <biblScope unit="page">190-203</biblScope>
-                            <publisher>National Gallery of Art</publisher>
-                            <date>2009</date>
-                            <note type="accessed">2024-04-17T14:57:18Z</note>
-                            <note type="url">https://www.jstor.org/stable/42622518</note>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
                 <biblStruct type="thesis" xml:id="Bolpagni2012" corresp="http://zotero.org/groups/5071036/items/DKUQYCQG">
                     <monogr>
                         <title level="m">Giovanni Mattia Tiberino e la Passio beati Simonis pueri Tridentini: Edizione e commento</title>
-                        <title type="short">GIOVANNI MATTIA TIBERINO E LA PASSIO BEATI SIMONIS PUERI TRIDENTINI</title>
                         <author>
                             <forename>Gaia</forename>
                             <surname>Bolpagni</surname>
@@ -360,7 +265,7 @@
                 </biblStruct>
                 <biblStruct type="bookSection" xml:id="Esposito2003" corresp="http://zotero.org/groups/5071036/items/2AJF4QV2">
                     <analytic>
-                        <title level="a">Das Stereotyp des Ritualmordes in den Trienter Prozessen und die Verehrung des „Seligen“ Si-mone</title>
+                        <title level="a">Das Stereotyp des Ritualmordes in den Trienter Prozessen und die Verehrung des „Seligen“ Simone</title>
                         <author>
                             <forename>Anna</forename>
                             <surname>Esposito</surname>
@@ -572,7 +477,7 @@
                         </author>
                     </analytic>
                     <monogr>
-                        <title level="m">: Il principe vescovo Johannes Hinderbach (1465-1486) fra tardo Medioevo e Umanesimo. Atti del Convegno promosso dalla Biblioteca Comunale di Trento, 2-6 ottobre 1989</title>
+                        <title level="m">Il principe vescovo Johannes Hinderbach (1465-1486) fra tardo Medioevo e Umanesimo. Atti del Convegno promosso dalla Biblioteca Comunale di Trento, 2-6 ottobre 1989</title>
                         <editor>
                             <forename>Rogger</forename>
                             <surname>Igino</surname>
@@ -588,7 +493,7 @@
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct type="journalArticle" xml:id="de_Freitas_Morais2019" corresp="http://zotero.org/groups/5071036/items/NP8MKZTQ">
+                <biblStruct type="bookSection" xml:id="de_Freitas_Morais2019" corresp="http://zotero.org/groups/5071036/items/NP8MKZTQ">
                     <analytic>
                         <title level="a">O ciclo iconográfico do beato Simão de Trento e a difusão do culto ao menino mártir no final do século XV</title>
                         <author>
@@ -597,14 +502,16 @@
                         </author>
                     </analytic>
                     <monogr>
-                        <title level="j">XII Encontro Internacional de Estudos Medievais, III: Seminario Internacional sobre Hagiografia Medieval = Anais do Encontros Internacionais de Estudos Medievais</title>
+                        <title level="m">XII Encontro Internacional de Estudos Medievais, III: Seminario Internacional sobre Hagiografia Medieval</title>
                         <imprint>
                             <biblScope unit="volume">3</biblScope>
-                            <biblScope unit="issue">1</biblScope>
                             <biblScope unit="page">109-120</biblScope>
                             <date>2019</date>
                         </imprint>
                     </monogr>
+                    <series>
+                        <title level="s">Anais do Encontros Internacionais de Estudos Medievais</title>
+                    </series>
                 </biblStruct>
                 <biblStruct type="journalArticle" xml:id="Astleithner2021" corresp="http://zotero.org/groups/5071036/items/AZ2DJQH5">
                     <analytic>
@@ -646,7 +553,6 @@
                 <biblStruct type="book" xml:id="Schulze2002" corresp="http://zotero.org/groups/5071036/items/Q3KN2G53">
                     <monogr>
                         <title level="m">Juden in der deutschen Literatur des Mittelalters. Religiöse Konzepte – Feindbilder – Rechtfertigungen</title>
-                        <idno type="ISBN">978-3-484-10846-2</idno>
                         <author>
                             <forename>Ursula</forename>
                             <surname>Schulze</surname>
@@ -695,7 +601,7 @@
                     <analytic>
                         <title level="a">Tales from Trent. The construction of “Saint” Simon in manuscript and print, 475-1511</title>
                         <author>
-                            <forename>Stephen D.</forename>
+                            <forename>Stephen</forename>
                             <surname>Bowd</surname>
                         </author>
                     </analytic>
@@ -722,21 +628,12 @@
                     </analytic>
                     <monogr>
                         <title level="m">Per Padre Frumenzio Ghetta. Scritti di storia e cultura ladina, trentina, tirolese e nota bio-bibliografica. In occasione del settantesimo compleanno</title>
-                        <imprint>
-                            <pubPlace>Trient</pubPlace>
-                            <biblScope unit="page">307-334</biblScope>
-                            <date>1991</date>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
-                <biblStruct type="book" xml:id="Biblioteca_comunale_di_Trento_e_dell_Istitut_cultural_ladin_Majon_di_Fashegn_VichVigo_di_Fassa1991" corresp="http://zotero.org/groups/5071036/items/I69TRCQS">
-                    <monogr>
-                        <title level="m">Per Padre Frumenzio Ghetta. Scritti di storia e cultura ladina, trentina, tirolese e nota bio-bibliografica. In occasione del settantesimo compleanno</title>
                         <editor>
                             <name>Biblioteca comunale di Trento e dell’Istitut cultural ladin ‘Majon di Fashegn’ Vich/Vigo di Fassa</name>
                         </editor>
                         <imprint>
                             <pubPlace>Trient</pubPlace>
+                            <biblScope unit="page">307-334</biblScope>
                             <date>1991</date>
                         </imprint>
                     </monogr>
@@ -838,7 +735,6 @@
                             <biblScope unit="page">1260-1275</biblScope>
                             <publisher>De Gruyter</publisher>
                             <date>1992</date>
-                            <note type="url">https://www-1degruyter-1com-100c00eoo0090.emedien3.sub.uni-hamburg.de/database/VDBO/entry/vdbo.vlma.4015/html</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
@@ -867,29 +763,7 @@
                         <title level="m">Musikleben des Spätmittelalters in der Region Österreich</title>
                         <imprint>
                             <date>2016</date>
-                            <note type="accessed">2023-05-23T21:22:50Z</note>
                             <note type="url">https://musical-life.net/essays/aggressionen-und-angste-judenhass</note>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
-                <biblStruct type="bookSection" xml:id="Teter2020" corresp="http://zotero.org/groups/5071036/items/WNTZ4C3W">
-                    <analytic>
-                        <title level="a">Blood Libel: On the Trail of an Antisemitic Myth</title>
-                        <idno type="DOI">10.4159/9780674243545</idno>
-                        <title type="short">Blood Libel</title>
-                        <author>
-                            <forename>Magda</forename>
-                            <surname>Teter</surname>
-                        </author>
-                    </analytic>
-                    <monogr>
-                        <title level="m">Blood Libel</title>
-                        <idno type="ISBN">978-0-674-24354-5</idno>
-                        <imprint>
-                            <publisher>Harvard University Press</publisher>
-                            <date>2020</date>
-                            <note type="accessed">2023-08-21T22:58:07Z</note>
-                            <note type="url">https://www.degruyter.com/document/doi/10.4159/9780674243545/html</note>
                         </imprint>
                     </monogr>
                 </biblStruct>
@@ -987,7 +861,7 @@
                         </imprint>
                     </monogr>
                     <series>
-                        <title level="s">uellen und Forschungen zur Geschichte des Dominikanerordens</title>
+                        <title level="s">Quellen und Forschungen zur Geschichte des Dominikanerordens</title>
                         <biblScope unit="volume">NF 14</biblScope>
                     </series>
                 </biblStruct>
@@ -1011,18 +885,16 @@
                 <biblStruct type="journalArticle" xml:id="Deigendesch2005" corresp="http://zotero.org/groups/5071036/items/6INM4IEB">
                     <analytic>
                         <title level="a">Judenfeindschaft am Uracher Hof? zu einer verschollenen und wieder entdeckten Handschrift aus dem Umkreis Graf Eberhards V. von Württemberg</title>
-                        <title type="short">Judenfeindschaft am Uracher Hof?</title>
                         <author>
-                            <forename>Roland 1962-</forename>
+                            <forename>Roland</forename>
                             <surname>Deigendesch</surname>
                         </author>
                     </analytic>
                     <monogr>
                         <title level="j">Zeitschrift für württembergische Landesgeschichte</title>
-                        <idno type="ISSN">0044-3786</idno>
                         <imprint>
                             <biblScope unit="volume">64</biblScope>
-                            <biblScope unit="page">85</biblScope>
+                            <biblScope unit="page">85-102</biblScope>
                             <date>2005</date>
                         </imprint>
                     </monogr>
@@ -1036,7 +908,6 @@
                         </author>
                         <imprint>
                             <date>2011</date>
-                            <note type="accessed">2023-05-23T21:17:16Z</note>
                             <note type="url">https://frueheneuzeit.hypotheses.org/590</note>
                         </imprint>
                     </monogr>
@@ -1058,6 +929,144 @@
                             <publisher>Reichert Verlag</publisher>
                             <date>2025</date>
                             <note type="url">https://medialibrary.reichert-verlag.de/de/article/jowg/2025/1/14/</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="book" xml:id="Teter2020" corresp="http://zotero.org/groups/5071036/items/WAN2AL9P">
+                    <monogr>
+                        <title level="m">Blood Libel: On the Trail of an Antisemitic Myth</title>
+                        <author>
+                            <forename>Magda</forename>
+                            <surname>Teter</surname>
+                        </author>
+                        <imprint>
+                            <pubPlace>Cambridge, MA</pubPlace>
+                            <publisher>Harvard University Press</publisher>
+                            <date>2020</date>
+                            <note type="accessed">2023-08-21T22:58:07Z</note>
+                            <note type="url">https://www.degruyter.com/document/doi/10.4159/9780674243545/html</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="bookSection" xml:id="Shalev-Eyni2016" corresp="http://zotero.org/groups/5071036/items/WERLM5U5">
+                    <analytic>
+                        <title level="a">Entanglement and Disentanglement. Visual Expressions of Late Medieval Ashkenazi Existence</title>
+                        <author>
+                            <forename>Sarit</forename>
+                            <surname>Shalev-Eyni</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">Transkulturelle Verflechtungsprozesse in der Vormoderne</title>
+                        <editor>
+                            <forename>Wolfgang</forename>
+                            <surname>Drews</surname>
+                        </editor>
+                        <editor>
+                            <forename>Christian</forename>
+                            <surname>Scholl</surname>
+                        </editor>
+                        <imprint>
+                            <pubPlace>Berlin/Boston</pubPlace>
+                            <biblScope unit="page">174-196</biblScope>
+                            <date>2016</date>
+                            <note type="url">https://www.degruyter.com/document/doi/10.1515/9783110445480-009/html</note>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Das Mittelalter. Perspektiven mediävistischer Forschung. Beihefte</title>
+                    </series>
+                </biblStruct>
+                <biblStruct type="bookSection" xml:id="Magin2009" corresp="http://zotero.org/groups/5071036/items/3DJL2PUD">
+                    <analytic>
+                        <title level="a">Two anti-Jewish broadsides from the late fifteenth century</title>
+                        <author>
+                            <forename>Christine</forename>
+                            <surname>Magin</surname>
+                        </author>
+                        <author>
+                            <forename>Falk</forename>
+                            <surname>Eisermann</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">The woodcut in fifteenth-century Europe</title>
+                        <editor>
+                            <forename>Peter W.</forename>
+                            <surname>Parshall</surname>
+                        </editor>
+                        <imprint>
+                            <pubPlace>New Haven, Conn.</pubPlace>
+                            <biblScope unit="page">191-203</biblScope>
+                            <date>2009</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="bookSection" xml:id="Magin2005" corresp="http://zotero.org/groups/5071036/items/CPN7H44J">
+                    <analytic>
+                        <title level="a">"Ettwas zu sagen von den Iuden": (Themen und Formen antijüdischer Einblattdrucke im späten 15. Jahrhundert</title>
+                        <title type="short">"Ettwas zu sagen von den Iuden"</title>
+                        <author>
+                            <forename>Christine</forename>
+                            <surname>Magin</surname>
+                        </author>
+                        <author>
+                            <forename>Falk</forename>
+                            <surname>Eisermann</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">Frömmigkeit - Theologie - Frömmigkeitstheologie. Contributions to European Church History. Festschrift Berndt Hamm</title>
+                        <editor>
+                            <forename>Gudrun</forename>
+                            <surname>Liz</surname>
+                        </editor>
+                        <editor>
+                            <forename>Heidrun</forename>
+                            <surname>Munzert</surname>
+                        </editor>
+                        <editor>
+                            <forename>Roland</forename>
+                            <surname>Liebenberg</surname>
+                        </editor>
+                        <imprint>
+                            <pubPlace>Leiden u.a.</pubPlace>
+                            <biblScope unit="page">173-193</biblScope>
+                            <date>2005</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="thesis" xml:id="de_Freitas_Morais2018" corresp="http://zotero.org/groups/5071036/items/PZN6AD58">
+                    <monogr>
+                        <title level="m">O menino mártir Simão de Trento, o antijudaismo e as dinâmicas da difusão de um culto em incunábulos no final do século XV</title>
+                        <author>
+                            <forename>Vinícius</forename>
+                            <surname>de Freitas Morais</surname>
+                        </author>
+                        <imprint>
+                            <date>2018</date>
+                            <note type="accessed">2026-02-26T10:53:15Z</note>
+                            <note type="url">https://app.uff.br/riuff/handle/1/13428</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="bookSection" xml:id="Groff1991" corresp="http://zotero.org/groups/5071036/items/LHIRMQI6">
+                    <analytic>
+                        <title level="a">I due esemplari del "Gedicht von dem getödteten Christenkinde Simon zu Trient" di Mattheus Kùnig: il ms. 585 della Biblioteca comunale di Trento e l’inc. 3557 della Staatsbibliothek Preussischer Kulturbesitz di Berlino</title>
+                        <author>
+                            <forename>Silvano</forename>
+                            <surname>Groff</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">Per Padre Frumenzio Ghetta. Scritti di storia e cultura ladina, trentina, tirolese e nota bio-bibliografica. In occasione del settantesimo compleanno</title>
+                        <editor>
+                            <name>Biblioteca comunale di Trento e dell’Istitut cultural ladin ‘Majon di Fashegn’ Vich/Vigo di Fassa</name>
+                        </editor>
+                        <imprint>
+                            <pubPlace>Trient</pubPlace>
+                            <biblScope unit="page">275-306</biblScope>
+                            <date>1991</date>
                         </imprint>
                     </monogr>
                 </biblStruct>
