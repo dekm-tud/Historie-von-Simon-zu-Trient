@@ -85,6 +85,22 @@
         </xsl:call-template>
     </xsl:template>
 
+    <xsl:template match="tei:figure">
+        <figure class="intro-figure">
+            <xsl:apply-templates select="tei:graphic" />
+            <figcaption>
+                <xsl:apply-templates select="node()[not(self::tei:graphic)]" />
+            </figcaption>
+        </figure>
+    </xsl:template>
+    <xsl:template match="tei:graphic">
+        <img src="{@url}" class="intro-img">
+            <xsl:if test="@width">
+                <xsl:attribute name="style"
+                               select="concat('max-width: min(100%, ', @width, ')')" />
+            </xsl:if>
+        </img>
+    </xsl:template>
     <xsl:template match="tei:body">
         <div>
             <xsl:apply-templates />
